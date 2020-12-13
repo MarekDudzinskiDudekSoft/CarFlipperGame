@@ -8,7 +8,7 @@ final class BuyACommercial extends LoopOption{
     }
 
     @Override
-    GameState execute() {
+    GameState execute(GameState state) {
 
         System.out.println("Wybrales opcje: Kup reklame");
         return null;

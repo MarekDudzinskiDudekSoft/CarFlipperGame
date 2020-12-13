@@ -9,22 +9,33 @@ class MenuOptionReader {
         OPTION_SIZE = size;
     }
 
-    private Scanner input = new Scanner(System.in);
+    int readNumberFromConsole() {                                       // todo walidacja
+        Scanner input = new Scanner(System.in);
 
-    int readNumberFromConsole() {
-        int number = input.nextInt();
-        while (number < 1 || number > OPTION_SIZE) {
-            number = input.nextInt();
+        try {
+            return readOption(input);
+        } catch (Exception e) {
+            System.err.println("Niepoprawny wybor lub format");
+            input.next();
+        } finally {
+            input.close();
         }
-        return number;
-    }               //TODO dodaj komunikaty o blednym wprowadzeniu,
-
-    String newLine() {
-        return input.nextLine();
+        return readNumberFromConsole();
     }
 
-    void closeReader() {
-        input.close();
-        input.reset();
+    private int readOption(Scanner input) {                             //to brzydkie
+        String numberInString = input.nextLine();
+        int correctNumber = Integer.parseInt(numberInString);
+        while (validateRangeOfNumber(correctNumber)) {
+            numberInString = input.nextLine();
+            correctNumber = Integer.parseInt(numberInString);
+        }
+        return correctNumber;
     }
+
+    private boolean validateRangeOfNumber(int number) {
+        return number < 1 || number > OPTION_SIZE;
+    }
+
+
 }

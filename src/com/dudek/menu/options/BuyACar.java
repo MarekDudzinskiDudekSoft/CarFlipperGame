@@ -8,7 +8,7 @@ final class BuyACar extends LoopOption{
     }
 
     @Override
-    GameState execute() {
+    GameState execute(GameState state) {
         System.out.println("Wybrales opcje: Kup auto");return null;
     }
 }

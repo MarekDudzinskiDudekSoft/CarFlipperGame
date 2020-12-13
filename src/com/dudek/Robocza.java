@@ -6,8 +6,8 @@ public class Robocza {
 
 /*
 
-Glowna petla
-Konstruktory w opcjach
+Glowna petla                    done
+Konstruktory w opcjach          done
 Robic dalej xd
 
 

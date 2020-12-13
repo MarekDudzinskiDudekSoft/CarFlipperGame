@@ -11,15 +11,15 @@ public abstract class LoopOption {
         this.text = text;
     }
 
-    public int getNumber() {
+    int getNumber() {
         return number;
     }
 
-    public String getText() {
+    String getText() {
         return text;
     }
 
-    abstract GameState execute();
+    abstract GameState execute(GameState state);
 
     @Override
     public String toString() {

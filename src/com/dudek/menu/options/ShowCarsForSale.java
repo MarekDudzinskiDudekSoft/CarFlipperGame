@@ -10,7 +10,7 @@ final class ShowCarsForSale extends LoopOption {
     }
 
     @Override
-    GameState execute() {
+    GameState execute(GameState state) {
         System.out.println("Wybrales opcje: Wyswietl auta na sprzedaz");
         return null;
     }

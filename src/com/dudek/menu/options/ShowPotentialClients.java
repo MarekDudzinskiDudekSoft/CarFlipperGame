@@ -8,7 +8,7 @@ final class ShowPotentialClients extends LoopOption {
     }
 
     @Override
-    GameState execute() {
+    GameState execute(GameState state) {
 
         System.out.println("Wybrales opcje: Pokaz potencjalnych klientow");
         return null;

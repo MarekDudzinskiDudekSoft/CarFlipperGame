@@ -1,6 +1,9 @@
 package com.dudek.menu.options;
 
-import java.util.*;
+import com.dudek.GameState;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class AllOptions {
 
@@ -37,9 +40,9 @@ public class AllOptions {
         options.forEach((key, value) -> System.out.println(value.getNumber() + " - " + value.getText()));
     }
 
-    public void executeOption(int optionNumber) {
+    public void executeOption(int optionNumber, GameState state) {
         if (options.containsKey(optionNumber)) {
-            options.get(optionNumber).execute();
+            options.get(optionNumber).execute(state);
         }
     }
 

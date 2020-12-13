@@ -8,7 +8,7 @@ final class ShowTransactionsHistory extends LoopOption {
     }
 
     @Override
-    GameState execute() {
+    GameState execute(GameState state) {
         System.out.println("Wybrales opcje: Wyswietl historie transakcji");
         return null;
     }

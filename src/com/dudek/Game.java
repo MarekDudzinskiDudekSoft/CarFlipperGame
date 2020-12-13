@@ -1,19 +1,22 @@
 package com.dudek;
 
-import com.dudek.menu.options.LoopOption;
 import com.dudek.menu.Menu;
 
-public class Game {
+class Game {
 
-    GameState state;
+    private GameState state;
+
+    Game() {
+        initialize();
+    }
     private final Menu menu = new Menu();
 
-    public void play() {
+    void play() {
         gameLoop();
     }
 
-    private GameState initialize() {
-        return null;
+    private void initialize() {
+        state = new GameState();
     }
 
     private void welcomeMessage() {
@@ -24,8 +27,8 @@ public class Game {
     private void gameLoop() {
         welcomeMessage();
         menu.printOptions();
-        Integer option = menu.chooseOption();
-        menu.executeOption(option);
+        int option = menu.chooseOption();
+        menu.executeOption(option, state);
     }
 
 }
