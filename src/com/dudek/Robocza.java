@@ -6,9 +6,19 @@ public class Robocza {
 
 /*
 
-Glowna petla                    done
-Konstruktory w opcjach          done
-Robic dalej xd
+
+
+
+git ignore   - nie komitujesz zbednyc pików (folder out, idea)
+
+
+
+
+
+
+
+
+
 
 
 
