@@ -1,7 +1,7 @@
 package com.dudek.menu;
 
-import com.dudek.GameState;
 import com.dudek.menu.options.AllOptions;
+import com.dudek.model.GameState.GameState;
 
 public class Menu {
 

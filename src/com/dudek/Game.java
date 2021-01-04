@@ -1,6 +1,7 @@
 package com.dudek;
 
 import com.dudek.menu.Menu;
+import com.dudek.model.GameState.GameState;
 
 class Game {
 

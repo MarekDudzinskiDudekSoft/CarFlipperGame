@@ -1,4 +1,4 @@
-package com.dudek;
+package com.dudek.model.GameState;
 
 import com.dudek.model.Car.Car;
 import com.dudek.model.Client;
@@ -12,8 +12,8 @@ public class GameState {
 
     private BigDecimal cash;
     private BigDecimal initialCash;
-    private List<Car> carsList;         //mapa?
-    private List<Car> shopOfCars;       //mapa?
+    private List<Car> carsList;
+    private List<Car> shopOfCars;
     private List<Client> clients;               //TODO oddzielne klasy na kontenery
     private List<Transaction> transactions;
     private List<Mechanic> mechanics;

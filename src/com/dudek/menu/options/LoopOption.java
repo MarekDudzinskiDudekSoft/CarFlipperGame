@@ -1,6 +1,6 @@
 package com.dudek.menu.options;
 
-import com.dudek.GameState;
+import com.dudek.model.GameState.GameState;
 
 public abstract class LoopOption {
     private final int number;
