@@ -2,42 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77cb2015-737e-4fd6-a33e-faee6b36be82" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Januszex/com/dudek/Game.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Januszex/com/dudek/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Januszex/com/dudek/GameState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Januszex/com/dudek/GameApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Januszex/com/dudek/GameApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Januszex/com/dudek/GameState.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Januszex/com/dudek/menu/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Januszex/com/dudek/menu/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Januszex/com/dudek/menu/MenuOptionReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Januszex/com/dudek/menu/MenuOptionReader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Januszex/com/dudek/menu/options/AllOptions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Januszex/com/dudek/menu/options/AllOptions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Januszex/com/dudek/menu/options/BuyACar.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Januszex/com/dudek/menu/options/BuyACommercial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Januszex/com/dudek/menu/options/BuyACommercial.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Januszex/com/dudek/menu/options/LoopOption.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Januszex/com/dudek/menu/options/LoopOption.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Januszex/com/dudek/menu/options/RepairACar.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Januszex/com/dudek/menu/options/SellCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Januszex/com/dudek/menu/options/SellCar.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Januszex/com/dudek/menu/options/ShowAccountBalance.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Januszex/com/dudek/menu/options/ShowAccountBalance.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Januszex/com/dudek/menu/options/ShowCarsForSale.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Januszex/com/dudek/menu/options/ShowCarsForSale.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Januszex/com/dudek/menu/options/ShowOwnedCars.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Januszex/com/dudek/menu/options/ShowOwnedCars.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Januszex/com/dudek/menu/options/ShowPotentialClients.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Januszex/com/dudek/menu/options/ShowPotentialClients.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Januszex/com/dudek/menu/options/ShowRepairAndWashCost.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Januszex/com/dudek/menu/options/ShowRepairHistoryForAllCars.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Januszex/com/dudek/menu/options/ShowRepairHistoryForAllCars.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Januszex/com/dudek/menu/options/ShowTransactionsHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Januszex/com/dudek/menu/options/ShowTransactionsHistory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dudek/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dudek/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dudek/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dudek/model/GameState/GameState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dudek/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dudek/menu/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dudek/menu/options/AllOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dudek/menu/options/AllOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dudek/menu/options/BuyACar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dudek/menu/options/BuyACar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dudek/menu/options/BuyACommercial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dudek/menu/options/BuyACommercial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dudek/menu/options/LoopOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dudek/menu/options/LoopOption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dudek/menu/options/RepairACar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dudek/menu/options/RepairACar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dudek/menu/options/SellCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dudek/menu/options/SellCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dudek/menu/options/ShowAccountBalance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dudek/menu/options/ShowAccountBalance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dudek/menu/options/ShowCarsForSale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dudek/menu/options/ShowCarsForSale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dudek/menu/options/ShowOwnedCars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dudek/menu/options/ShowOwnedCars.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dudek/menu/options/ShowPotentialClients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dudek/menu/options/ShowPotentialClients.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dudek/menu/options/ShowRepairAndWashCost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dudek/menu/options/ShowRepairAndWashCost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dudek/menu/options/ShowRepairHistoryForAllCars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dudek/menu/options/ShowRepairHistoryForAllCars.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dudek/menu/options/ShowTransactionsHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dudek/menu/options/ShowTransactionsHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/GameApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/Robocza.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/menu/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/menu/MenuOptionReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/menu/options/AllOptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/menu/options/BuyACar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/menu/options/BuyACommercial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/menu/options/LoopOption.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/menu/options/RepairACar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/menu/options/SellCar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/menu/options/ShowAccountBalance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/menu/options/ShowCarsForSale.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/menu/options/ShowOwnedCars.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/menu/options/ShowPotentialClients.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/menu/options/ShowRepairAndWashCost.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/menu/options/ShowRepairHistoryForAllCars.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/menu/options/ShowTransactionsHistory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/model/Car/Brand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/model/Car/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/model/Car/CarParts/Breaks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/model/Car/CarParts/CarBody.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/model/Car/CarParts/CarPart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/model/Car/CarParts/Engine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/model/Car/CarParts/SuspensionSystem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/model/Car/CarParts/Transmission.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/model/Car/Color.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/model/Car/Segment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/model/Car/Washing.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/model/Car/WashingPrices.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/model/GameState/GameState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/model/GameState/Transaction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/model/Mechanic/Adrian.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/model/Mechanic/Janusz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/model/Mechanic/Marian.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/model/Mechanic/Mechanic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dudek/model/Randomiser.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,11 +66,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/dudek/model/GameState/GameState.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/model/GameState/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+            <state relative-caret-position="221">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1117#1118#0" expanded="true" />
+                <element signature="e#1143#1144#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/model/Randomiser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/model/GameState/CarGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,49 +102,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/dudek/menu/options/ShowCarsForSale.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            <state relative-caret-position="255">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/dudek/menu/options/AllOptions.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/menu/options/AllOptions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="677">
+            <state relative-caret-position="548">
               <caret line="44" column="47" lean-forward="true" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/dudek/model/Car/Brand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/dudek/model/Car/Color.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/dudek/model/Car/Segment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -128,23 +144,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/dudek/menu/options/ShowCarsForSale.java" />
-        <option value="$PROJECT_DIR$/src/com/dudek/menu/options/SellCar.java" />
-        <option value="$PROJECT_DIR$/src/com/dudek/menu/options/ShowAccountBalance.java" />
-        <option value="$PROJECT_DIR$/src/com/dudek/menu/options/ShowOwnedCars.java" />
-        <option value="$PROJECT_DIR$/src/com/dudek/menu/options/ShowPotentialClients.java" />
-        <option value="$PROJECT_DIR$/src/com/dudek/menu/options/ShowTransactionsHistory.java" />
-        <option value="$PROJECT_DIR$/src/com/dudek/menu/options/ShowRepairHistoryForAllCars.java" />
-        <option value="$PROJECT_DIR$/src/com/dudek/menu/options/BuyACommercial.java" />
-        <option value="$PROJECT_DIR$/src/com/dudek/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/dudek/menu/options/MenuOptionReader.java" />
-        <option value="$PROJECT_DIR$/src/com/dudek/GameApp.java" />
         <option value="$PROJECT_DIR$/src/com/dudek/menu/options/BuyACar.java" />
         <option value="$PROJECT_DIR$/src/com/dudek/menu/MenuOptionReader.java" />
         <option value="$PROJECT_DIR$/src/com/dudek/menu/options/ShowRepairAndWashCost.java" />
         <option value="$PROJECT_DIR$/src/com/dudek/menu/Menu.java" />
         <option value="$PROJECT_DIR$/src/com/dudek/menu/options/AllOptions.java" />
-        <option value="$PROJECT_DIR$/src/com/dudek/Game.java" />
         <option value="$PROJECT_DIR$/src/com/dudek/menu/options/RepairACar.java" />
         <option value="$PROJECT_DIR$/src/com/dudek/menu/options/LoopOption.java" />
         <option value="$PROJECT_DIR$/src/com/dudek/Robocza.java" />
@@ -165,21 +169,40 @@
         <option value="$PROJECT_DIR$/src/com/dudek/model/Car/CivilCar.java" />
         <option value="$PROJECT_DIR$/src/com/dudek/model/Mechanic/bb.java" />
         <option value="$PROJECT_DIR$/src/com/dudek/model/Mechanic/aa.java" />
-        <option value="$PROJECT_DIR$/src/com/dudek/model/Car/CarParts/CarPart.java" />
         <option value="$PROJECT_DIR$/src/com/dudek/model/Car/Car.java" />
         <option value="$PROJECT_DIR$/src/com/dudek/model/Car/WashingPrices.java" />
-        <option value="$PROJECT_DIR$/src/com/dudek/model/Car/Washing.java" />
         <option value="$PROJECT_DIR$/src/com/dudek/model/Car/CarParts/Transmission.java" />
         <option value="$PROJECT_DIR$/src/com/dudek/model/Car/CarParts/SuspensionSystem.java" />
         <option value="$PROJECT_DIR$/src/com/dudek/model/Car/CarParts/Engine.java" />
         <option value="$PROJECT_DIR$/src/com/dudek/model/Car/CarParts/CarBody.java" />
         <option value="$PROJECT_DIR$/src/com/dudek/model/Car/CarParts/Breaks.java" />
-        <option value="$PROJECT_DIR$/src/com/dudek/model/Car/Brand.java" />
         <option value="$PROJECT_DIR$/src/com/dudek/model/Car/Color.java" />
         <option value="$PROJECT_DIR$/src/com/dudek/model/Car/Segment.java" />
         <option value="$PROJECT_DIR$/src/com/dudek/GameState.java" />
+        <option value="$PROJECT_DIR$/src/com/dudek/model/GameState/Data/Container.java" />
+        <option value="$PROJECT_DIR$/src/com/dudek/model/GameState/Data/CarShop.java" />
+        <option value="$PROJECT_DIR$/src/com/dudek/model/GameState/Data/ClientBase.java" />
+        <option value="$PROJECT_DIR$/src/com/dudek/model/Car/Washing.java" />
+        <option value="$PROJECT_DIR$/src/com/dudek/model/Car/Brand.java" />
         <option value="$PROJECT_DIR$/src/com/dudek/model/GameState/GameState.java" />
+        <option value="$PROJECT_DIR$/src/com/dudek/Game.java" />
+        <option value="$PROJECT_DIR$/src/com/dudek/model/GameState/ClientGenerator.java" />
+        <option value="$PROJECT_DIR$/src/com/dudek/GameApp.java" />
+        <option value="$PROJECT_DIR$/src/com/dudek/model/GameState/ClientBase.java" />
+        <option value="$PROJECT_DIR$/src/com/dudek/model/GameState/CarShop.java" />
+        <option value="$PROJECT_DIR$/src/com/dudek/model/GameState/CarGenerator.java" />
+        <option value="$PROJECT_DIR$/src/com/dudek/model/Car/CarParts/CarPart.java" />
+        <option value="$PROJECT_DIR$/src/com/dudek/model/GameState/Client.java" />
+        <option value="$PROJECT_DIR$/src/com/dudek/model/Randomiser.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -196,7 +219,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -218,12 +240,29 @@
               <item name="Januszex" type="b2602c69:ProjectViewProjectNode" />
               <item name="Januszex" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Januszex" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Januszex" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Januszex" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Januszex" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Januszex" type="b2602c69:ProjectViewProjectNode" />
               <item name="Januszex" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="dudek" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -231,6 +270,8 @@
               <item name="Januszex" type="b2602c69:ProjectViewProjectNode" />
               <item name="Januszex" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="dudek" type="462c0819:PsiDirectoryNode" />
               <item name="menu" type="462c0819:PsiDirectoryNode" />
@@ -239,6 +280,8 @@
               <item name="Januszex" type="b2602c69:ProjectViewProjectNode" />
               <item name="Januszex" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="dudek" type="462c0819:PsiDirectoryNode" />
               <item name="menu" type="462c0819:PsiDirectoryNode" />
@@ -248,6 +291,8 @@
               <item name="Januszex" type="b2602c69:ProjectViewProjectNode" />
               <item name="Januszex" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="dudek" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
@@ -256,34 +301,29 @@
               <item name="Januszex" type="b2602c69:ProjectViewProjectNode" />
               <item name="Januszex" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="dudek" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="Car" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Januszex" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Januszex" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="dudek" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="GameState" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1608454944626" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1610104967834" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.dudek.model.GameState" />
       <recent name="com.dudek" />
     </key>
   </component>
@@ -341,7 +381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608140590626</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Model added: Car, CarParts, Washing, Enums(Color,Segment, Brand)">
+      <created>1609745291079</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1609745291079</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -361,15 +408,15 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.21748401" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.2238806" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.2654388" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="2" visible="true" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="3" visible="true" weight="0.27735645" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.32936078" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.27735645" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.34236187" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.34236187" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -389,15 +436,15 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.21321961" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.2217484" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.2654388" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="2" weight="0.32936078" />
-      <window_info anchor="bottom" id="Version Control" order="3" visible="true" weight="0.27735645" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.27735645" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.34236187" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.34236187" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -460,28 +507,21 @@
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="146" column="7" lean-forward="true" selection-start-line="146" selection-start-column="7" selection-end-line="146" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/menu/options/BuyACommercial.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/menu/options/BuyACommercial.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/menu/options/ShowOwnedCars.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/menu/options/ShowOwnedCars.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/menu/options/ShowTransactionsHistory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/menu/options/ShowTransactionsHistory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
@@ -492,14 +532,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/menu/options/ShowRepairHistoryForAllCars.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/menu/options/ShowRepairHistoryForAllCars.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/menu/options/SellCar.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/menu/options/SellCar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
@@ -510,7 +550,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/menu/options/BuyACar.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/menu/options/BuyACar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
@@ -539,74 +579,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/menu/options/ShowRepairAndWashCost.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/menu/options/ShowRepairAndWashCost.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/menu/options/ShowPotentialClients.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/menu/options/ShowPotentialClients.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/Robocza.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/menu/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#250#251#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#435#436#0" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#542#543#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/model/Transaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/model/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/GameApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/menu/options/LoopOption.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/menu/options/LoopOption.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/menu/MenuOptionReader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/menu/MenuOptionReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-112">
           <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
@@ -619,28 +613,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/model/Mechanic/Marian.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Marian.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/model/Mechanic/Janusz.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Janusz.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/model/Mechanic/Adrian.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Adrian.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/model/Mechanic/Mechanic.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Mechanic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
@@ -649,14 +643,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dudek/model/Mechanic/bb.java" />
     <entry file="file://$PROJECT_DIR$/src/com/dudek/model/Mechanic/aa.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/menu/options/ShowAccountBalance.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/menu/options/ShowAccountBalance.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/menu/options/RepairACar.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/menu/options/RepairACar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
@@ -670,18 +664,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/model/Car/CarParts/Engine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="e#133#134#0" expanded="true" />
-            <element signature="e#180#181#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/model/Car/CarParts/Breaks.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarParts/Breaks.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
@@ -692,7 +675,146 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/model/Car/CarParts/CarBody.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarParts/SuspensionSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarParts/Transmission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/menu/options/ShowCarsForSale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dudek/model/GameState/Data.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/menu/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/model/Car/WashingPrices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dudek/model/GameState/Data/Container.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/model/GameState/Transaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/Robocza.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/Random.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="487" column="17" selection-start-line="487" selection-start-column="17" selection-end-line="487" selection-end-column="17" />
+          <folding>
+            <element signature="e#19086#19087#0" expanded="true" />
+            <element signature="e#19138#19139#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/GameApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/model/GameState/GameState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1546#1547#0" expanded="true" />
+            <element signature="e#1576#1577#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/model/GameState/CarShop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/model/GameState/ClientBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#173#174#0" expanded="true" />
+            <element signature="e#231#232#0" expanded="true" />
+            <element signature="e#381#382#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/model/GameState/ClientGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="52" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarParts/Engine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#133#134#0" expanded="true" />
+            <element signature="e#180#181#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarParts/CarBody.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
@@ -703,99 +825,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/model/Car/CarParts/SuspensionSystem.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarParts/CarPart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/model/Car/CarParts/Transmission.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/model/Car/Brand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/model/Car/Color.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/model/Car/Segment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/menu/options/ShowCarsForSale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/menu/options/AllOptions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="677">
-          <caret line="44" column="47" lean-forward="true" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/model/Car/WashingPrices.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/model/Car/Washing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/model/Car/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/model/Car/CarParts/CarPart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="255">
+          <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#469#470#0" expanded="true" />
@@ -804,10 +837,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dudek/model/GameState/GameState.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/model/Car/Brand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+        <state relative-caret-position="119">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/model/Car/Color.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/model/Car/Segment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/model/Car/Washing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="81" lean-forward="true" selection-start-line="12" selection-start-column="81" selection-end-line="12" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/model/Car/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-495">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/model/GameState/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1117#1118#0" expanded="true" />
+            <element signature="e#1143#1144#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/model/Randomiser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/model/GameState/CarGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/menu/options/AllOptions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="44" column="47" lean-forward="true" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
