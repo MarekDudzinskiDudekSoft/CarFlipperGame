@@ -1,10 +1,10 @@
-package com.dudek.model.GameState;
+package com.dudek.model.Client;
 
 import com.dudek.model.Car.Brand;
-import com.dudek.model.Randomiser;
+import com.dudek.model.Randomizer;
 
 import java.math.BigDecimal;
-import java.util.concurrent.ThreadLocalRandom;
+
 
 public class Client {
     private BigDecimal cash;
@@ -13,14 +13,10 @@ public class Client {
     private boolean isInterestedInDeliveryCars;
 
     Client() {
-        this.cash = createClientCash();
-        this.wantedBrand = Brand.randomBrand();
-        isInterestedInBrokenCars = Randomiser.createBooleanWithTruePropability(90);
-        isInterestedInDeliveryCars = Randomiser.createBooleanWithTruePropability(5);
-    }
-
-    private BigDecimal createClientCash(){
-        return BigDecimal.valueOf(ThreadLocalRandom.current().nextInt(15000, 25000));
+        this.cash = Randomizer.createRandomDecimalFromRange(15000,25000);
+        this.wantedBrand = Brand.RandomBrand.randomBrand();
+        isInterestedInBrokenCars = Randomizer.createBooleanWithTruePropability(20);
+        isInterestedInDeliveryCars = Randomizer.createBooleanWithTruePropability(5);
     }
 
     public Brand getWantedBrand() {

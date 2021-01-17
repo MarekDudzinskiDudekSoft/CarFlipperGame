@@ -16,7 +16,7 @@ class MenuOptionReader {
             return readOption(input);
         } catch (Exception e) {
             System.err.println("Niepoprawny wybor lub format");
-            input.next();
+            input.nextLine();
         } finally {
             input.close();
         }

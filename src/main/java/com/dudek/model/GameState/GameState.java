@@ -1,6 +1,8 @@
 package com.dudek.model.GameState;
-
-import com.dudek.model.Car.Car;
+import com.dudek.model.Car.CarBase;
+import com.dudek.model.Car.CarGenerator;
+import com.dudek.model.Client.ClientBase;
+import com.dudek.model.Client.ClientGenerator;
 import com.dudek.model.Mechanic.Mechanic;
 
 import java.math.BigDecimal;
@@ -10,23 +12,24 @@ public class GameState {
 
     private BigDecimal cash;
     private BigDecimal initialCash;
-    private List<Car> carsList;
-    private List<Car> shopOfCars;
-    private ClientBase clients;               //TODO oddzielne klasy na kontenery
+    private CarBase ownedCars;              //todo to do oddzielnej klasy, nie moze byc carbase
+
+    private CarBase carBase;
+    private ClientBase clients;
     private List<Transaction> transactions;
     private List<Mechanic> mechanics;
     private int moveCounter;
 
-    public GameState(BigDecimal cash, BigDecimal initialCash, List<Car> carsList, List<Car> shopOfCars, List<Transaction> transactions, List<Mechanic> mechanics, int moveCounter) {
+    public GameState(BigDecimal cash, BigDecimal initialCash, List<Transaction> transactions, List<Mechanic> mechanics, int moveCounter) {
         this.cash = cash;
         this.initialCash = initialCash;
-        this.carsList = carsList;
-        this.shopOfCars = shopOfCars;
         this.transactions = transactions;
         this.mechanics = mechanics;
         this.moveCounter = moveCounter;
 
+        this.ownedCars = null;
         this.clients = new ClientBase(new ClientGenerator());
+        this.carBase = new CarBase(new CarGenerator());
     }
 
     public BigDecimal getCash() {
@@ -37,12 +40,8 @@ public class GameState {
         return initialCash;
     }
 
-    public List<Car> getCarsList() {
-        return carsList;
-    }
-
-    public List<Car> getShopOfCars() {
-        return shopOfCars;
+    public CarBase getCarBase() {
+        return carBase;
     }
 
     public List<Transaction> getTransactions() {
@@ -59,5 +58,9 @@ public class GameState {
 
     public ClientBase getClients() {
         return clients;
+    }
+
+    public CarBase getOwnedCars() {
+        return ownedCars;
     }
 }

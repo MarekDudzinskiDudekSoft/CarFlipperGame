@@ -9,20 +9,24 @@ public enum Brand {
 
     FIAT("Fiat"), LADA("Lada"), WOLGA("Wolga");
 
-    private static final List<Brand> VALUES =
-            Collections.unmodifiableList(Arrays.asList(values()));
-    private static final int SIZE = VALUES.size();
-    private static final Random RANDOM = new Random();
-private final String description;
+    private final String description;
+
     Brand(String description) {
         this.description = description;
     }
 
-    public static Brand randomBrand()  {
-        return VALUES.get(RANDOM.nextInt(SIZE));
-    }
-
     public String getDescription() {
         return description;
+    }
+
+    public static class RandomBrand {
+        private static final List<Brand> VALUES =
+                Collections.unmodifiableList(Arrays.asList(values()));
+        private static final int SIZE = VALUES.size();
+        public static Random random = new Random();
+
+        public static Brand randomBrand() {
+            return VALUES.get(random.nextInt(SIZE));
+        }
     }
 }

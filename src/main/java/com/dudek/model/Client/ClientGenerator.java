@@ -1,13 +1,12 @@
-package com.dudek.model.GameState;
+package com.dudek.model.Client;
 
 import java.util.ArrayList;
 import java.util.List;
 
-  class ClientGenerator {
+public class ClientGenerator {
 
-    private List<Client> clientList = new ArrayList<>();
-
-     List<Client> generateClients(int howManyClients) {
+    List<Client> generateClients(int howManyClients) {
+        final List<Client> clientList = new ArrayList<>();
         for (int i = 0; i < howManyClients; i++) {
             clientList.add(new Client());
         }

@@ -3,6 +3,8 @@ package com.dudek;
 import com.dudek.menu.Menu;
 import com.dudek.model.GameState.GameState;
 
+import java.math.BigDecimal;
+
 class Game {
 
     private final Menu menu = new Menu();
@@ -18,7 +20,7 @@ class Game {
     }
 
     private void initialize() {
-       // state = new GameState();
+       state = new GameState(BigDecimal.valueOf(1000),BigDecimal.valueOf(1000),null,null,5); //smieci
     }
 
     private void welcomeMessage() {

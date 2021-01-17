@@ -1,10 +1,12 @@
 package com.dudek.model.Car;
 
 import com.dudek.model.Car.CarParts.*;
+import com.dudek.model.Randomizer;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
+
 
 public class Car {
 
@@ -21,12 +23,12 @@ public class Car {
     private SuspensionSystem suspensionSystem;
     private Transmission transmission;
 
-    public Car(BigDecimal value, Brand brand, Double mileage, Color color, Segment segment) {
-        this.value = value;
-        this.brand = brand;
-        this.mileage = mileage;
-        this.color = color;
-        this.segment = segment;
+    public Car() {
+        this.value = Randomizer.createRandomDecimalFromRange(15000, 25000);
+        this.brand = Brand.RandomBrand.randomBrand();
+        this.mileage = Randomizer.createRandomDoubleFromRange(150000, 250000);
+        this.color = Color.randomColor();
+        this.segment = Segment.randomSegment();
 
         this.isWashed = new Washing();
         this.breaks = new Breaks();
@@ -98,10 +100,34 @@ public class Car {
         return carPartList;
     }
 
-    public boolean canBeSold() {
+    private boolean isNotBroken() {
         return getPartsList().stream()
                 .map(CarPart::isOk)
-                .allMatch(e -> e = true) && isWashed.isDone();
+                .allMatch(e -> e = true);
     }
 
+    private void printBrokenParts(){
+        getPartsList().stream().filter(e -> !e.isOk()).forEach(System.out::println);
+        }
+
+    public boolean canBeSold() {
+        return isNotBroken() && isWashed.isDone();
+    }
+
+    @Override
+    public String toString() {                  //TODO zrobic lepszego toStringa do reszty obiektow
+        return "Car{" +
+                "value=" + value +
+                ", brand=" + brand +
+                ", mileage=" + mileage +
+                ", color=" + color +
+                ", segment=" + segment +
+                ", isWashed=" + isWashed +
+                ", breaks=" + breaks +
+                ", carBody=" + carBody +
+                ", engine=" + engine +
+                ", suspensionSystem=" + suspensionSystem +
+                ", transmission=" + transmission +
+                '}' + " \n";
+    }
 }
