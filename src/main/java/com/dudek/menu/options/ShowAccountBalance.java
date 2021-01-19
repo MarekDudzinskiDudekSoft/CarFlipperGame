@@ -10,7 +10,7 @@ final class ShowAccountBalance extends LoopOption {
     @Override
     GameState execute(GameState state) {
         System.out.println("Wybrales opcje: Wyswietl stan konta");
-        System.out.println(state.getCash());
+        System.out.println();
         return state;
     }
 }

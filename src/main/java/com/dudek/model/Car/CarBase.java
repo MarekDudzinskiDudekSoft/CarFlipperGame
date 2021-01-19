@@ -15,4 +15,12 @@ public class CarBase {
         System.out.println(carsList);
     }
 
+    public Car getACar(int index) {
+        return carsList.get(index);
+    }
+
+    public void removeACar(Car car) {
+        carsList.remove(car);
+    }
+
 }

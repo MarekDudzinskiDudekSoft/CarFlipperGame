@@ -10,6 +10,8 @@ import java.util.List;
 
 public class Car {
 
+    private static int indexCounter = 1;
+    private int index;
     private BigDecimal value;
     private Brand brand;
     private Double mileage;
@@ -24,6 +26,7 @@ public class Car {
     private Transmission transmission;
 
     public Car() {
+        this.index = indexCounter++;
         this.value = Randomizer.createRandomDecimalFromRange(15000, 25000);
         this.brand = Brand.RandomBrand.randomBrand();
         this.mileage = Randomizer.createRandomDoubleFromRange(150000, 250000);
@@ -106,9 +109,9 @@ public class Car {
                 .allMatch(e -> e = true);
     }
 
-    private void printBrokenParts(){
+    private void printBrokenParts() {
         getPartsList().stream().filter(e -> !e.isOk()).forEach(System.out::println);
-        }
+    }
 
     public boolean canBeSold() {
         return isNotBroken() && isWashed.isDone();
@@ -116,8 +119,8 @@ public class Car {
 
     @Override
     public String toString() {                  //TODO zrobic lepszego toStringa do reszty obiektow
-        return "Car{" +
-                "value=" + value +
+        return "Index= " + index +
+                ", value=" + value +
                 ", brand=" + brand +
                 ", mileage=" + mileage +
                 ", color=" + color +
@@ -130,4 +133,6 @@ public class Car {
                 ", transmission=" + transmission +
                 '}' + " \n";
     }
+
+
 }

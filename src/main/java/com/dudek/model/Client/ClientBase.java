@@ -22,4 +22,8 @@ public class ClientBase {
         clientList.add(client);
     }
 
+    public void removeClientFromList(Client client){
+        clientList.remove(client);
+    }
+
 }

@@ -4,38 +4,31 @@ import java.util.Scanner;
 
 class MenuOptionReader {
     private final int OPTION_SIZE;
+    private final static Scanner input = new Scanner(System.in);
 
     MenuOptionReader(final int size) {
         OPTION_SIZE = size;
     }
 
-    int readNumberFromConsole() {                                       // todo walidacja
-        Scanner input = new Scanner(System.in);
+    int readNumberFromConsole() {
+        int option;
+        do {
+            option = readOption(input);
+        } while (validateRangeOfOptions(option));
+        return option;
+    }
 
-        try {
-            return readOption(input);
-        } catch (Exception e) {
-            System.err.println("Niepoprawny wybor lub format");
-            input.nextLine();
-        } finally {
-            input.close();
+    private int readOption(Scanner input) {
+        while (!input.hasNextInt()) {
+            input.next();
         }
-        return readNumberFromConsole();
+        int option = input.nextInt();
+        input.nextLine();
+        return option;
     }
 
-    private int readOption(Scanner input) {                             //to brzydkie
-        String numberInString = input.nextLine();
-        int correctNumber = Integer.parseInt(numberInString);
-        while (validateRangeOfNumber(correctNumber)) {
-            numberInString = input.nextLine();
-            correctNumber = Integer.parseInt(numberInString);
-        }
-        return correctNumber;
+    private boolean validateRangeOfOptions(int number) {
+        return number < 0 || number > OPTION_SIZE;
     }
-
-    private boolean validateRangeOfNumber(int number) {
-        return number < 1 || number > OPTION_SIZE;
-    }
-
 
 }
