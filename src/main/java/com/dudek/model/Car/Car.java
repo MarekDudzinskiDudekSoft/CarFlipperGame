@@ -28,8 +28,8 @@ public class Car {
         this.value = Randomizer.createRandomDecimalFromRange(15000, 25000);
         this.brand = Brand.RandomBrand.randomBrand();
         this.mileage = Randomizer.createRandomDoubleFromRange(150000, 250000);
-        this.color = Color.randomColor();
-        this.segment = Segment.randomSegment();
+        this.color = Color.RandomColor.randomColor();
+        this.segment = Segment.RandomSegment.randomSegment();
 
         this.isWashed = new Washing();
         this.breaks = new Breaks();

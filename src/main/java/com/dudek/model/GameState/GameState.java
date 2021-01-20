@@ -54,13 +54,14 @@ public class GameState {
     }
 
     public void buyACar(int index) {
-        Car boughtCar = carBase.getACar(index);
+        Car boughtCar = carBase.getACar(index + 1);
         if (player.getCash().compareTo(boughtCar.getValue()) >= 0) {
             player.buyACar(boughtCar);
             carBase.removeACar(boughtCar);
+            carBase.generateNewCar(index + 1);
+        } else {
+            System.err.println("Niewystarczajaca liczba środków aby kupić to auto!");
         }
+
     }
-
-
-
 }

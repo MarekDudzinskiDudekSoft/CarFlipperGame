@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Player {
 
-    private final static BigDecimal initialCash = new BigDecimal(100000);
+    private final static BigDecimal initialCash = new BigDecimal(1000);
     private String nickname;
     private BigDecimal cash;
     private OwnedCars ownedCars;

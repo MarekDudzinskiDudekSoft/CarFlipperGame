@@ -1,10 +1,9 @@
 package com.dudek.model.Car;
 
-import com.dudek.model.Randomizer;
-
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 
 public enum Segment {
 
@@ -12,11 +11,6 @@ public enum Segment {
     BUDGET("Bugdet"), STANDRAD("Standard"), PREMIUM("Premium");
 
     private final String description;
-
-    private static final List<Segment> VALUES =                 //todo anaogicznie do Brand wywalic Randomisera
-            Collections.unmodifiableList(Arrays.asList(values()));
-    private static final int SIZE = VALUES.size();
-
 
     Segment(String description) {
         this.description = description;
@@ -26,8 +20,15 @@ public enum Segment {
         return description;
     }
 
-    public static Segment randomSegment()  {
-        return VALUES.get(Randomizer.random.nextInt(SIZE));
+    public static class RandomSegment {
+        private static final List<Segment> VALUES =
+                Collections.unmodifiableList(Arrays.asList(values()));
+        private static final int SIZE = VALUES.size();
+        public static Random random = new Random();
+
+        public static Segment randomSegment() {
+            return VALUES.get(random.nextInt(SIZE));
+        }
     }
 }
 

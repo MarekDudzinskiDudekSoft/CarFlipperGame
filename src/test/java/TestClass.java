@@ -12,4 +12,4 @@ public class TestClass {
     }
 
 
-}           //todo zrobic test dla kilkaset prob randomowego booleana
+}

@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77cb2015-737e-4fd6-a33e-faee6b36be82" name="Default Changelist" comment="Added &quot;buy a car&quot;, &quot; show owned cars&quot;, &quot;print available cars&quot; functionality">
+    <list default="true" id="77cb2015-737e-4fd6-a33e-faee6b36be82" name="Default Changelist" comment="Test, changed to IntelliJ Ultimate">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Januszex.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/MenuOptionReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/MenuOptionReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/BuyACar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/BuyACar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/Color.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/Segment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/Segment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/GameState/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/GameState/GameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/GameState/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/GameState/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/GameState/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/GameState/GameState.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +100,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-53" />
     <option name="y" value="26" />
     <option name="width" value="1940" />
@@ -108,6 +115,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -270,7 +278,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -347,6 +354,7 @@
       <updated>1607549531590</updated>
       <workItem from="1611142693376" duration="879000" />
       <workItem from="1611143601205" duration="226000" />
+      <workItem from="1611143852271" duration="6094000" />
     </task>
     <task id="LOCAL-00001" summary="Separation of logic from Menu to optionReader">
       <created>1607881014028</created>
@@ -411,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611143077130</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Test, changed to IntelliJ Ultimate">
+      <created>1611144465522</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1611144465522</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -442,15 +457,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.5016251" side_tool="true" weight="0.2595949" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49729145" visible="true" weight="0.26439232" />
-      <window_info active="true" id="Structure" order="6" sideWeight="0.50270855" side_tool="true" visible="true" weight="0.26439232" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.496208" visible="true" weight="0.26705757" />
+      <window_info active="true" id="Structure" order="6" sideWeight="0.503792" side_tool="true" visible="true" weight="0.26705757" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.156013" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50053304" side_tool="true" weight="0.27735645" />
       <window_info anchor="bottom" id="Messages" order="2" weight="0.32936078" />
@@ -537,7 +551,8 @@
     <MESSAGE value="Added mechanic's logic to repair broken cars" />
     <MESSAGE value="Added Player's logic which contains main basics of a game." />
     <MESSAGE value="Added &quot;buy a car&quot;, &quot; show owned cars&quot;, &quot;print available cars&quot; functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added &quot;buy a car&quot;, &quot; show owned cars&quot;, &quot;print available cars&quot; functionality" />
+    <MESSAGE value="Test, changed to IntelliJ Ultimate" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test, changed to IntelliJ Ultimate" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

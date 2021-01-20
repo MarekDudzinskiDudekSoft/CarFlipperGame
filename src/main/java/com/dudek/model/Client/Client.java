@@ -9,9 +9,9 @@ import java.math.BigDecimal;
 
 public class Client {
     private BigDecimal cash;
-    private Brand wantedBrand;          //TODO zamienić na tablice/liste/dwa oddzielne pola?
-    private boolean isInterestedInBrokenCars;
-    private boolean isInterestedInDeliveryCars;
+    private final Brand wantedBrand;
+    private final boolean isInterestedInBrokenCars;
+    private final boolean isInterestedInDeliveryCars;
 
     public Client() {
         this.cash = Randomizer.createRandomDecimalFromRange(15000, 25000);
@@ -44,7 +44,7 @@ public class Client {
     }
 
     public void buyACar(Car car) {
-        if (this.cash.compareTo(car.getValue()) >= 0) {                   //tak moze byc czy komparator?
+        if (this.cash.compareTo(car.getValue()) >= 0) {
             cash = cash.subtract(car.getValue());
         }
     }
