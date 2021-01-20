@@ -11,7 +11,7 @@ class MenuOptionReader {
         System.out.println(("Wybierz opcję: "));
         int option = DataReader.readInt();
         while (validateRangeOfOptions(option)){
-            System.out.println("Podaj opcje z zakresu!");
+            System.err.println("Podaj opcje z zakresu!");
             option = DataReader.readInt();
         }
         return option;

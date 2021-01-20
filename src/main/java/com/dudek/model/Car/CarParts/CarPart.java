@@ -12,7 +12,7 @@ public abstract class CarPart {
     private boolean isOk;
 
     CarPart(BigDecimal multiplier) {
-        this.isOk = Randomizer.createBooleanWithTruePropability(95);
+        this.isOk = Randomizer.createBooleanWithTruePropability(70);
         this.multiplier = multiplier;
     }
 
@@ -36,7 +36,7 @@ public abstract class CarPart {
         }
     }
 
-    private String isOKconverterTOString(boolean isOk) {
+    private String isOkconverterTOString(boolean isOk) {
         if (this.isOk)
             return "Sprawny";
         else
@@ -45,6 +45,6 @@ public abstract class CarPart {
 
     @Override
     public String toString() {
-        return isOKconverterTOString(this.isOk);
+        return isOkconverterTOString(this.isOk);
     }
 }

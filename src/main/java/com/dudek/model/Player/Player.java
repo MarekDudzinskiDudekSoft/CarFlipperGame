@@ -1,7 +1,6 @@
-package com.dudek.model.GameState;
+package com.dudek.model.Player;
 
 import com.dudek.model.Car.Car;
-import com.dudek.model.Car.OwnedCars;
 
 import java.math.BigDecimal;
 import java.util.InputMismatchException;
@@ -9,10 +8,10 @@ import java.util.Scanner;
 
 public class Player {
 
-    private final static BigDecimal initialCash = new BigDecimal(1000);
-    private String nickname;
+    private final static BigDecimal initialCash = new BigDecimal(100000);
+    private final String nickname;
     private BigDecimal cash;
-    private OwnedCars ownedCars;
+    private final OwnedCars ownedCars;
 
     public Player() {
         this.nickname = typePlayerName();
@@ -54,14 +53,8 @@ public class Player {
         ownedCars.buyACar(car);
     }
 
-    public void sellACar(Car car) {
-        cash = cash.add(car.getValue());
-        ownedCars.sellACar(car);
-    }
-
     public void printOwnedCars() {
         System.out.println(ownedCars);
     }
-
 
 }

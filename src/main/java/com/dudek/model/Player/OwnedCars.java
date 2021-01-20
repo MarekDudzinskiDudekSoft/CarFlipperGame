@@ -1,4 +1,6 @@
-package com.dudek.model.Car;
+package com.dudek.model.Player;
+
+import com.dudek.model.Car.Car;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,22 +13,22 @@ public class OwnedCars {
         this.ownedCarList = new ArrayList<>();
     }
 
-    public void buyACar(Car car){
+    public void buyACar(Car car) {
         ownedCarList.add(car);
     }
 
-    public void sellACar(Car car){
+    public void removeACar(Car car) {
         ownedCarList.remove(car);
     }
 
-    public List<Car> getOwnedCarList() {
-        return ownedCarList;
+    public Car getACar(int index) {
+        return ownedCarList.get(index);
     }
 
     @Override
     public String toString() {
         return "Posiadane samochody: " + "\n" +
-                ownedCarList +
-                '}';
+                ownedCarList;
     }
+
 }

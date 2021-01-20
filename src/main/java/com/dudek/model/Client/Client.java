@@ -8,13 +8,13 @@ import java.math.BigDecimal;
 
 
 public class Client {
-    private BigDecimal cash;
+    private BigDecimal cash;                                    //TODO Add random name from database
     private final Brand wantedBrand;
     private final boolean isInterestedInBrokenCars;
     private final boolean isInterestedInDeliveryCars;
 
     public Client() {
-        this.cash = Randomizer.createRandomDecimalFromRange(15000, 25000);
+        this.cash = Randomizer.createRandomDecimalFromRange(350, 500).multiply(BigDecimal.valueOf(100));
         this.wantedBrand = Brand.RandomBrand.randomBrand();
         isInterestedInBrokenCars = Randomizer.createBooleanWithTruePropability(20);
         isInterestedInDeliveryCars = Randomizer.createBooleanWithTruePropability(5);
@@ -39,14 +39,21 @@ public class Client {
     @Override
     public String toString() {
         return "Fundusze: " + getCash() + ", Zainteresowany marką: " + getWantedBrand() +
-                ", Zainteresowany uszkodzonymi autami: " + isInterestedInBrokenCars() +
-                ", Zainteresowany autami dostawczymi: " + isInterestedInDeliveryCars() + " \n";
+                ", Zainteresowany uszkodzonymi autami: " + convertBooleanToString(isInterestedInBrokenCars()) +
+                ", Zainteresowany autami dostawczymi: " + convertBooleanToString(isInterestedInDeliveryCars()) + " \n";
     }
 
     public void buyACar(Car car) {
         if (this.cash.compareTo(car.getValue()) >= 0) {
             cash = cash.subtract(car.getValue());
         }
+    }
+
+    private String convertBooleanToString(boolean bool) {
+        if (bool)
+            return "Tak";
+        else
+            return "Nie";
     }
 }
 

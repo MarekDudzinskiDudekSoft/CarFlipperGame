@@ -26,7 +26,8 @@ public abstract class Mechanic {
     }
 
     protected BigDecimal calculateRepairCost(CarPart carPart){         //todo logika wyceny
-    return null;// sprawdzac musi czy mamy kase na naprawe z GameState
+
+        return null;// sprawdzac musi czy mamy kase na naprawe z GameState
     }
 
 

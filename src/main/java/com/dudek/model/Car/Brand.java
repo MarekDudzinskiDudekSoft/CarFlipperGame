@@ -7,7 +7,8 @@ import java.util.Random;
 
 public enum Brand {
 
-    FIAT("Fiat"), LADA("Lada"), WOLGA("Wolga");
+    HONDA("Honda"), FIAT("Fiat"), LADA("Lada"), WOLGA("Wolga"), AUDI("Audi"), MERCEDES("Mercedes"), TOYOTA("Toyota"),
+    LEXUS("Lexus"), MAZDA("Mazda");
 
     private final String description;
 

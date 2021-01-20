@@ -6,16 +6,17 @@ import com.dudek.model.Car.CarGenerator;
 import com.dudek.model.Client.ClientBase;
 import com.dudek.model.Client.ClientGenerator;
 import com.dudek.model.Mechanic.MechanicGarage;
+import com.dudek.model.Player.Player;
 
 import java.util.List;
 
 public class GameState {
 
-    private Player player;
-    private CarBase carBase;
-    private ClientBase clients;
+    private final Player player;
+    private final CarBase carBase;
+    private final ClientBase clients;
     private List<Transaction> transactions;
-    private MechanicGarage mechanicGarage;
+    private final MechanicGarage mechanicGarage;
     private int moveCounter;
 
     public GameState(List<Transaction> transactions) {
@@ -56,12 +57,23 @@ public class GameState {
     public void buyACar(int index) {
         Car boughtCar = carBase.getACar(index + 1);
         if (player.getCash().compareTo(boughtCar.getValue()) >= 0) {
-            player.buyACar(boughtCar);
-            carBase.removeACar(boughtCar);
-            carBase.generateNewCar(index + 1);
+            transferCarFromBaseToPlayer(index, boughtCar);
         } else {
             System.err.println("Niewystarczajaca liczba środków aby kupić to auto!");
         }
+    }
+
+    private void transferCarFromBaseToPlayer(int index, Car boughtCar) {
+        player.buyACar(boughtCar);
+        carBase.removeACar(boughtCar);
+        carBase.generateNewCar(index + 1);
+    }
+
+    public void sellACar(int index) {
+        Car potentialCar = player.getOwnedCars().getACar(index);
+
 
     }
+
+
 }

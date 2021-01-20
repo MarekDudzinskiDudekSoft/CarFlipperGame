@@ -13,13 +13,17 @@ public class MechanicGarage {
         this.mechanicList.add(new Adrian());
     }
 
-    public List<Mechanic> getMechanicList() {
-        return mechanicList;
-    }       // todo
+    public Mechanic chooseAMechanic(int index) {
+        printMechanicOptions();
 
-    public void chooseAMechanic(){
+        return mechanicList.get(index);
+    }
 
-
+    private void printMechanicOptions() {
+        System.out.println("Wybierz mechanika, ktory ma naprawic samochod");
+        System.out.println("1 - Janusz - złota rączka");
+        System.out.println("2 - Marian - doświadczony w zawodzie");
+        System.out.println("3 - Adrian - praktykant");
     }
 
 }

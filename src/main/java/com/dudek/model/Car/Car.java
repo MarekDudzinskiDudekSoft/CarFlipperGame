@@ -25,7 +25,7 @@ public class Car {
     private Transmission transmission;
 
     public Car() {
-        this.value = Randomizer.createRandomDecimalFromRange(15000, 25000);
+        this.value = Randomizer.createRandomDecimalFromRange(150, 250).multiply(BigDecimal.valueOf(100));
         this.brand = Brand.RandomBrand.randomBrand();
         this.mileage = Randomizer.createRandomDoubleFromRange(150000, 250000);
         this.color = Color.RandomColor.randomColor();
@@ -119,17 +119,17 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Cena: " + value.setScale(2, BigDecimal.ROUND_HALF_UP) +
-                ", Marka: " + brand.getDescription() +
-                ", Przebieg: " + df.format(mileage) +
-                ", Kolor: " + color.getDescription() +
-                ", Segment" + segment.getDescription() +
-                ", Czy umyty :" + isWashed +
-                ", Hamulce: " + breaks +
-                ", Karoseria: " + carBody +
-                ", Silnik: " + engine +
-                ", Zawieszenie: " + suspensionSystem +
-                ", Skrznia biegów: " + transmission +
+        return  "| Cena: " + getValueWithParts() +
+                "| Marka: " + brand.getDescription() +
+                "| Przebieg: " + df.format(mileage) +
+                "| Kolor: " + color.getDescription() +
+                "| Segment" + segment.getDescription() +
+                "| Czy umyty :" + isWashed +
+                "| Hamulce: " + breaks +
+                "| Karoseria: " + carBody +
+                "| Si|nik: " + engine +
+                "| Zawieszenie: " + suspensionSystem +
+                "| Skrznia biegów: " + transmission +
                 " \n";
     }
 

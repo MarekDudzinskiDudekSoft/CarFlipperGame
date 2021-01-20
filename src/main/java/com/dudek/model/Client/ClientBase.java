@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ClientBase {
 
-    private final static int initialClientNumber = 50;
+    private final static int initialClientNumber = 5;
     private final List<Client> clientList = new ArrayList<>();
 
     public ClientBase(ClientGenerator generator) {
@@ -17,13 +17,13 @@ public class ClientBase {
         System.out.println(clientList);
     }
 
-    public void addClientToList() {
+    public void addClientToBase() {
         Client client = new Client();
         clientList.add(client);
     }
 
-    public void removeClientFromList(Client client){
-        clientList.remove(client);
+    public List<Client> getClientList() {
+        return clientList;
     }
 
 }

@@ -7,6 +7,7 @@ public class DataReader {
 
     public static int readInt() {
         while (!input.hasNextInt()) {
+            System.err.println("Niepoprawny format danych!");
             input.next();
         }
         int option = input.nextInt();
