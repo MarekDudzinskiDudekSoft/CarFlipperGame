@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ClientBase {
 
-    private final static int initialClientNumber = 1000;
+    private final static int initialClientNumber = 50;
     private final List<Client> clientList = new ArrayList<>();
 
     public ClientBase(ClientGenerator generator) {

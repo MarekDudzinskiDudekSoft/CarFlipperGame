@@ -4,14 +4,13 @@ import com.dudek.model.Car.CarParts.*;
 import com.dudek.model.Randomizer;
 
 import java.math.BigDecimal;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class Car {
 
-    private static int indexCounter = 1;
-    private int index;
     private BigDecimal value;
     private Brand brand;
     private Double mileage;
@@ -26,7 +25,6 @@ public class Car {
     private Transmission transmission;
 
     public Car() {
-        this.index = indexCounter++;
         this.value = Randomizer.createRandomDecimalFromRange(15000, 25000);
         this.brand = Brand.RandomBrand.randomBrand();
         this.mileage = Randomizer.createRandomDoubleFromRange(150000, 250000);
@@ -117,21 +115,22 @@ public class Car {
         return isNotBroken() && isWashed.isDone();
     }
 
+    DecimalFormat df = new DecimalFormat("#.000");
+
     @Override
-    public String toString() {                  //TODO zrobic lepszego toStringa do reszty obiektow
-        return "Index= " + index +
-                ", value=" + value +
-                ", brand=" + brand +
-                ", mileage=" + mileage +
-                ", color=" + color +
-                ", segment=" + segment +
-                ", isWashed=" + isWashed +
-                ", breaks=" + breaks +
-                ", carBody=" + carBody +
-                ", engine=" + engine +
-                ", suspensionSystem=" + suspensionSystem +
-                ", transmission=" + transmission +
-                '}' + " \n";
+    public String toString() {
+        return "Cena: " + value.setScale(2, BigDecimal.ROUND_HALF_UP) +
+                ", Marka: " + brand.getDescription() +
+                ", Przebieg: " + df.format(mileage) +
+                ", Kolor: " + color.getDescription() +
+                ", Segment" + segment.getDescription() +
+                ", Czy umyty :" + isWashed +
+                ", Hamulce: " + breaks +
+                ", Karoseria: " + carBody +
+                ", Silnik: " + engine +
+                ", Zawieszenie: " + suspensionSystem +
+                ", Skrznia biegów: " + transmission +
+                " \n";
     }
 
 

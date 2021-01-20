@@ -1,10 +1,15 @@
 package com.dudek.model.Car;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class OwnedCars {
 
     private List<Car> ownedCarList;
+
+    public OwnedCars() {
+        this.ownedCarList = new ArrayList<>();
+    }
 
     public void buyACar(Car car){
         ownedCarList.add(car);
@@ -20,8 +25,8 @@ public class OwnedCars {
 
     @Override
     public String toString() {
-        return "OwnedCars{" +
-                "ownedCarList=" + ownedCarList +
+        return "Posiadane samochody: " + "\n" +
+                ownedCarList +
                 '}';
     }
 }

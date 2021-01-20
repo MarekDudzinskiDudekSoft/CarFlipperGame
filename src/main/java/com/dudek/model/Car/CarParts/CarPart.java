@@ -36,4 +36,15 @@ public abstract class CarPart {
         }
     }
 
+    private String isOKconverterTOString(boolean isOk) {
+        if (this.isOk)
+            return "Sprawny";
+        else
+            return "Do naprawy";
+    }
+
+    @Override
+    public String toString() {
+        return isOKconverterTOString(this.isOk);
+    }
 }

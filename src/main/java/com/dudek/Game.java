@@ -22,7 +22,6 @@ class Game {
 
     private void welcomeMessage() {
         System.out.println("Witaj w grze symulujacej sklep samochodowy");
-        System.out.println(("Wybierz opcję: "));
     }
 
     private void gameLoop() {

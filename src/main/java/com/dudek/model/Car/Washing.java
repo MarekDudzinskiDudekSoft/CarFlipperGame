@@ -26,4 +26,16 @@ final public class Washing {
         return isDone;
     }
 
+    private String isDoneConverterToString() {
+        if (this.isDone)
+            return "Tak";
+        else
+            return "Nie";
+    }
+
+    @Override
+    public String toString() {
+        return isDoneConverterToString();
+
+    }
 }

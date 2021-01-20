@@ -9,7 +9,7 @@ import java.util.List;
 public enum Color {
 
 
-    WHITE("Bialy"), BLUE ("Niebieski"), RED("Czerwony"), BLACK("Czarny, najtanszy");
+    WHITE("Bialy"), BLUE ("Niebieski"), RED("Czerwony"), BLACK("Czarny");
 
     private final String description;
 
@@ -28,5 +28,6 @@ public enum Color {
     public static Color randomColor()  {
         return VALUES.get(Randomizer.random.nextInt(SIZE));
     }
+
 }
 

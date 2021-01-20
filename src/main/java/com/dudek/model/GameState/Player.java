@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Player {
 
-    private final static BigDecimal initialCash = new BigDecimal(10000);
+    private final static BigDecimal initialCash = new BigDecimal(100000);
     private String nickname;
     private BigDecimal cash;
     private OwnedCars ownedCars;
@@ -63,10 +63,5 @@ public class Player {
         System.out.println(ownedCars);
     }
 
-    @Override
-    public String toString() {
-        return "Player{" +
-                "ownedCars=" + ownedCars +
-                '}';
-    }
+
 }
