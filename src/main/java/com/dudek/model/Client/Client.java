@@ -43,9 +43,12 @@ public class Client {
                 ", Zainteresowany autami dostawczymi: " + convertBooleanToString(isInterestedInDeliveryCars()) + " \n";
     }
 
-    public void buyACar(Car car) {
+    public boolean canBuyCar(Car car) {
         if (this.cash.compareTo(car.getValue()) >= 0) {
-            cash = cash.subtract(car.getValue());
+            return true;
+        } else {
+            System.out.println("Niewystarczajace środki na zakup auta! ");
+            return false;
         }
     }
 

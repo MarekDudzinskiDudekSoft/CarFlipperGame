@@ -1,5 +1,7 @@
 package com.dudek.model.Client;
 
+import com.dudek.menu.DataReader;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,8 +24,12 @@ public class ClientBase {
         clientList.add(client);
     }
 
-    public List<Client> getClientList() {
-        return clientList;
+    public Client getClientFromBase() {
+        System.out.println("Podaj index klienta do pobrania: ");
+        int index = DataReader.readInt();
+        return clientList.get(index);
     }
+
+
 
 }
