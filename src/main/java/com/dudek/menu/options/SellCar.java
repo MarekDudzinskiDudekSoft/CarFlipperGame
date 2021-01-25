@@ -1,6 +1,5 @@
 package com.dudek.menu.options;
 
-import com.dudek.menu.DataReader;
 import com.dudek.model.GameState.GameState;
 
 final class SellCar extends LoopOption {
@@ -12,7 +11,7 @@ final class SellCar extends LoopOption {
     GameState execute(GameState state) {
         System.out.println("Wybrales opcje: Sprzedaj samochod");
         System.out.println("Podaj indeks auta do sprzedania");
-        state.sellACar(DataReader.readInt());
+        state.sellACar();
         return state;
     }
 }

@@ -15,4 +15,14 @@ public class DataReader {
         return option;
     }
 
+    public static int readOptionFromRange(final int min, final int max) {
+        int option = readInt();
+
+        while (option < min || option > max) {
+            System.out.println("Wybrana opcja jest spoza zakresu: " + min + " - " + max + " sprobuj jeszcze raz.");
+            option = readInt();
+        }
+        return option - 1;
+    }
+
 }

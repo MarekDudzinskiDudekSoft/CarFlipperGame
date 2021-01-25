@@ -1,6 +1,7 @@
 package com.dudek.model.Car;
 
 import com.dudek.model.Car.CarParts.*;
+import com.dudek.model.Car.CarStatus.Washing;
 import com.dudek.model.Randomizer;
 
 import java.math.BigDecimal;

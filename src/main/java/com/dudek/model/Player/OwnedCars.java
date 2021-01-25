@@ -25,6 +25,10 @@ public class OwnedCars {
         return ownedCarList.get(index);
     }
 
+    public int getSize() {
+        return ownedCarList.size();
+    }
+
     @Override
     public String toString() {
         return "Posiadane samochody: " + "\n" +

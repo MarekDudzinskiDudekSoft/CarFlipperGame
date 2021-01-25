@@ -32,6 +32,3 @@ public abstract class Mechanic {
 
 
 }
-
-//uporzadkuj co jest wspolne
-//

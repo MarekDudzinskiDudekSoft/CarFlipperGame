@@ -26,10 +26,9 @@ public class ClientBase {
 
     public Client getClientFromBase() {
         System.out.println("Podaj index klienta do pobrania: ");
-        int index = DataReader.readInt();
+        int index = DataReader.readOptionFromRange(1, clientList.size());
         return clientList.get(index);
     }
-
 
 
 }

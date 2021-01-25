@@ -4,19 +4,27 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77cb2015-737e-4fd6-a33e-faee6b36be82" name="Default Changelist" comment="Cleaning code in few places">
+    <list default="true" id="77cb2015-737e-4fd6-a33e-faee6b36be82" name="Default Changelist" comment="Added selling option to LoopMenu">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/GameApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/GameApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/menu/DataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/menu/DataReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/BuyACar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/BuyACar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/SellCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/SellCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/ShowCarsForSale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/ShowCarsForSale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/NewCarsDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/Washing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarStatus/Washing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/WashingPrices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarStatus/WashingPrices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Client/ClientBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Client/ClientBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/GameState/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/GameState/GameState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/GameApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/GameApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/RepairACar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/RepairACar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Mechanic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Mechanic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Player/OwnedCars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Player/OwnedCars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/SellCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/SellCar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowAccountBalance.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowAccountBalance.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowOwnedCars.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowOwnedCars.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowCarsForSale.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowCarsForSale.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/Washing.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/WashingPrices.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/GameState/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/GameState/GameState.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -315,15 +323,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -372,7 +378,12 @@
       <workItem from="1611143852271" duration="19653000" />
       <workItem from="1611244576851" duration="35000" />
       <workItem from="1611247699217" duration="349000" />
-      <workItem from="1611323788000" duration="4240000" />
+      <workItem from="1611323788000" duration="4741000" />
+      <workItem from="1611334099330" duration="610000" />
+      <workItem from="1611340513198" duration="596000" />
+      <workItem from="1611475760792" duration="2428000" />
+      <workItem from="1611500584865" duration="191000" />
+      <workItem from="1611573671509" duration="4730000" />
     </task>
     <task id="LOCAL-00001" summary="Separation of logic from Menu to optionReader">
       <created>1607881014028</created>
@@ -458,7 +469,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611180415013</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added selling option to LoopMenu">
+      <created>1611333449694</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1611333449694</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -586,7 +604,8 @@
     <MESSAGE value="Test, changed to IntelliJ Ultimate" />
     <MESSAGE value="Finished most of TODO's from existing  code. Added inner classes in Car's enums as Car's fields." />
     <MESSAGE value="Cleaning code in few places" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaning code in few places" />
+    <MESSAGE value="Added selling option to LoopMenu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added selling option to LoopMenu" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

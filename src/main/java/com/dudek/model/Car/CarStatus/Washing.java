@@ -1,4 +1,4 @@
-package com.dudek.model.Car;
+package com.dudek.model.Car.CarStatus;
 
 import java.math.BigDecimal;
 import java.util.concurrent.ThreadLocalRandom;
@@ -9,7 +9,7 @@ final public class Washing {
     private BigDecimal price;
     private boolean isDone;
 
-    Washing() {
+    public Washing() {
         this.price = BigDecimal.valueOf(ThreadLocalRandom.current().nextInt(WashingPrices.MIN_PRICE_OF_WASH, WashingPrices.MAX_PRICE_OF_WASH));
         this.isDone = false;
     }
@@ -22,7 +22,7 @@ final public class Washing {
         isDone = true;
     }
 
-    boolean isDone() {
+    public boolean isDone() {
         return isDone;
     }
 
