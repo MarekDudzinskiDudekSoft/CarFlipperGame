@@ -4,27 +4,27 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77cb2015-737e-4fd6-a33e-faee6b36be82" name="Default Changelist" comment="Added selling option to LoopMenu">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarView.java" afterDir="false" />
+    <list default="true" id="77cb2015-737e-4fd6-a33e-faee6b36be82" name="Default Changelist" comment="Corrected buy and sell logic. Improved DataReader - added range verification">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/exceptions/NoCarToSellException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/menu/DataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/menu/DataReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/BuyACar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/BuyACar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/SellCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/SellCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/ShowCarsForSale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/ShowCarsForSale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/ShowPotentialClients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/ShowPotentialClients.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/NewCarsDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/Washing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarStatus/Washing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/WashingPrices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarStatus/WashingPrices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarParts/CarPart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarParts/CarPart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/NewCarsDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/NewCarsDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Client/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Client/ClientBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Client/ClientBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/GameState/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/GameState/GameState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Mechanic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Mechanic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/MechanicGarage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/MechanicGarage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Player/OwnedCars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Player/OwnedCars.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Player/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ClientGeneratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ClientGeneratorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/BuyACar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/BuyACar.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/SellCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/SellCar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowCarsForSale.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowCarsForSale.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowPotentialClients.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowPotentialClients.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/Car.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/Washing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/WashingPrices.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/GameState/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/GameState/GameState.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -307,6 +307,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.dudek.exceptions" />
       <recent name="com.dudek.model.Mechanic" />
       <recent name="com.dudek.model.GameState" />
       <recent name="com.dudek" />
@@ -383,7 +384,7 @@
       <workItem from="1611340513198" duration="596000" />
       <workItem from="1611475760792" duration="2428000" />
       <workItem from="1611500584865" duration="191000" />
-      <workItem from="1611573671509" duration="4730000" />
+      <workItem from="1611573671509" duration="20464000" />
     </task>
     <task id="LOCAL-00001" summary="Separation of logic from Menu to optionReader">
       <created>1607881014028</created>
@@ -476,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611333449694</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Corrected buy and sell logic. Improved DataReader - added range verification">
+      <created>1611578785506</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1611578785506</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -605,7 +613,8 @@
     <MESSAGE value="Finished most of TODO's from existing  code. Added inner classes in Car's enums as Car's fields." />
     <MESSAGE value="Cleaning code in few places" />
     <MESSAGE value="Added selling option to LoopMenu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added selling option to LoopMenu" />
+    <MESSAGE value="Corrected buy and sell logic. Improved DataReader - added range verification" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrected buy and sell logic. Improved DataReader - added range verification" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

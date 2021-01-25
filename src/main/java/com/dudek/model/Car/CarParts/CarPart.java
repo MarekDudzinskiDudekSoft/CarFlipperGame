@@ -36,7 +36,7 @@ public abstract class CarPart {
         }
     }
 
-    private String isOkconverterTOString(boolean isOk) {
+    private String isOkconverterToString(boolean isOk) {
         if (this.isOk)
             return "Sprawny";
         else
@@ -45,6 +45,6 @@ public abstract class CarPart {
 
     @Override
     public String toString() {
-        return isOkconverterTOString(this.isOk);
+        return isOkconverterToString(this.isOk);
     }
 }

@@ -1,5 +1,6 @@
 package com.dudek.model.Player;
 
+import com.dudek.menu.DataReader;
 import com.dudek.model.Car.Car;
 
 import java.util.ArrayList;
@@ -25,14 +26,20 @@ public class OwnedCars {
         return ownedCarList.get(index);
     }
 
-    public int getSize() {
-        return ownedCarList.size();
-    }
-
     @Override
     public String toString() {
         return "Posiadane samochody: " + "\n" +
                 ownedCarList;
+    }
+
+    public boolean isEmpty(){
+        return ownedCarList.isEmpty();
+    }
+
+    public Car getCarFromBase() {
+        System.out.println("Podaj indeks auta do sprzedania: ");
+        int chosenOption = DataReader.readOptionFromRange(1,ownedCarList.size());
+        return ownedCarList.get(chosenOption);
     }
 
 }

@@ -7,6 +7,7 @@ import com.dudek.model.Car.NewCarsDatabase;
 import com.dudek.model.Client.Client;
 import com.dudek.model.Client.ClientBase;
 import com.dudek.model.Client.ClientGenerator;
+import com.dudek.model.Mechanic.Mechanic;
 import com.dudek.model.Mechanic.MechanicGarage;
 import com.dudek.model.Player.Player;
 
@@ -56,30 +57,29 @@ public class GameState {
     }
 
     public void buyACar() {
-        int chosenOption = DataReader.readOptionFromRange(1, newCarsDatabase.getSize());
-        Car boughtCar = newCarsDatabase.getACar(chosenOption);
+
+        Car boughtCar = newCarsDatabase.getACar();
         if (player.canAffordACar(boughtCar)) {
-            transferCarAfterBuy(chosenOption, boughtCar);
+            transferCarAfterBuy(boughtCar);
+            System.out.println("Zakupiono samochod: " + boughtCar.getBrand() + " " + boughtCar.getColor().getDescription() + " za " + boughtCar.getValueWithParts());
         } else {
             System.err.println("Niewystarczajaca liczba środków aby kupić to auto!");
         }
     }
 
-    private void transferCarAfterBuy(int index, Car boughtCar) {
+    private void transferCarAfterBuy(Car boughtCar) {
         player.buyACar(boughtCar);
         newCarsDatabase.sellACar(boughtCar);
-        newCarsDatabase.generateNewCar(index);
+        newCarsDatabase.generateNewCar();
     }
 
     public void sellACar() {
-        int chosenOption = DataReader.readOptionFromRange(1, player.getOwnedCars().getSize());
-        Car potentialCar = player.getOwnedCars().getACar(chosenOption);
+        Car potentialCar = player.getOwnedCars().getCarFromBase();
         Client potentialClient = clients.getClientFromBase();
 
-        if (potentialClient.canBuyCar(potentialCar)) {
+        if (potentialClient.canBuyCar(potentialCar) && potentialClient.isInterestedInThisCar(potentialCar)) {
             transferCarAfterSell(potentialCar);
-        } else {
-            System.err.println("Klient nie dysponuje wystarczajacymi srodkami");
+            System.out.println("Sprzedano samochod: " + potentialCar.getBrand() + " " + potentialCar.getColor().getDescription() + " za " + potentialCar.getValueWithParts());
         }
     }
 
@@ -87,6 +87,13 @@ public class GameState {
         player.sellACar(potentialCar);
         clients.addClientToBase();
         clients.addClientToBase();
+    }
+
+    public void repairCar(Car car) {
+        int chosenOption = DataReader.readOptionFromRange(1, mechanicGarage.getSize());
+        Mechanic chosenMechanic = mechanicGarage.chooseMechanic(chosenOption);
+
+
     }
 
 

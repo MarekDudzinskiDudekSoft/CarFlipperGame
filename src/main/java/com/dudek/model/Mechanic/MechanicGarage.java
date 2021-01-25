@@ -13,7 +13,7 @@ public class MechanicGarage {
         this.mechanicList.add(new Adrian());
     }
 
-    public Mechanic chooseAMechanic(int index) {
+    public Mechanic chooseMechanic(int index) {
         printMechanicOptions();
 
         return mechanicList.get(index);
@@ -24,6 +24,10 @@ public class MechanicGarage {
         System.out.println("1 - Janusz - złota rączka");
         System.out.println("2 - Marian - doświadczony w zawodzie");
         System.out.println("3 - Adrian - praktykant");
+    }
+
+    public int getSize() {
+        return mechanicList.size();
     }
 
 }

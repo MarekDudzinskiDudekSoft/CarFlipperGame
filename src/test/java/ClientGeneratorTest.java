@@ -8,7 +8,7 @@ public class ClientGeneratorTest {
 
     @Test
      void checkClientPropability(){
-        clientBase.printList();
+        clientBase.printClientList();
 
     }
 

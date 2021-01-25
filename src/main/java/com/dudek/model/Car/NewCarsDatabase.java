@@ -1,5 +1,7 @@
 package com.dudek.model.Car;
 
+import com.dudek.menu.DataReader;
+
 import java.util.List;
 
 public class NewCarsDatabase {
@@ -16,26 +18,24 @@ public class NewCarsDatabase {
         //  carsList.forEach(e -> System.out.println(e.toString()));        //to umozliwia podejscie do kazdego elementu konterena osobno
 
         for (int i = 1; i < carsList.size() + 1; i++) {
-            CarView carView = new CarView(i, carsList.get(i-1));
+            CarView carView = new CarView(i, carsList.get(i - 1));
             System.out.println(carView);
         }
     }
 
-    public Car getACar(int index) {
-        return carsList.get(index);
+    public Car getACar() {
+        System.out.println("Podaj indeks auta do kupienia: ");
+        int chosenOption = DataReader.readOptionFromRange(1, carsList.size());
+        return carsList.get(chosenOption);
     }
 
     public void sellACar(Car car) {
         carsList.remove(car);
     }
 
-    public void generateNewCar(int index) {
+    public void generateNewCar() {
         Car newCar = new Car();
-        carsList.add(index, newCar);
-    }
-
-    public int getSize(){
-        return carsList.size();
+        carsList.add(newCar);
     }
 
 }

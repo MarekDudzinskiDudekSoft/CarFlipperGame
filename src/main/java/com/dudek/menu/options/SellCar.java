@@ -10,8 +10,13 @@ final class SellCar extends LoopOption {
     @Override
     GameState execute(GameState state) {
         System.out.println("Wybrales opcje: Sprzedaj samochod");
-        System.out.println("Podaj indeks auta do sprzedania");
-        state.sellACar();
+        boolean hasAnyCar = state.getPlayer().getOwnedCars().isEmpty();
+        if (hasAnyCar) {
+            System.err.println("Nie masz aut na sprzedaz!");
+            return state;
+        } else
+            state.sellACar();
+
         return state;
     }
 }

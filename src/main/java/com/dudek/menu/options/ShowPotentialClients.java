@@ -11,7 +11,7 @@ final class ShowPotentialClients extends LoopOption {
     GameState execute(GameState state) {
 
         System.out.println("Wybrales opcje: Pokaz potencjalnych klientow");
-        state.getClients().printList();
+        state.getClients().printClientList();
         return state;
     }
 }

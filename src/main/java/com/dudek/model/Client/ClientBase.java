@@ -15,7 +15,7 @@ public class ClientBase {
         clientList.addAll(generator.generateClients(initialClientNumber));
     }
 
-    public void printList() {
+    public void printClientList() {
         System.out.println(clientList);
     }
 
@@ -25,7 +25,7 @@ public class ClientBase {
     }
 
     public Client getClientFromBase() {
-        System.out.println("Podaj index klienta do pobrania: ");
+        System.out.println("Podaj indeks klienta do pobrania: ");
         int index = DataReader.readOptionFromRange(1, clientList.size());
         return clientList.get(index);
     }

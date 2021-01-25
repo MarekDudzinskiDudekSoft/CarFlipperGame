@@ -40,14 +40,14 @@ public class Client {
     public String toString() {
         return "Fundusze: " + getCash() + ", Zainteresowany marką: " + getWantedBrand() +
                 ", Zainteresowany uszkodzonymi autami: " + convertBooleanToString(isInterestedInBrokenCars()) +
-                ", Zainteresowany autami dostawczymi: " + convertBooleanToString(isInterestedInDeliveryCars()) + " \n";
+                ", Zainteresowany autami dostawczymi: " + convertBooleanToString(isInterestedInDeliveryCars()) + "\n";
     }
 
     public boolean canBuyCar(Car car) {
-        if (this.cash.compareTo(car.getValue()) >= 0) {
+        if (this.cash.compareTo(car.getValueWithParts()) >= 0) {
             return true;
         } else {
-            System.out.println("Niewystarczajace środki na zakup auta! ");
+            System.err.println("Niewystarczajace środki na zakup auta! ");
             return false;
         }
     }
@@ -58,5 +58,25 @@ public class Client {
         else
             return "Nie";
     }
-}
 
+    public boolean isInterestedInThisCar(Car car) {
+        if (this.wantedBrand.equals(car.getBrand())) {
+            return validateClientInterest(car);
+        }
+        System.err.println("Klient nie jest zainteresowany tą marką auta!");
+        return false;
+    }
+
+    private boolean validateClientInterest(Car car) {
+        if (car.isNotBroken()) {
+            return true;
+        }
+
+        if (!car.isNotBroken() && this.isInterestedInBrokenCars) {
+            return true;
+        }
+
+        System.err.println("Klient nie jest zainteresowany uszkodzonymi autami!");
+        return false;
+    }
+}

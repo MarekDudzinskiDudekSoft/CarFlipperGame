@@ -40,10 +40,6 @@ public class Car {
         this.transmission = new Transmission();
     }
 
-    public BigDecimal getValue() {
-        return value;
-    }
-
     public Brand getBrand() {
         return brand;
     }
@@ -102,10 +98,9 @@ public class Car {
         return carPartList;
     }
 
-    private boolean isNotBroken() {
+    public boolean isNotBroken() {
         return getPartsList().stream()
-                .map(CarPart::isOk)
-                .allMatch(e -> e = true);
+                .allMatch(CarPart::isOk);
     }
 
     private void printBrokenParts() {
@@ -130,8 +125,7 @@ public class Car {
                 "| Karoseria: " + carBody +
                 "| Si|nik: " + engine +
                 "| Zawieszenie: " + suspensionSystem +
-                "| Skrznia biegów: " + transmission +
-                " \n";
+                "| Skrznia biegów: " + transmission;
     }
 
 

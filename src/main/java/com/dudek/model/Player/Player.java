@@ -49,12 +49,12 @@ public class Player {
     }
 
     public void buyACar(Car car) {
-        cash = cash.subtract(car.getValue());
+        cash = cash.subtract(car.getValueWithParts());
         ownedCars.buyACar(car);
     }
 
     public void sellACar(Car car){
-        cash = cash.add(car.getValue());
+        cash = cash.add(car.getValueWithParts());
         ownedCars.removeACar(car);
     }
 
@@ -63,7 +63,8 @@ public class Player {
     }
 
     public boolean canAffordACar(Car car){
-        return (this.getCash().compareTo(car.getValue()) >= 0);
+        return (this.getCash().compareTo(car.getValueWithParts()) >= 0);
     }
+
 
 }
