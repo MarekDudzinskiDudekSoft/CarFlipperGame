@@ -4,6 +4,6 @@ import java.math.BigDecimal;
 
 public final class Engine extends CarPart {
     public Engine() {
-        super( BigDecimal.valueOf(1.0));
+        super( BigDecimal.valueOf(1.0), "Silnik", BigDecimal.valueOf(1200));
     }
 }

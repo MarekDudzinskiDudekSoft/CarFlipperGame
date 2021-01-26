@@ -4,6 +4,6 @@ import java.math.BigDecimal;
 
 public final class SuspensionSystem extends CarPart {
     public SuspensionSystem() {
-        super( BigDecimal.valueOf(0.2));
+        super( BigDecimal.valueOf(0.2), "Zawieszenie", BigDecimal.valueOf(800));
     }
 }

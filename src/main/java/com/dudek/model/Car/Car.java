@@ -1,5 +1,6 @@
 package com.dudek.model.Car;
 
+import com.dudek.menu.DataReader;
 import com.dudek.model.Car.CarParts.*;
 import com.dudek.model.Car.CarStatus.Washing;
 import com.dudek.model.Randomizer;
@@ -20,25 +21,11 @@ public class Car {
     private Washing isWashed;
 
     private Breaks breaks;
-    private CarBody carBody;
+   private final DecimalFormat df = new DecimalFormat("#.000");
     private Engine engine;
     private SuspensionSystem suspensionSystem;
     private Transmission transmission;
-
-    public Car() {
-        this.value = Randomizer.createRandomDecimalFromRange(150, 250).multiply(BigDecimal.valueOf(100));
-        this.brand = Brand.RandomBrand.randomBrand();
-        this.mileage = Randomizer.createRandomDoubleFromRange(150000, 250000);
-        this.color = Color.RandomColor.randomColor();
-        this.segment = Segment.RandomSegment.randomSegment();
-
-        this.isWashed = new Washing();
-        this.breaks = new Breaks();
-        this.carBody = new CarBody();
-        this.engine = new Engine();
-        this.suspensionSystem = new SuspensionSystem();
-        this.transmission = new Transmission();
-    }
+    private CarPartBody carBody;
 
     public Brand getBrand() {
         return brand;
@@ -64,8 +51,19 @@ public class Car {
         return breaks;
     }
 
-    public CarBody getCarBody() {
-        return carBody;
+    public Car() {
+        this.value = Randomizer.createRandomDecimalFromRange(150, 250).multiply(BigDecimal.valueOf(100));
+        this.brand = Brand.RandomBrand.randomBrand();
+        this.mileage = Randomizer.createRandomDoubleFromRange(150000, 250000);
+        this.color = Color.RandomColor.randomColor();
+        this.segment = Segment.RandomSegment.randomSegment();
+
+        this.isWashed = new Washing();
+        this.breaks = new Breaks();
+        this.carBody = new CarPartBody();
+        this.engine = new Engine();
+        this.suspensionSystem = new SuspensionSystem();
+        this.transmission = new Transmission();
     }
 
     public Engine getEngine() {
@@ -87,15 +85,8 @@ public class Car {
                 .reduce(BigDecimal.ZERO, BigDecimal::add);
     }
 
-    private List<CarPart> getPartsList() {
-        List<CarPart> carPartList = new ArrayList<>();
-        carPartList.add(breaks);
-        carPartList.add(carBody);
-        carPartList.add(engine);
-        carPartList.add(suspensionSystem);
-        carPartList.add(carBody);
-
-        return carPartList;
+    public CarPartBody getCarBody() {
+        return carBody;
     }
 
     public boolean isNotBroken() {
@@ -103,29 +94,49 @@ public class Car {
                 .allMatch(CarPart::isOk);
     }
 
-    private void printBrokenParts() {
+    private List<CarPart> getPartsList() {
+        List<CarPart> carPartList = new ArrayList<>();
+        carPartList.add(breaks);
+        carPartList.add(carBody);
+        carPartList.add(engine);
+        carPartList.add(suspensionSystem);
+        carPartList.add(transmission);
+
+        return carPartList;
+    }
+
+    public void printBrokenParts() {
+        System.out.println("Części, które wymagają naprawy: ");
         getPartsList().stream().filter(e -> !e.isOk()).forEach(System.out::println);
     }
 
-    public boolean canBeSold() {
-        return isNotBroken() && isWashed.isDone();
+    public List<CarPart> getBrokenPartsList() {
+        List<CarPart> brokenParts = new ArrayList<>();
+        getPartsList().stream().filter(e -> !e.isOk()).forEach(brokenParts::add);
+
+        return brokenParts;
     }
 
-    DecimalFormat df = new DecimalFormat("#.000");
+    public CarPart choosePartToRepair(){
+        printBrokenParts();
+        System.out.println("Wybierz część do naprawy: ");
+        int chosenOption = DataReader.readOptionFromRange(1, getBrokenPartsList().size());
+        return getBrokenPartsList().get(chosenOption);
+    }
 
     @Override
     public String toString() {
-        return  "| Cena: " + getValueWithParts() +
+        return "| Cena: " + getValueWithParts() +
                 "| Marka: " + brand.getDescription() +
                 "| Przebieg: " + df.format(mileage) +
                 "| Kolor: " + color.getDescription() +
-                "| Segment" + segment.getDescription() +
+                "| Segment: " + segment.getDescription() +
                 "| Czy umyty :" + isWashed +
-                "| Hamulce: " + breaks +
-                "| Karoseria: " + carBody +
-                "| Si|nik: " + engine +
-                "| Zawieszenie: " + suspensionSystem +
-                "| Skrznia biegów: " + transmission;
+                "| " + breaks +
+                "| " + carBody +
+                "| " + engine +
+                "| " + suspensionSystem +
+                "| " + transmission;
     }
 
 

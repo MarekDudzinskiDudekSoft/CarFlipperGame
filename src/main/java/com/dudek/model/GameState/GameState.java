@@ -1,8 +1,8 @@
 package com.dudek.model.GameState;
 
-import com.dudek.menu.DataReader;
 import com.dudek.model.Car.Car;
 import com.dudek.model.Car.CarGenerator;
+import com.dudek.model.Car.CarParts.CarPart;
 import com.dudek.model.Car.NewCarsDatabase;
 import com.dudek.model.Client.Client;
 import com.dudek.model.Client.ClientBase;
@@ -12,6 +12,7 @@ import com.dudek.model.Mechanic.MechanicGarage;
 import com.dudek.model.Player.Player;
 
 import java.util.List;
+
 
 public class GameState {
 
@@ -57,11 +58,9 @@ public class GameState {
     }
 
     public void buyACar() {
-
         Car boughtCar = newCarsDatabase.getACar();
         if (player.canAffordACar(boughtCar)) {
             transferCarAfterBuy(boughtCar);
-            System.out.println("Zakupiono samochod: " + boughtCar.getBrand() + " " + boughtCar.getColor().getDescription() + " za " + boughtCar.getValueWithParts());
         } else {
             System.err.println("Niewystarczajaca liczba środków aby kupić to auto!");
         }
@@ -71,6 +70,7 @@ public class GameState {
         player.buyACar(boughtCar);
         newCarsDatabase.sellACar(boughtCar);
         newCarsDatabase.generateNewCar();
+        System.out.println("Zakupiono samochod: " + boughtCar.getBrand() + " " + boughtCar.getColor().getDescription() + " za " + boughtCar.getValueWithParts());
     }
 
     public void sellACar() {
@@ -79,7 +79,6 @@ public class GameState {
 
         if (potentialClient.canBuyCar(potentialCar) && potentialClient.isInterestedInThisCar(potentialCar)) {
             transferCarAfterSell(potentialCar);
-            System.out.println("Sprzedano samochod: " + potentialCar.getBrand() + " " + potentialCar.getColor().getDescription() + " za " + potentialCar.getValueWithParts());
         }
     }
 
@@ -87,13 +86,21 @@ public class GameState {
         player.sellACar(potentialCar);
         clients.addClientToBase();
         clients.addClientToBase();
+        System.out.println("Sprzedano samochod: " + potentialCar.getBrand() + " " + potentialCar.getColor().getDescription() + " za " + potentialCar.getValueWithParts());
     }
 
-    public void repairCar(Car car) {
-        int chosenOption = DataReader.readOptionFromRange(1, mechanicGarage.getSize());
-        Mechanic chosenMechanic = mechanicGarage.chooseMechanic(chosenOption);
+    public void repairCar() {
+        Car brokenCar = player.getOwnedCars().getCarFromBase();
+        CarPart brokenPart = brokenCar.choosePartToRepair();
+        Mechanic chosenMechanic = mechanicGarage.chooseMechanic();
 
+        if (player.getCash().compareTo(chosenMechanic.calculateRepairCost(brokenCar, brokenPart)) >= 0) {
+           player.payForRepair(chosenMechanic.repairCarPart(brokenCar, brokenPart));
+        } else {
+            System.err.println("Niewystarczające środki na naprawę!");
+        }
 
+        System.out.println("Naprawa przeszla pomyślnie");
     }
 
 

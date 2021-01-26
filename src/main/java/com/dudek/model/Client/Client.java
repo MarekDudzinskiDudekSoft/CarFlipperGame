@@ -38,9 +38,9 @@ public class Client {
 
     @Override
     public String toString() {
-        return "Fundusze: " + getCash() + ", Zainteresowany marką: " + getWantedBrand() +
+        return " Fundusze: " + getCash() + ", Zainteresowany marką: " + getWantedBrand() +
                 ", Zainteresowany uszkodzonymi autami: " + convertBooleanToString(isInterestedInBrokenCars()) +
-                ", Zainteresowany autami dostawczymi: " + convertBooleanToString(isInterestedInDeliveryCars()) + "\n";
+                ", Zainteresowany autami dostawczymi: " + convertBooleanToString(isInterestedInDeliveryCars());
     }
 
     public boolean canBuyCar(Car car) {

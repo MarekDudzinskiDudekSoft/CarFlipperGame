@@ -1,8 +1,9 @@
 package com.dudek.menu.options;
 
+
 import com.dudek.model.GameState.GameState;
 
-final class RepairACar extends LoopOption{
+final class RepairACar extends LoopOption {
 
     RepairACar() {
         super(4, "Napraw auto");
@@ -11,7 +12,12 @@ final class RepairACar extends LoopOption{
     @Override
     GameState execute(GameState state) {
         System.out.println("Wybrales opcje: Napraw auto");
-
-        return null;
+        if (state.getPlayer().getOwnedCars().getBrokenCars().isEmpty()) {
+            System.err.println("Nie posiadasz uszkodzonych aut! ");
+            return state;
+        } else {
+            state.repairCar();
+            return state;
+        }
     }
 }

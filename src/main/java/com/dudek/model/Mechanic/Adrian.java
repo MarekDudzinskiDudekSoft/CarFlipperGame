@@ -1,5 +1,6 @@
 package com.dudek.model.Mechanic;
 
+import com.dudek.model.Car.Car;
 import com.dudek.model.Car.CarParts.CarPart;
 import com.dudek.model.Randomizer;
 
@@ -9,20 +10,20 @@ public class Adrian extends Mechanic implements CanBreakAPart {
 
     private final static int criticalErrorChance = 2;
 
-    public Adrian() {
-        super(80, BigDecimal.valueOf(100));
+    protected Adrian() {
+        super(60, BigDecimal.valueOf(200));
     }
 
     @Override
-    public BigDecimal repairCarPart(CarPart carPart) {
+    public BigDecimal repairCarPart(Car car, CarPart carPart) {
         carPart.repair(this);
         carPart.breakAPart(this);
 
         if (!carPart.isOk()) {
             Janusz janusz = new Janusz();
-            return janusz.repairCarPart(carPart).add(calculateRepairCost(carPart));
+            return janusz.calculateRepairCost(car, carPart).add(getMechanicSalary());
         }
-        return calculateRepairCost(carPart);
+        return calculateRepairCost(car, carPart);
     }
 
     @Override

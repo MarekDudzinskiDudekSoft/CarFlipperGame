@@ -1,24 +1,26 @@
 package com.dudek.model.Mechanic;
 
+import com.dudek.model.Car.Car;
 import com.dudek.model.Car.CarParts.CarPart;
 
 import java.math.BigDecimal;
 
 public class Marian extends Mechanic {
 
-    public Marian() {
-        super(90, BigDecimal.valueOf(300));
+    protected Marian() {
+        super(80, BigDecimal.valueOf(400));
     }
 
     @Override
-    public BigDecimal repairCarPart(CarPart carPart) {
+    public BigDecimal repairCarPart(Car car, CarPart carPart) {
         carPart.repair(this);
 
         if (!carPart.isOk()) {
+            System.err.println("Marian nie umie naprawic auta, musial wezwac Janusza, bedzie to dodatkowo kosztowac!");
             Janusz janusz = new Janusz();
-            return janusz.repairCarPart(carPart).add(calculateRepairCost(carPart));
+            return janusz.repairCarPart(car,carPart).add(getMechanicSalary());
         }
-        return calculateRepairCost(carPart);
+        return calculateRepairCost(car, carPart);
     }
 
 }

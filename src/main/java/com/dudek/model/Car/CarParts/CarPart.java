@@ -10,10 +10,14 @@ public abstract class CarPart {
 
     private final BigDecimal multiplier;
     private boolean isOk;
+    private final String name;
+    private BigDecimal baseValue;
 
-    CarPart(BigDecimal multiplier) {
+    CarPart(BigDecimal multiplier, String name, BigDecimal baseValue ) {
+        this.name = name;
         this.isOk = Randomizer.createBooleanWithTruePropability(70);
         this.multiplier = multiplier;
+        this.baseValue = baseValue;
     }
 
     public BigDecimal calculatePartValue(BigDecimal value) {
@@ -30,9 +34,14 @@ public abstract class CarPart {
         }
     }
 
+    public BigDecimal getBaseValue() {
+        return baseValue;
+    }
+
     public void breakAPart(CanBreakAPart mechanic) {
         if (mechanic.didPartBroke()) {
             this.isOk = false;
+            System.err.println("Mechanik uszkodzil część: ");
         }
     }
 
@@ -43,8 +52,17 @@ public abstract class CarPart {
             return "Do naprawy";
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getIsOkInString(){
+        return isOkconverterToString(this.isOk);
+    }
+
+
     @Override
     public String toString() {
-        return isOkconverterToString(this.isOk);
+        return getName() + ": "+ getIsOkInString();
     }
 }

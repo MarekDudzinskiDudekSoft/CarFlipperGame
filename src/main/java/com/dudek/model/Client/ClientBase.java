@@ -16,7 +16,10 @@ public class ClientBase {
     }
 
     public void printClientList() {
-        System.out.println(clientList);
+        for (int i = 1; i < clientList.size() + 1; i++) {
+            ClientView carView = new ClientView(i, clientList.get(i - 1));
+            System.out.println(carView);
+        }
     }
 
     public void addClientToBase() {

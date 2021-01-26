@@ -9,12 +9,12 @@ import java.util.Scanner;
 public class Player {
 
     private final static BigDecimal initialCash = new BigDecimal(100000);
-   // private final String nickname;
+    // private final String nickname;
     private BigDecimal cash;
     private final OwnedCars ownedCars;
 
     public Player() {
-       // this.nickname = typePlayerName();
+        // this.nickname = typePlayerName();
         this.cash = initialCash;
         this.ownedCars = new OwnedCars();
     }
@@ -36,9 +36,9 @@ public class Player {
         return readString();
     }
 
-   // public String getNickname() {
-   //     return nickname;
-   // }
+    // public String getNickname() {
+    //     return nickname;
+    // }
 
     public BigDecimal getCash() {
         return cash;
@@ -53,18 +53,21 @@ public class Player {
         ownedCars.buyACar(car);
     }
 
-    public void sellACar(Car car){
+    public void sellACar(Car car) {
         cash = cash.add(car.getValueWithParts());
         ownedCars.removeACar(car);
     }
 
     public void printOwnedCars() {
-        System.out.println(ownedCars);
+        ownedCars.printOwnedCars();
     }
 
-    public boolean canAffordACar(Car car){
+    public boolean canAffordACar(Car car) {
         return (this.getCash().compareTo(car.getValueWithParts()) >= 0);
     }
 
 
+    public void payForRepair(BigDecimal price) {
+        this.cash = getCash().subtract(price);
+    }
 }
