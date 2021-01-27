@@ -95,6 +95,7 @@ public class GameState {
 
         if (player.getCash().compareTo(chosenMechanic.calculateRepairCost(brokenCar, brokenPart)) >= 0) {
             player.payForRepair(chosenMechanic.repairCarPart(brokenCar, brokenPart));
+            brokenCar.addRepairedPartToList(brokenPart);
         } else {
             System.err.println("Niewystarczające środki na naprawę!");                          //TODO druk kosztu naprawy
         }

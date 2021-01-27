@@ -4,12 +4,10 @@ import com.dudek.model.Car.Car;
 import com.dudek.model.Car.CarFee;
 
 import java.math.BigDecimal;
-import java.util.InputMismatchException;
-import java.util.Scanner;
 
 public class Player {
 
-    private final static BigDecimal initialCash = new BigDecimal(100000);
+    private final static BigDecimal initialCash = new BigDecimal(300000);
     private BigDecimal cash;
     private final OwnedCars ownedCars;
 
@@ -18,28 +16,13 @@ public class Player {
         this.ownedCars = new OwnedCars();
     }
 
-    private String typePlayerName() {
-        return readString();
-    }
-
-    private String readString() {
-        Scanner scanner = new Scanner(System.in);
-        try {
-            return scanner.nextLine();
-        } catch (InputMismatchException e) {
-            System.err.println("Niepoprawny format danych");
-        } catch (NullPointerException e) {
-            System.err.println("Nie wprowadzono danych");
-        }
-        scanner.close();
-        return readString();
-    }
-
     public BigDecimal getCash() {
         return cash;
     }
 
     public OwnedCars getOwnedCars() {
+        if (ownedCars.isEmpty())
+            System.err.println("Nie posiadasz zadnych samochodów!");
         return ownedCars;
     }
 
@@ -60,6 +43,8 @@ public class Player {
     }
 
     public void printOwnedCars() {
+        if (ownedCars.isEmpty())
+            System.err.println("Nie posiadasz zadnych samochodów!");
         ownedCars.printOwnedCars();
     }
 

@@ -26,6 +26,7 @@ public class Car {
     private final SuspensionSystem suspensionSystem;
     private final Transmission transmission;
     private final CarPartBody carBody;
+    private final List<CarPart> repairedPartsList = new ArrayList<>();
 
     public Brand getBrand() {
         return brand;
@@ -117,6 +118,27 @@ public class Car {
         getPartsList().stream().filter(e -> !e.isOk()).forEach(brokenParts::add);
 
         return brokenParts;
+    }
+
+    public List<CarPart> getRepairedPartsList() {
+        return repairedPartsList;
+    }
+
+    public void addRepairedPartToList(CarPart carPart) {
+        getRepairedPartsList().add(carPart);
+    }
+
+    public void printRepairedCarParts() {
+        if (getRepairedPartsList().isEmpty()) {
+            System.err.println("W aucie nie byly dokonywane zadne naprawy! ");
+        } else {
+            System.out.println("W aucie: " + this.getBrand() + " " + this.color + " " + this.mileage + "bylo naprawiane: ");
+            for (CarPart carPart : getRepairedPartsList()) {
+                System.out.println(carPart.getName());
+            }
+            System.out.println();
+        }
+
     }
 
     public CarPart choosePartToRepair() {

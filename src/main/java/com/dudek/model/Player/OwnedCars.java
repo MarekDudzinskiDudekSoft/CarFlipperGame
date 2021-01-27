@@ -50,4 +50,8 @@ public class OwnedCars {
         return ownedCarList.get(chosenOption);
     }
 
+    public void printRepairedParts(){
+        ownedCarList.forEach(Car::printRepairedCarParts);
+    }
+
 }

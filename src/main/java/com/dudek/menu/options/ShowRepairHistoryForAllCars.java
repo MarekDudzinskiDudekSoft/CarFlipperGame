@@ -10,6 +10,8 @@ final class ShowRepairHistoryForAllCars extends LoopOption {
     @Override
     GameState execute(GameState state) {
         System.out.println("Wyswietl historie napraw aut");
-        return null;
+        state.getPlayer().getOwnedCars().printRepairedParts();
+
+        return state;
     }
 }

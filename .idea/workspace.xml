@@ -4,39 +4,16 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77cb2015-737e-4fd6-a33e-faee6b36be82" name="Default Changelist" comment="Added RepairACar feature with pricing algorithm and probability of success.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarFee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Commercial/Commercial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Commercial/CommercialFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Commercial/InternetCommercial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Commercial/NewsPaperCommercial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionContainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionView.java" afterDir="false" />
+    <list default="true" id="77cb2015-737e-4fd6-a33e-faee6b36be82" name="Default Changelist" comment="Added 2 carBrands in Client needs.&#10;Added Transaction feature.&#10;Added fee payment feature.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/exceptions/MechanicRepairException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/exceptions/NoCarToSellException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/BuyACommercial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/BuyACommercial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/ShowTransactionsHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/ShowTransactionsHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/ShowRepairHistoryForAllCars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/ShowRepairHistoryForAllCars.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarParts/CarPart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarParts/CarPart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Client/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/GameState/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/GameState/GameState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Adrian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Adrian.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Mechanic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Mechanic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Player/OwnedCars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Player/OwnedCars.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Randomizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Randomizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/BuyACommercial.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/BuyACommercial.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowTransactionsHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowTransactionsHistory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowRepairHistoryForAllCars.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowRepairHistoryForAllCars.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/Car.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/CarPart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/CarPart.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/GameState/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/GameState/GameState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Mechanic/Adrian.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Mechanic/Adrian.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Mechanic/Marian.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Mechanic/Marian.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Mechanic/Mechanic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Mechanic/Mechanic.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -400,7 +377,7 @@
       <workItem from="1611500584865" duration="191000" />
       <workItem from="1611573671509" duration="21323000" />
       <workItem from="1611654518757" duration="23750000" />
-      <workItem from="1611739150569" duration="9215000" />
+      <workItem from="1611739150569" duration="12818000" />
     </task>
     <task id="LOCAL-00001" summary="Separation of logic from Menu to optionReader">
       <created>1607881014028</created>
@@ -514,7 +491,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611676187642</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added 2 carBrands in Client needs.&#10;Added Transaction feature.&#10;Added fee payment feature.">
+      <created>1611751296519</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1611751296519</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -646,7 +630,8 @@
     <MESSAGE value="Corrected buy and sell logic. Improved DataReader - added range verification" />
     <MESSAGE value="Another improvement in GameState buy and sell methods. &#10;First attempt to repair option" />
     <MESSAGE value="Added RepairACar feature with pricing algorithm and probability of success." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added RepairACar feature with pricing algorithm and probability of success." />
+    <MESSAGE value="Added 2 carBrands in Client needs.&#10;Added Transaction feature.&#10;Added fee payment feature." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added 2 carBrands in Client needs.&#10;Added Transaction feature.&#10;Added fee payment feature." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
