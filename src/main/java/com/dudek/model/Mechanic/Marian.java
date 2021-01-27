@@ -20,7 +20,7 @@ public class Marian extends Mechanic {
             Janusz janusz = new Janusz();
             return janusz.repairCarPart(car,carPart).add(getMechanicSalary());
         }
-        return calculateRepairCost(car, carPart);
+        return calculateRepairCostWithSalary(car, carPart);
     }
 
 }

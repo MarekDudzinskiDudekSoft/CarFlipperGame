@@ -21,9 +21,9 @@ public class Adrian extends Mechanic implements CanBreakAPart {
 
         if (!carPart.isOk()) {
             Janusz janusz = new Janusz();
-            return janusz.calculateRepairCost(car, carPart).add(getMechanicSalary());
+            return janusz.calculateRepairCostWithSalary(car, carPart).add(getMechanicSalary());
         }
-        return calculateRepairCost(car, carPart);
+        return calculateRepairCostWithSalary(car, carPart);
     }
 
     @Override

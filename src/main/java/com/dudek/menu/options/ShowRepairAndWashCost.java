@@ -10,6 +10,7 @@ final class ShowRepairAndWashCost extends LoopOption {
     @Override
     GameState execute(GameState state) {
         System.out.println("Wybrales opcje: Pokaz koszt naprawy i umycia auta");
-        return null;
+        state.calculateTotalRepairAndWashingCost();
+        return state;
     }
 }

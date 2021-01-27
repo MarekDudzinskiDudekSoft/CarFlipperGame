@@ -93,11 +93,11 @@ public class GameState {
         CarPart brokenPart = brokenCar.choosePartToRepair();
         Mechanic chosenMechanic = mechanicGarage.chooseMechanic();
 
-        if (player.getCash().compareTo(chosenMechanic.calculateRepairCost(brokenCar, brokenPart)) >= 0) {
+        if (player.getCash().compareTo(chosenMechanic.calculateRepairCostWithSalary(brokenCar, brokenPart)) >= 0) {
             player.payForRepair(chosenMechanic.repairCarPart(brokenCar, brokenPart));
             brokenCar.addRepairedPartToList(brokenPart);
         } else {
-            System.err.println("Niewystarczające środki na naprawę!");                          //TODO druk kosztu naprawy
+            System.err.println("Niewystarczające środki na naprawę!");
         }
         transactions.addCarRepairTransaction();
         System.out.println("Naprawa przeszla pomyślnie");
@@ -110,6 +110,9 @@ public class GameState {
         for (int i = 0; i < commercial.getClientsInterested(); i++) {
             clients.addClientToBase();
         }
+    }
 
+    public void calculateTotalRepairAndWashingCost() {
+        player.getOwnedCars().getOwnedCarList().forEach(Car::printRepairAndWashCost);
     }
 }

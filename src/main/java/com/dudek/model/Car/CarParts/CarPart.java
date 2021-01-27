@@ -11,7 +11,7 @@ public abstract class CarPart {
     private final BigDecimal multiplier;
     private boolean isOk;
     private final String name;
-    private BigDecimal baseValue;
+    private final BigDecimal baseValue;
 
     CarPart(BigDecimal multiplier, String name, BigDecimal baseValue ) {
         this.name = name;

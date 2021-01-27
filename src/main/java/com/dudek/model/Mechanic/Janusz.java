@@ -14,6 +14,6 @@ public class Janusz extends Mechanic {
     @Override
     public BigDecimal repairCarPart(Car car, CarPart carPart) {
         carPart.repair(this);
-        return calculateRepairCost(car, carPart);
+        return calculateRepairCostWithSalary(car, carPart);
     }
 }

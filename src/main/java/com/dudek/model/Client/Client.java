@@ -1,7 +1,7 @@
 package com.dudek.model.Client;
 
-import com.dudek.model.Car.Brand;
 import com.dudek.model.Car.Car;
+import com.dudek.model.Car.CarEnums.Brand;
 import com.dudek.model.Randomizer;
 
 import java.math.BigDecimal;

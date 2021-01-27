@@ -1,4 +1,4 @@
-package com.dudek.model.Car.CarStatus;
+package com.dudek.model.Car.CarWash;
 
 import java.math.BigDecimal;
 import java.util.concurrent.ThreadLocalRandom;

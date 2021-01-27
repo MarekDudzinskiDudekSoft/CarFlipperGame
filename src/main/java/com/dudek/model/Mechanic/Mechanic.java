@@ -1,23 +1,23 @@
 package com.dudek.model.Mechanic;
 
 import com.dudek.model.Car.Car;
+import com.dudek.model.Car.CarEnums.Segment;
 import com.dudek.model.Car.CarParts.CarPart;
-import com.dudek.model.Car.Segment;
 import com.dudek.model.Randomizer;
 
 import java.math.BigDecimal;
 
 public abstract class Mechanic {
 
-    private int successRate;
-    private BigDecimal mechanicSalary;
+    private final int successRate;
+    private final BigDecimal mechanicSalary;
 
     Mechanic(int successRate, BigDecimal mechanicSalary) {
         this.successRate = successRate;
         this.mechanicSalary = mechanicSalary;
     }
 
-    public abstract BigDecimal repairCarPart(Car car,CarPart carPart);
+    public abstract BigDecimal repairCarPart(Car car, CarPart carPart);
 
     protected BigDecimal getMechanicSalary() {
         return mechanicSalary;
@@ -27,7 +27,11 @@ public abstract class Mechanic {
         return Randomizer.createBooleanWithTrueProbability(successRate);
     }
 
-    public BigDecimal calculateRepairCost(Car car, CarPart carPart) {
+    public BigDecimal calculateRepairCostWithSalary(Car car, CarPart carPart) {
+        return calculateRepairCost(car,carPart).add(getMechanicSalary());
+    }
+
+    private BigDecimal calculateRepairCost(Car car, CarPart carPart) {
         BigDecimal price = new BigDecimal(0);
 
         if (car.getSegment().equals(Segment.PREMIUM)) {
@@ -42,9 +46,7 @@ public abstract class Mechanic {
             price = carPart.getBaseValue().multiply(BigDecimal.valueOf(1.1));
         }
 
-        return price.add(getMechanicSalary());
+        return price;
     }
-
-
 
 }

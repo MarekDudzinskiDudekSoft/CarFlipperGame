@@ -1,8 +1,11 @@
 package com.dudek.model.Car;
 
 import com.dudek.menu.DataReader;
+import com.dudek.model.Car.CarEnums.Brand;
+import com.dudek.model.Car.CarEnums.Color;
+import com.dudek.model.Car.CarEnums.Segment;
 import com.dudek.model.Car.CarParts.*;
-import com.dudek.model.Car.CarStatus.Washing;
+import com.dudek.model.Car.CarWash.Washing;
 import com.dudek.model.Randomizer;
 
 import java.math.BigDecimal;
@@ -147,6 +150,33 @@ public class Car {
         int chosenOption = DataReader.readOptionFromRange(1, getBrokenPartsList().size());
         return getBrokenPartsList().get(chosenOption);
     }
+
+    public void printRepairAndWashCost() {
+        BigDecimal totalPrice = new BigDecimal(0);
+        List<CarPart> parts = getBrokenPartsList();
+        for (CarPart part : parts) {
+            totalPrice = totalPrice.add(getPartPrice(part));
+        }
+        System.out.println("Calkowity koszt wynosi: " + totalPrice.add(getIsWashed().getPrice()) + " z czego naprawa wynosi: " +totalPrice + " a umycie: " + getIsWashed().getPrice());
+    }
+
+    private BigDecimal getPartPrice(CarPart carPart) {
+        BigDecimal price = new BigDecimal(0);
+        if (this.getSegment().equals(Segment.PREMIUM)) {
+            price = carPart.getBaseValue().multiply(BigDecimal.valueOf(2));
+        }
+
+        if (this.getSegment().equals(Segment.STANDRAD)) {
+            price = carPart.getBaseValue().multiply(BigDecimal.valueOf(1.5));
+        }
+
+        if (this.getSegment().equals(Segment.BUDGET)) {
+            price = carPart.getBaseValue().multiply(BigDecimal.valueOf(1.1));
+        }
+
+        return price;
+    }
+
 
     @Override
     public String toString() {

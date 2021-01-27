@@ -1,4 +1,4 @@
-package com.dudek.model.Car;
+package com.dudek.model.Car.CarEnums;
 
 import java.util.Arrays;
 import java.util.Collections;
