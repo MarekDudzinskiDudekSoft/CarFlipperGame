@@ -7,11 +7,12 @@ import com.dudek.model.Car.NewCarsDatabase;
 import com.dudek.model.Client.Client;
 import com.dudek.model.Client.ClientBase;
 import com.dudek.model.Client.ClientGenerator;
+import com.dudek.model.Commercial.Commercial;
+import com.dudek.model.Commercial.CommercialFactory;
 import com.dudek.model.Mechanic.Mechanic;
 import com.dudek.model.Mechanic.MechanicGarage;
 import com.dudek.model.Player.Player;
-
-import java.util.List;
+import com.dudek.model.Transaction.TransactionContainer;
 
 
 public class GameState {
@@ -19,26 +20,28 @@ public class GameState {
     private final Player player;
     private final NewCarsDatabase newCarsDatabase;
     private final ClientBase clients;
-    private List<Transaction> transactions;
+    private final TransactionContainer transactions;
     private final MechanicGarage mechanicGarage;
     private int moveCounter;
+    private final CommercialFactory commercialFactory;
 
-    public GameState(List<Transaction> transactions) {
-        this.transactions = transactions;
+    public GameState() {
         this.moveCounter = 0;
 
+        this.transactions = new TransactionContainer();
         this.player = new Player();
         this.mechanicGarage = new MechanicGarage();
         this.clients = new ClientBase(new ClientGenerator());
         this.newCarsDatabase = new NewCarsDatabase(new CarGenerator());
+        this.commercialFactory = new CommercialFactory();
+    }
+
+    public TransactionContainer getTransactions() {
+        return transactions;
     }
 
     public NewCarsDatabase getCarBase() {
         return newCarsDatabase;
-    }
-
-    public List<Transaction> getTransactions() {
-        return transactions;
     }
 
     public int getMoveCounter() {
@@ -53,14 +56,11 @@ public class GameState {
         return player;
     }
 
-    public MechanicGarage getMechanicGarage() {
-        return mechanicGarage;
-    }
-
     public void buyACar() {
         Car boughtCar = newCarsDatabase.getACar();
         if (player.canAffordACar(boughtCar)) {
             transferCarAfterBuy(boughtCar);
+            transactions.addBuyCarTransaction();
         } else {
             System.err.println("Niewystarczajaca liczba środków aby kupić to auto!");
         }
@@ -70,7 +70,6 @@ public class GameState {
         player.buyACar(boughtCar);
         newCarsDatabase.sellACar(boughtCar);
         newCarsDatabase.generateNewCar();
-        System.out.println("Zakupiono samochod: " + boughtCar.getBrand() + " " + boughtCar.getColor().getDescription() + " za " + boughtCar.getValueWithParts());
     }
 
     public void sellACar() {
@@ -79,6 +78,7 @@ public class GameState {
 
         if (potentialClient.canBuyCar(potentialCar) && potentialClient.isInterestedInThisCar(potentialCar)) {
             transferCarAfterSell(potentialCar);
+            transactions.addSellCarTransaction();
         }
     }
 
@@ -86,7 +86,6 @@ public class GameState {
         player.sellACar(potentialCar);
         clients.addClientToBase();
         clients.addClientToBase();
-        System.out.println("Sprzedano samochod: " + potentialCar.getBrand() + " " + potentialCar.getColor().getDescription() + " za " + potentialCar.getValueWithParts());
     }
 
     public void repairCar() {
@@ -95,13 +94,21 @@ public class GameState {
         Mechanic chosenMechanic = mechanicGarage.chooseMechanic();
 
         if (player.getCash().compareTo(chosenMechanic.calculateRepairCost(brokenCar, brokenPart)) >= 0) {
-           player.payForRepair(chosenMechanic.repairCarPart(brokenCar, brokenPart));
+            player.payForRepair(chosenMechanic.repairCarPart(brokenCar, brokenPart));
         } else {
-            System.err.println("Niewystarczające środki na naprawę!");
+            System.err.println("Niewystarczające środki na naprawę!");                          //TODO druk kosztu naprawy
         }
-
+        transactions.addCarRepairTransaction();
         System.out.println("Naprawa przeszla pomyślnie");
     }
 
+    public void buyCommercial() {
+        Commercial commercial = commercialFactory.chooseCommercial();
+        player.payForCommercial(commercial.getPrice());
+        transactions.addBuyCommercialTransaction();
+        for (int i = 0; i < commercial.getClientsInterested(); i++) {
+            clients.addClientToBase();
+        }
 
+    }
 }

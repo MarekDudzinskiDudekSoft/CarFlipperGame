@@ -5,22 +5,25 @@ import com.dudek.model.Car.Car;
 import com.dudek.model.Randomizer;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class Client {
-    private BigDecimal cash;                                    //TODO Add random name from database
-    private final Brand wantedBrand;
+    private final BigDecimal cash;                                    //TODO Add random name from database
+    private final List<Brand> wantedBrand = new ArrayList<>(2);
     private final boolean isInterestedInBrokenCars;
     private final boolean isInterestedInDeliveryCars;
 
     public Client() {
-        this.cash = Randomizer.createRandomDecimalFromRange(350, 500).multiply(BigDecimal.valueOf(100));
-        this.wantedBrand = Brand.RandomBrand.randomBrand();
-        isInterestedInBrokenCars = Randomizer.createBooleanWithTruePropability(20);
-        isInterestedInDeliveryCars = Randomizer.createBooleanWithTruePropability(5);
+        this.cash = Randomizer.createRandomDecimalFromRange(450, 600).multiply(BigDecimal.valueOf(100));
+        this.wantedBrand.add(Brand.RandomBrand.randomBrand());
+        this.wantedBrand.add(Brand.RandomBrand.randomBrand());
+        isInterestedInBrokenCars = Randomizer.createBooleanWithTrueProbability(10);
+        isInterestedInDeliveryCars = Randomizer.createBooleanWithTrueProbability(5);
     }
 
-    public Brand getWantedBrand() {
+    public List<Brand> getWantedBrand() {
         return wantedBrand;
     }
 
@@ -60,7 +63,7 @@ public class Client {
     }
 
     public boolean isInterestedInThisCar(Car car) {
-        if (this.wantedBrand.equals(car.getBrand())) {
+        if (this.wantedBrand.contains(car.getBrand())) {
             return validateClientInterest(car);
         }
         System.err.println("Klient nie jest zainteresowany tą marką auta!");

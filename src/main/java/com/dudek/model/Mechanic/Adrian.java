@@ -28,7 +28,7 @@ public class Adrian extends Mechanic implements CanBreakAPart {
 
     @Override
     public boolean didPartBroke() {
-        return Randomizer.createBooleanWithTruePropability(criticalErrorChance);
+        return Randomizer.createBooleanWithTrueProbability(criticalErrorChance);
     }
 }
 

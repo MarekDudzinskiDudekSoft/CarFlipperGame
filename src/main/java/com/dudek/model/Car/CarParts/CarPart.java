@@ -15,7 +15,7 @@ public abstract class CarPart {
 
     CarPart(BigDecimal multiplier, String name, BigDecimal baseValue ) {
         this.name = name;
-        this.isOk = Randomizer.createBooleanWithTruePropability(70);
+        this.isOk = Randomizer.createBooleanWithTrueProbability(70);
         this.multiplier = multiplier;
         this.baseValue = baseValue;
     }

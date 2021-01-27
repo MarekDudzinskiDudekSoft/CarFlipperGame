@@ -13,19 +13,19 @@ import java.util.List;
 
 public class Car {
 
-    private BigDecimal value;
-    private Brand brand;
-    private Double mileage;
-    private Color color;
-    private Segment segment;
-    private Washing isWashed;
+    private final BigDecimal value;
+    private final Brand brand;
+    private final Double mileage;
+    private final Color color;
+    private final Segment segment;
+    private final Washing isWashed;
 
-    private Breaks breaks;
-   private final DecimalFormat df = new DecimalFormat("#.000");
-    private Engine engine;
-    private SuspensionSystem suspensionSystem;
-    private Transmission transmission;
-    private CarPartBody carBody;
+    private final Breaks breaks;
+    private final DecimalFormat df = new DecimalFormat("#.000");
+    private final Engine engine;
+    private final SuspensionSystem suspensionSystem;
+    private final Transmission transmission;
+    private final CarPartBody carBody;
 
     public Brand getBrand() {
         return brand;
@@ -33,6 +33,10 @@ public class Car {
 
     public Double getMileage() {
         return mileage;
+    }
+
+    public Washing getIsWashed() {
+        return isWashed;
     }
 
     public Color getColor() {
@@ -51,6 +55,22 @@ public class Car {
         return breaks;
     }
 
+    public Engine getEngine() {
+        return engine;
+    }
+
+    public SuspensionSystem getSuspensionSystem() {
+        return suspensionSystem;
+    }
+
+    public Transmission getTransmission() {
+        return transmission;
+    }
+
+    public CarPartBody getCarBody() {
+        return carBody;
+    }
+
     public Car() {
         this.value = Randomizer.createRandomDecimalFromRange(150, 250).multiply(BigDecimal.valueOf(100));
         this.brand = Brand.RandomBrand.randomBrand();
@@ -66,27 +86,10 @@ public class Car {
         this.transmission = new Transmission();
     }
 
-    public Engine getEngine() {
-        return engine;
-    }
-
-    public SuspensionSystem getSuspensionSystem() {
-        return suspensionSystem;
-    }
-
-    public Transmission getTransmission() {
-        return transmission;
-    }
-
-
     public BigDecimal getValueWithParts() {
         return getPartsList().stream()
                 .map(e -> e.calculatePartValue(value))
                 .reduce(BigDecimal.ZERO, BigDecimal::add);
-    }
-
-    public CarPartBody getCarBody() {
-        return carBody;
     }
 
     public boolean isNotBroken() {
@@ -106,7 +109,6 @@ public class Car {
     }
 
     public void printBrokenParts() {
-        System.out.println("Części, które wymagają naprawy: ");
         getPartsList().stream().filter(e -> !e.isOk()).forEach(System.out::println);
     }
 
@@ -117,7 +119,7 @@ public class Car {
         return brokenParts;
     }
 
-    public CarPart choosePartToRepair(){
+    public CarPart choosePartToRepair() {
         printBrokenParts();
         System.out.println("Wybierz część do naprawy: ");
         int chosenOption = DataReader.readOptionFromRange(1, getBrokenPartsList().size());
@@ -128,16 +130,15 @@ public class Car {
     public String toString() {
         return "| Cena: " + getValueWithParts() +
                 "| Marka: " + brand.getDescription() +
-                "| Przebieg: " + df.format(mileage) +
+                "| Przebieg: " + df.format(getMileage()) +
                 "| Kolor: " + color.getDescription() +
                 "| Segment: " + segment.getDescription() +
-                "| Czy umyty :" + isWashed +
-                "| " + breaks +
-                "| " + carBody +
-                "| " + engine +
-                "| " + suspensionSystem +
-                "| " + transmission;
+                "| Czy umyty :" + getIsWashed() +
+                "| " + getBreaks() +
+                "| " + getCarBody() +
+                "| " + getEngine() +
+                "| " + getSuspensionSystem() +
+                "| " + getTransmission();
     }
-
 
 }

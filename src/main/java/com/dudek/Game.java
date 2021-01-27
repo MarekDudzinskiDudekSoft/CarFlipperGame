@@ -17,7 +17,7 @@ class Game {
     }
 
     private void initialize() {
-        state = new GameState(null); //smieci
+        state = new GameState();
     }
 
     private void welcomeMessage() {

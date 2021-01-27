@@ -23,10 +23,6 @@ public class OwnedCars {
         ownedCarList.remove(car);
     }
 
-    public Car getACar(int index) {
-        return ownedCarList.get(index);
-    }
-
     public void printOwnedCars() {
         for (int i = 1; i < ownedCarList.size() + 1; i++) {
             CarView carView = new CarView(i, ownedCarList.get(i - 1));

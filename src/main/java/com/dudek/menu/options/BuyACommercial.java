@@ -2,7 +2,7 @@ package com.dudek.menu.options;
 
 import com.dudek.model.GameState.GameState;
 
-final class BuyACommercial extends LoopOption{
+final class BuyACommercial extends LoopOption {
     BuyACommercial() {
         super(7, "Kup reklame");
     }
@@ -11,6 +11,8 @@ final class BuyACommercial extends LoopOption{
     GameState execute(GameState state) {
 
         System.out.println("Wybrales opcje: Kup reklame");
-        return null;
+
+        state.buyCommercial();
+        return state;
     }
 }

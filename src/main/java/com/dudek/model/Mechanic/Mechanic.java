@@ -24,7 +24,7 @@ public abstract class Mechanic {
     }
 
     public boolean canRepair() {
-        return Randomizer.createBooleanWithTruePropability(successRate);
+        return Randomizer.createBooleanWithTrueProbability(successRate);
     }
 
     public BigDecimal calculateRepairCost(Car car, CarPart carPart) {
