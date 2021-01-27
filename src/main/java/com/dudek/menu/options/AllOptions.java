@@ -9,7 +9,7 @@ public class AllOptions {
 
     Map<Integer, LoopOption> options = new HashMap<>();
 
-    public AllOptions() {                               //https://devcave.pl/effective-java/wzorzec-projektowy-singleton  tutaj robimy to w ten sposob?
+    public AllOptions() {
 
         ShowCarsForSale showCarsForSale = new ShowCarsForSale();
         BuyACar buyACar = new BuyACar();
@@ -22,6 +22,7 @@ public class AllOptions {
         ShowTransactionsHistory showTransactionsHistory = new ShowTransactionsHistory();
         ShowRepairHistoryForAllCars showRepairHistoryForAllCars = new ShowRepairHistoryForAllCars();
         ShowRepairAndWashCost showRepairAndWashCost = new ShowRepairAndWashCost();
+        ShowMoveCounter showMoveCounter = new ShowMoveCounter();
 
         options.put(showCarsForSale.getNumber(), showCarsForSale);
         options.put(buyACar.getNumber(), buyACar);
@@ -34,6 +35,7 @@ public class AllOptions {
         options.put(showTransactionsHistory.getNumber(), showTransactionsHistory);
         options.put(showRepairHistoryForAllCars.getNumber(), showRepairHistoryForAllCars);
         options.put(showRepairAndWashCost.getNumber(), showRepairAndWashCost);
+        options.put(showMoveCounter.getNumber(), showMoveCounter);
     }
 
     public void printOptions() {

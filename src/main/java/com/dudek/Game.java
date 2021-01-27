@@ -3,6 +3,8 @@ package com.dudek;
 import com.dudek.menu.Menu;
 import com.dudek.model.GameState.GameState;
 
+import java.math.BigDecimal;
+
 class Game {
 
     private final Menu menu = new Menu();
@@ -31,8 +33,16 @@ class Game {
             menu.printOptions();
             option = menu.chooseOption();
             menu.executeOption(option, state);
+            if (checkWinningCondition(state)) {
+                break;
+            }
         } while (option != 0);
         System.out.println("Koniec pracy programu");
+    }
+
+    private boolean checkWinningCondition(GameState state) {
+        BigDecimal winCondition = state.getPlayer().getInitialCash().multiply(BigDecimal.valueOf(2));
+        return winCondition.equals(state.getPlayer().getCash());
     }
 
 }

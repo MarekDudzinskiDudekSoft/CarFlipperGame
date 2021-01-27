@@ -61,6 +61,7 @@ public class GameState {
         if (player.canAffordACar(boughtCar)) {
             transferCarAfterBuy(boughtCar);
             transactions.addBuyCarTransaction();
+            moveCounter++;
         } else {
             System.err.println("Niewystarczajaca liczba środków aby kupić to auto!");
         }
@@ -79,6 +80,7 @@ public class GameState {
         if (potentialClient.canBuyCar(potentialCar) && potentialClient.isInterestedInThisCar(potentialCar)) {
             transferCarAfterSell(potentialCar);
             transactions.addSellCarTransaction();
+            moveCounter++;
         }
     }
 
@@ -100,6 +102,7 @@ public class GameState {
             System.err.println("Niewystarczające środki na naprawę!");
         }
         transactions.addCarRepairTransaction();
+        moveCounter++;
         System.out.println("Naprawa przeszla pomyślnie");
     }
 
@@ -107,6 +110,7 @@ public class GameState {
         Commercial commercial = commercialFactory.chooseCommercial();
         player.payForCommercial(commercial.getPrice());
         transactions.addBuyCommercialTransaction();
+        moveCounter++;
         for (int i = 0; i < commercial.getClientsInterested(); i++) {
             clients.addClientToBase();
         }

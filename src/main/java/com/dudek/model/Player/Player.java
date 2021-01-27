@@ -20,6 +20,10 @@ public class Player {
         return cash;
     }
 
+    public  BigDecimal getInitialCash() {
+        return initialCash;
+    }
+
     public OwnedCars getOwnedCars() {
         if (ownedCars.isEmpty())
             System.err.println("Nie posiadasz zadnych samochodów!");
