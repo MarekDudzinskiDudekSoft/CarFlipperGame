@@ -5,26 +5,24 @@ import com.dudek.model.Car.CarEnums.Brand;
 import com.dudek.model.Randomizer;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 
 public class Client {
     private final BigDecimal cash;                                    //TODO Add random name from database
-    private final List<Brand> wantedBrand = new ArrayList<>(2);
+    private final Set<Brand> wantedBrands = new HashSet<>(2);
     private final boolean isInterestedInBrokenCars;
     private final boolean isInterestedInDeliveryCars;
 
-    public Client() {
-        this.cash = Randomizer.createRandomDecimalFromRange(450, 600).multiply(BigDecimal.valueOf(100));
-        this.wantedBrand.add(Brand.RandomBrand.randomBrand());
-        this.wantedBrand.add(Brand.RandomBrand.randomBrand());
-        isInterestedInBrokenCars = Randomizer.createBooleanWithTrueProbability(10);
-        isInterestedInDeliveryCars = Randomizer.createBooleanWithTrueProbability(5);
+    public Client(BigDecimal cash, boolean isInterestedInBrokenCars, boolean isInterestedInDeliveryCars) {
+        this.cash = cash;
+        this.isInterestedInBrokenCars = isInterestedInBrokenCars;
+        this.isInterestedInDeliveryCars = isInterestedInDeliveryCars;
     }
 
-    public List<Brand> getWantedBrand() {
-        return wantedBrand;
+    public Set<Brand> getWantedBrands() {
+        return new HashSet<>(wantedBrands);
     }
 
     public boolean isInterestedInBrokenCars() {
@@ -41,7 +39,7 @@ public class Client {
 
     @Override
     public String toString() {
-        return " Fundusze: " + getCash() + ", Zainteresowany marką: " + getWantedBrand() +
+        return " Fundusze: " + getCash() + ", Zainteresowany marką: " + getWantedBrands() +
                 ", Zainteresowany uszkodzonymi autami: " + convertBooleanToString(isInterestedInBrokenCars()) +
                 ", Zainteresowany autami dostawczymi: " + convertBooleanToString(isInterestedInDeliveryCars());
     }
@@ -63,7 +61,7 @@ public class Client {
     }
 
     public boolean isInterestedInThisCar(Car car) {
-        if (this.wantedBrand.contains(car.getBrand())) {
+        if (this.wantedBrands.contains(car.getBrand())) {
             return validateClientInterest(car);
         }
         System.err.println("Klient nie jest zainteresowany tą marką auta!");
@@ -81,5 +79,25 @@ public class Client {
 
         System.err.println("Klient nie jest zainteresowany uszkodzonymi autami!");
         return false;
+    }
+
+    public static class ClientRandomizer{
+
+
+        public static final int INTERESTED_IN_BROKEN_CARS_PROBABILITY = 10;
+        public static final int INTERESTED_IN_DELIVERY_CARS_PROBABILITY = 5;
+
+        public Client getNewRandomClient()
+        {
+            Client client = new Client(
+                    Randomizer.createRandomDecimalFromRange(450, 600).multiply(BigDecimal.valueOf(100)),
+                    Randomizer.createBooleanWithTrueProbability(INTERESTED_IN_BROKEN_CARS_PROBABILITY),
+                    Randomizer.createBooleanWithTrueProbability(INTERESTED_IN_DELIVERY_CARS_PROBABILITY)
+            );
+
+            client.wantedBrands.add(Brand.RandomBrand.randomBrand());
+            client.wantedBrands.add(Brand.RandomBrand.randomBrand());
+            return client;
+        }
     }
 }

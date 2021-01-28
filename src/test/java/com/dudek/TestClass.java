@@ -1,3 +1,5 @@
+package com.dudek;
+
 import com.dudek.model.Car.CarGenerator;
 import com.dudek.model.Car.NewCarsDatabase;
 import org.junit.jupiter.api.Test;

@@ -8,11 +8,10 @@ import java.util.List;
 public class ClientBase {
 
     private final static int initialClientNumber = 5;
-    private final List<Client> clientList = new ArrayList<>();
+    private final List<Client> clientList;
 
     public ClientBase(ClientGenerator generator) {
-        clientList.clear();
-        clientList.addAll(generator.generateClients(initialClientNumber));
+        clientList = new ArrayList<>(generator.generateClients(initialClientNumber));
     }
 
     public void printClientList() {
@@ -23,7 +22,7 @@ public class ClientBase {
     }
 
     public void addClientToBase() {
-        Client client = new Client();
+        Client client = new Client.ClientRandomizer().getNewRandomClient();
         clientList.add(client);
     }
 
