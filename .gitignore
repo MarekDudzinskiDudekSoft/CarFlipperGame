@@ -17,9 +17,7 @@
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
 
-# IntelliJ
-out/
-target/
-
 # mpeltonen/sbt-idea plugin
 .idea_modules/
+/target/
+/out/
