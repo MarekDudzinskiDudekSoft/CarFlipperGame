@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 public class NewsPaperCommercial extends Commercial{
 
     public NewsPaperCommercial() {
-        super(BigDecimal.valueOf(550), Randomizer.createRandomIntFromRange(1,4));
+        super(" Reklama w gazecie", BigDecimal.valueOf(550), Randomizer.createRandomIntFromRange(1,4));
     }
 
 }

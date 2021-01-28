@@ -24,14 +24,14 @@ public class OwnedCars {
     }
 
     public void printOwnedCars() {
-        for (int i = 1; i < ownedCarList.size() + 1; i++) {
-            CarView carView = new CarView(i, ownedCarList.get(i - 1));
+        for (int i = 1; i < getOwnedCarList().size() + 1; i++) {
+            CarView carView = new CarView(i, getOwnedCarList().get(i - 1));
             System.out.println(carView);
         }
     }
 
     public List<Car> getOwnedCarList() {
-        return ownedCarList;
+        return new ArrayList<>(ownedCarList);
     }
 
     public List<Car> getBrokenCars(){
@@ -41,17 +41,17 @@ public class OwnedCars {
     }
 
     public boolean isEmpty() {
-        return ownedCarList.isEmpty();
+        return getOwnedCarList().isEmpty();
     }
 
     public Car getCarFromBase() {
         System.out.println("Podaj indeks auta: ");
-        int chosenOption = DataReader.readOptionFromRange(1, ownedCarList.size());
-        return ownedCarList.get(chosenOption);
+        int chosenOption = DataReader.readOptionFromRange(1, getOwnedCarList().size());
+        return getOwnedCarList().get(chosenOption);
     }
 
     public void printRepairedParts(){
-        ownedCarList.forEach(Car::printRepairedCarParts);
+        getOwnedCarList().forEach(Car::printRepairedCarParts);
     }
 
 }

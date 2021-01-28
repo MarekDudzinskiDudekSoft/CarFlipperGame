@@ -8,8 +8,9 @@ import java.math.BigDecimal;
 public class Player {
 
     private final static BigDecimal initialCash = new BigDecimal(300000);
-    private BigDecimal cash;
     private final OwnedCars ownedCars;
+    private BigDecimal cash;
+
 
     public Player() {
         this.cash = initialCash;

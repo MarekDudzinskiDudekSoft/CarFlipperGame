@@ -124,7 +124,7 @@ public class Car {
     }
 
     public List<CarPart> getRepairedPartsList() {
-        return repairedPartsList;
+        return  new ArrayList<>(repairedPartsList);
     }
 
     public void addRepairedPartToList(CarPart carPart) {
@@ -141,7 +141,6 @@ public class Car {
             }
             System.out.println();
         }
-
     }
 
     public CarPart choosePartToRepair() {
@@ -176,7 +175,6 @@ public class Car {
 
         return price;
     }
-
 
     @Override
     public String toString() {

@@ -9,9 +9,10 @@ import java.math.BigDecimal;
 public class Adrian extends Mechanic implements CanBreakAPart {
 
     private final static int criticalErrorChance = 2;
+    private final static String name = "Adrian";
 
     protected Adrian() {
-        super(60, BigDecimal.valueOf(200));
+        super(name, 60, BigDecimal.valueOf(200));
     }
 
     @Override
@@ -24,6 +25,10 @@ public class Adrian extends Mechanic implements CanBreakAPart {
             return janusz.calculateRepairCostWithSalary(car, carPart).add(getMechanicSalary());
         }
         return calculateRepairCostWithSalary(car, carPart);
+    }
+
+    public String getName() {
+        return name;
     }
 
     @Override

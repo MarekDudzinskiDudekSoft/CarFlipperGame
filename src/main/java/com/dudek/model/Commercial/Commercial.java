@@ -4,11 +4,13 @@ import java.math.BigDecimal;
 
 public abstract class Commercial {
 
-    private BigDecimal price;
-    private int clientsInterested;
+    private final BigDecimal price;
+    private final int clientsInterested;
+    private String name;
 
-    public Commercial(BigDecimal price, int clientsInterested) {
+    public Commercial(String name, BigDecimal price, int clientsInterested) {
         this.price = price;
+        this.name = name;
         this.clientsInterested = clientsInterested;
     }
 
@@ -20,4 +22,7 @@ public abstract class Commercial {
         return clientsInterested;
     }
 
+    public String getName() {
+        return name;
+    }
 }

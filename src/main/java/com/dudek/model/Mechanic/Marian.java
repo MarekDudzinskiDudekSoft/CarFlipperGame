@@ -7,8 +7,10 @@ import java.math.BigDecimal;
 
 public class Marian extends Mechanic {
 
+    private final static String name = "Marian";
+
     protected Marian() {
-        super(80, BigDecimal.valueOf(400));
+        super(name, 80, BigDecimal.valueOf(400));
     }
 
     @Override
@@ -18,10 +20,13 @@ public class Marian extends Mechanic {
         if (!carPart.isOk()) {
             System.err.println("Marian nie umie naprawic auta, musial wezwac Janusza, bedzie to dodatkowo kosztowac!");
             Janusz janusz = new Janusz();
-            return janusz.repairCarPart(car,carPart).add(getMechanicSalary());
+            return janusz.repairCarPart(car, carPart).add(getMechanicSalary());
         }
         return calculateRepairCostWithSalary(car, carPart);
     }
 
+    public String getName() {
+        return name;
+    }
 }
 

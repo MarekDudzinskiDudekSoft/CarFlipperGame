@@ -6,8 +6,7 @@ import org.junit.jupiter.api.Test;
 public class ClientTests {
 
     @Test
-    public void  checkIfClientWantedBrandsAreImmutable()
-    {
+    public void checkIfClientWantedBrandsAreImmutable() {
         //given
         Client newRandomClient = new Client.ClientRandomizer().getNewRandomClient();
         int howManyBefore = newRandomClient.getWantedBrands().size();
@@ -15,6 +14,6 @@ public class ClientTests {
         newRandomClient.getWantedBrands().clear();
         //then
         int howManyAfter = newRandomClient.getWantedBrands().size();
-        Assertions.assertEquals(howManyAfter,howManyBefore);
+        Assertions.assertEquals(howManyAfter, howManyBefore);
     }
 }

@@ -10,12 +10,17 @@ import java.util.Set;
 
 
 public class Client {
-    private final BigDecimal cash;                                    //TODO Add random name from database
+
+    private final BigDecimal cash;
+    ClientNameRandomizer clientNameRandomizer = new ClientNameRandomizer();
+    private final String firstName = clientNameRandomizer.randomizeFirstName();
+    private final String lastName = clientNameRandomizer.randomizeLastName();
     private final Set<Brand> wantedBrands = new HashSet<>(2);
     private final boolean isInterestedInBrokenCars;
     private final boolean isInterestedInDeliveryCars;
 
-    public Client(BigDecimal cash, boolean isInterestedInBrokenCars, boolean isInterestedInDeliveryCars) {
+
+    private Client(BigDecimal cash, boolean isInterestedInBrokenCars, boolean isInterestedInDeliveryCars) {
         this.cash = cash;
         this.isInterestedInBrokenCars = isInterestedInBrokenCars;
         this.isInterestedInDeliveryCars = isInterestedInDeliveryCars;
@@ -37,9 +42,17 @@ public class Client {
         return cash;
     }
 
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
     @Override
     public String toString() {
-        return " Fundusze: " + getCash() + ", Zainteresowany marką: " + getWantedBrands() +
+        return " Imie: " + firstName + " Nazwisko: " + lastName + " Fundusze: " + getCash() + ", Zainteresowany marką: " + getWantedBrands() +
                 ", Zainteresowany uszkodzonymi autami: " + convertBooleanToString(isInterestedInBrokenCars()) +
                 ", Zainteresowany autami dostawczymi: " + convertBooleanToString(isInterestedInDeliveryCars());
     }
@@ -81,14 +94,13 @@ public class Client {
         return false;
     }
 
-    public static class ClientRandomizer{
+    public static class ClientRandomizer {
 
 
         public static final int INTERESTED_IN_BROKEN_CARS_PROBABILITY = 10;
         public static final int INTERESTED_IN_DELIVERY_CARS_PROBABILITY = 5;
 
-        public Client getNewRandomClient()
-        {
+        public Client getNewRandomClient() {
             Client client = new Client(
                     Randomizer.createRandomDecimalFromRange(450, 600).multiply(BigDecimal.valueOf(100)),
                     Randomizer.createBooleanWithTrueProbability(INTERESTED_IN_BROKEN_CARS_PROBABILITY),
@@ -100,4 +112,6 @@ public class Client {
             return client;
         }
     }
+
+
 }

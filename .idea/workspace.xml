@@ -5,16 +5,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77cb2015-737e-4fd6-a33e-faee6b36be82" name="Default Changelist" comment="Version [1.0] &#10;Added Print repair and washing cost feature.&#10;Marked as 1.0 version.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/ShowMoveCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Client/ClientNameRandomizer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionDetails/TransactionCar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionDetails/TransactionCash.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionDetails/TransactionClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionDetails/TransactionCommercial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionDetails/TransactionMechanic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dudek/model/Client/car/CarTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_5_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_5_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/GameApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/GameApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/AllOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/AllOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Januszex.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Januszex.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Client/ClientBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Client/ClientBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Commercial/Commercial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Commercial/Commercial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Commercial/InternetCommercial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Commercial/InternetCommercial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Commercial/NewsPaperCommercial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Commercial/NewsPaperCommercial.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/GameState/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/GameState/GameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Adrian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Adrian.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Janusz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Janusz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Marian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Marian.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Mechanic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Mechanic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Player/OwnedCars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Player/OwnedCars.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Player/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dudek/model/Client/ClientTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dudek/model/Client/ClientTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/GameApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/GameApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/Robocza.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/Robocza.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/MenuOptionReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/MenuOptionReader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/AllOptions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/AllOptions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/BuyACar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/BuyACar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/BuyACommercial.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/BuyACommercial.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/LoopOption.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/LoopOption.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/RepairACar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/RepairACar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/SellCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/SellCar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowAccountBalance.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowAccountBalance.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowCarsForSale.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowCarsForSale.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowOwnedCars.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowOwnedCars.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowPotentialClients.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowPotentialClients.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowRepairAndWashCost.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowRepairAndWashCost.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowRepairHistoryForAllCars.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowRepairHistoryForAllCars.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowTransactionsHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowTransactionsHistory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/Breaks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/Breaks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/CarPart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/CarPart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/Engine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/Engine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/SuspensionSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/SuspensionSystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/Transmission.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/Transmission.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/GameState/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/GameState/GameState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/GameState/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/GameState/Transaction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Mechanic/Adrian.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Mechanic/Adrian.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Mechanic/Janusz.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Mechanic/Janusz.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Mechanic/Marian.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Mechanic/Marian.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Mechanic/Mechanic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Mechanic/Mechanic.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +91,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -284,6 +342,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1611141110585" />
@@ -316,32 +375,77 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Januszex" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dudek.model.Client.car.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dudek.model.Client.car" />
+      <option name="MAIN_CLASS_NAME" value="com.dudek.model.Client.car.CarTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClientGeneratorTest.checkClientPropability" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarTests.checkIfCarFeeEquals2PercentCarValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Januszex" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ClientGeneratorTest" />
-      <option name="METHOD_NAME" value="checkClientPropability" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dudek.model.Client.car.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dudek.model.Client.car" />
+      <option name="MAIN_CLASS_NAME" value="com.dudek.model.Client.car.CarTests" />
+      <option name="METHOD_NAME" value="checkIfCarFeeEquals2PercentCarValue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestClass.shouldPrintCars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarTests.checkIfCarIsTransferredCorrectlyAfterBuy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Januszex" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestClass" />
-      <option name="METHOD_NAME" value="shouldPrintCars" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dudek.model.Client.car.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dudek.model.Client.car" />
+      <option name="MAIN_CLASS_NAME" value="com.dudek.model.Client.car.CarTests" />
+      <option name="METHOD_NAME" value="checkIfCarIsTransferredCorrectlyAfterBuy" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientGeneratorTests.checkIf10PercentOfTheClientsAreInterestedInBrokenCarsWith5PercentTolerance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Januszex" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dudek.model.Client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dudek.model.Client" />
+      <option name="MAIN_CLASS_NAME" value="com.dudek.model.Client.ClientGeneratorTests" />
+      <option name="METHOD_NAME" value="checkIf10PercentOfTheClientsAreInterestedInBrokenCarsWith5PercentTolerance" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -350,8 +454,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.ClientGeneratorTest.checkClientPropability" />
-        <item itemvalue="JUnit.TestClass.shouldPrintCars" />
+        <item itemvalue="JUnit.CarTests.checkIfCarFeeEquals2PercentCarValue" />
+        <item itemvalue="JUnit.CarTests" />
+        <item itemvalue="JUnit.CarTests.checkIfCarIsTransferredCorrectlyAfterBuy" />
+        <item itemvalue="JUnit.ClientGeneratorTests.checkIf10PercentOfTheClientsAreInterestedInBrokenCarsWith5PercentTolerance" />
       </list>
     </recent_temporary>
   </component>

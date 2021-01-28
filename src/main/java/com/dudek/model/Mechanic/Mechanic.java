@@ -9,10 +9,12 @@ import java.math.BigDecimal;
 
 public abstract class Mechanic {
 
+    private final String name;
     private final int successRate;
     private final BigDecimal mechanicSalary;
 
-    Mechanic(int successRate, BigDecimal mechanicSalary) {
+    Mechanic(String name, int successRate, BigDecimal mechanicSalary) {
+        this.name = name;
         this.successRate = successRate;
         this.mechanicSalary = mechanicSalary;
     }
@@ -49,4 +51,7 @@ public abstract class Mechanic {
         return price;
     }
 
+    public String getName() {
+        return name;
+    }
 }

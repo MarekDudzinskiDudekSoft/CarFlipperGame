@@ -7,13 +7,19 @@ import java.math.BigDecimal;
 
 public class Janusz extends Mechanic {
 
+    private final static String name = "Janusz";
+
     protected Janusz() {
-        super(100, BigDecimal.valueOf(600));
+        super(name,100, BigDecimal.valueOf(600));
     }
 
     @Override
     public BigDecimal repairCarPart(Car car, CarPart carPart) {
         carPart.repair(this);
         return calculateRepairCostWithSalary(car, carPart);
+    }
+
+    public String getName() {
+        return name;
     }
 }

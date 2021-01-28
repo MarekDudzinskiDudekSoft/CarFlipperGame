@@ -2,7 +2,6 @@ package com.dudek.model.Client;
 
 import com.dudek.menu.DataReader;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ClientBase {
@@ -11,7 +10,7 @@ public class ClientBase {
     private final List<Client> clientList;
 
     public ClientBase(ClientGenerator generator) {
-        clientList = new ArrayList<>(generator.generateClients(initialClientNumber));
+        clientList = generator.generateClients(initialClientNumber);
     }
 
     public void printClientList() {
