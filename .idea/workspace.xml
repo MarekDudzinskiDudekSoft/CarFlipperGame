@@ -4,40 +4,53 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77cb2015-737e-4fd6-a33e-faee6b36be82" name="Default Changelist" comment="Version [1.0] &#10;Added Print repair and washing cost feature.&#10;Marked as 1.0 version.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Client/ClientNameRandomizer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionDetails/TransactionCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionDetails/TransactionCash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionDetails/TransactionClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionDetails/TransactionCommercial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionDetails/TransactionMechanic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/dudek/model/Client/car/CarTests.java" afterDir="false" />
+    <list default="true" id="77cb2015-737e-4fd6-a33e-faee6b36be82" name="Default Changelist" comment="Fixed GitIgnore file">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/exceptions/DataExportException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/exceptions/DataImportException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/file/SerializableFileManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/SaveGameState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/GameState/CsvSaver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dudek/model/Commercial/Commercial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dudek/model/GameState/GameStateTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dudek/model/Player/PlayerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dudek/model/car/CarTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_5_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_5_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Januszex.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Januszex.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/main/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/GameApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/main/GameApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/Robocza.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/AllOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/AllOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/RepairACar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/RepairACar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/SellCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/SellCar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarParts/CarPart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarParts/CarPart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarWash/Washing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarWash/Washing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarWash/WashingPrices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarWash/WashingPrices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/NewCarsDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/NewCarsDatabase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Client/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Client/ClientBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Client/ClientBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Client/ClientNameRandomizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Client/ClientNameRandomizer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Commercial/Commercial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Commercial/Commercial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Commercial/InternetCommercial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Commercial/InternetCommercial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Commercial/NewsPaperCommercial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Commercial/NewsPaperCommercial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Commercial/CommercialFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Commercial/CommercialFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/GameState/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/GameState/GameState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Adrian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Adrian.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Janusz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Janusz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Marian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Marian.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Mechanic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Mechanic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/MechanicGarage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/MechanicGarage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Player/OwnedCars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Player/OwnedCars.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Player/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/Transaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dudek/model/Client/ClientTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dudek/model/Client/ClientTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/GameApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/GameApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/Robocza.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/Robocza.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionDetails/TransactionCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionDetails/TransactionCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionDetails/TransactionCash.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionDetails/TransactionClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionDetails/TransactionClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionDetails/TransactionCommercial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionDetails/TransactionCommercial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionDetails/TransactionMechanic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/TransactionDetails/TransactionMechanic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dudek/model/Client/car/CarTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/GameApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/Robocza.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/Menu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/MenuOptionReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/MenuOptionReader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/AllOptions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/AllOptions.class" afterDir="false" />
@@ -70,6 +83,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Januszex" />
@@ -155,6 +171,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/ShowAccountBalance.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dudek/model/Client/ClientBase.java" />
       </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="11" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -342,16 +365,19 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1611141110585" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -360,13 +386,16 @@
       <recent name="com.dudek.model.GameState" />
       <recent name="com.dudek" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.dudek.model.Client" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.dudek.model.Client" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.dudek.GameApp" />
+      <option name="MAIN_CLASS_NAME" value="com.dudek.main.GameApp" />
       <module name="Januszex" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
@@ -375,15 +404,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -399,6 +426,22 @@
       <option name="PACKAGE_NAME" value="com.dudek.model.Client.car" />
       <option name="MAIN_CLASS_NAME" value="com.dudek.model.Client.car.CarTests" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarTests.checkIfCarCommissionIsCalculatedWell" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Januszex" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dudek.model.Client.car.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dudek.model.Client.car" />
+      <option name="MAIN_CLASS_NAME" value="com.dudek.model.Client.car.CarTests" />
+      <option name="METHOD_NAME" value="checkIfCarCommissionIsCalculatedWell" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -435,29 +478,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClientGeneratorTests.checkIf10PercentOfTheClientsAreInterestedInBrokenCarsWith5PercentTolerance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Januszex" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dudek.model.Client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dudek.model.Client" />
-      <option name="MAIN_CLASS_NAME" value="com.dudek.model.Client.ClientGeneratorTests" />
-      <option name="METHOD_NAME" value="checkIf10PercentOfTheClientsAreInterestedInBrokenCarsWith5PercentTolerance" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.CarTests.checkIfCarCommissionIsCalculatedWell" />
         <item itemvalue="JUnit.CarTests.checkIfCarFeeEquals2PercentCarValue" />
         <item itemvalue="JUnit.CarTests" />
         <item itemvalue="JUnit.CarTests.checkIfCarIsTransferredCorrectlyAfterBuy" />
-        <item itemvalue="JUnit.ClientGeneratorTests.checkIf10PercentOfTheClientsAreInterestedInBrokenCarsWith5PercentTolerance" />
       </list>
     </recent_temporary>
   </component>
@@ -485,6 +512,15 @@
       <workItem from="1611573671509" duration="21323000" />
       <workItem from="1611654518757" duration="23750000" />
       <workItem from="1611739150569" duration="22120000" />
+      <workItem from="1611909207673" duration="1226000" />
+      <workItem from="1611911974111" duration="25000" />
+      <workItem from="1612268149267" duration="89000" />
+      <workItem from="1612268254834" duration="1221000" />
+      <workItem from="1612269501565" duration="797000" />
+      <workItem from="1612270368476" duration="1174000" />
+      <workItem from="1612284988406" duration="601000" />
+      <workItem from="1612291147110" duration="614000" />
+      <workItem from="1612335299013" duration="17974000" />
     </task>
     <task id="LOCAL-00001" summary="Separation of logic from Menu to optionReader">
       <created>1607881014028</created>
@@ -619,7 +655,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611765743896</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Version [1.2] &#10;Improved transaction printing. Added more information to transaction">
+      <created>1611863158067</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1611863158067</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Fixed GitIgnore file">
+      <created>1611863264955</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1611863264955</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -754,9 +804,22 @@
     <MESSAGE value="Added 2 carBrands in Client needs.&#10;Added Transaction feature.&#10;Added fee payment feature." />
     <MESSAGE value="Added repair history transaction" />
     <MESSAGE value="Version [1.0] &#10;Added Print repair and washing cost feature.&#10;Marked as 1.0 version." />
-    <option name="LAST_COMMIT_MESSAGE" value="Version [1.0] &#10;Added Print repair and washing cost feature.&#10;Marked as 1.0 version." />
+    <MESSAGE value="Version [1.2] &#10;Improved transaction printing. Added more information to transaction" />
+    <MESSAGE value="Fixed GitIgnore file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed GitIgnore file" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.dudek.model.Player.Player" memberName="ownedCars" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dudek/model/Car/WashingPrices.java">

@@ -4,9 +4,10 @@ import com.dudek.model.Mechanic.CanBreakAPart;
 import com.dudek.model.Mechanic.Mechanic;
 import com.dudek.model.Randomizer;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
-public abstract class CarPart {
+public abstract class CarPart implements Serializable {
 
     private final BigDecimal multiplier;
     private boolean isOk;

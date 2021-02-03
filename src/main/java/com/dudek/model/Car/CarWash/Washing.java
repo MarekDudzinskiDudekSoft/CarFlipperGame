@@ -1,9 +1,10 @@
 package com.dudek.model.Car.CarWash;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.concurrent.ThreadLocalRandom;
 
-final public class Washing {
+final public class Washing implements Serializable {
 
 
     private BigDecimal price;

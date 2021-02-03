@@ -5,11 +5,12 @@ import com.dudek.model.Client.Client;
 import com.dudek.model.Commercial.Commercial;
 import com.dudek.model.Mechanic.Mechanic;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TransactionContainer {
+public class TransactionContainer implements Serializable {
 
     private final List<Transaction> transactionList = new ArrayList<>();
 

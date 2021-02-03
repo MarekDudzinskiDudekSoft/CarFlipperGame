@@ -2,7 +2,10 @@ package com.dudek.model.Transaction.TransactionDetails;
 
 import com.dudek.model.Commercial.Commercial;
 
-public class TransactionCommercial {
+import java.io.Serializable;
+
+public class TransactionCommercial implements Serializable {
+
 
     private String type;
 

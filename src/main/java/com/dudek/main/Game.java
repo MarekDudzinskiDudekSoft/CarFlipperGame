@@ -1,14 +1,16 @@
-package com.dudek;
+package com.dudek.main;
 
+import com.dudek.file.SerializableFileManager;
+import com.dudek.menu.DataReader;
 import com.dudek.menu.Menu;
 import com.dudek.model.GameState.GameState;
 
 import java.math.BigDecimal;
 
-class Game {
+public class Game {
 
     private final Menu menu = new Menu();
-    public GameState state;
+    private GameState state;
 
     Game() {
         initialize();
@@ -19,7 +21,18 @@ class Game {
     }
 
     private void initialize() {
-        state = new GameState();
+        System.out.println("Nowa gra - 1 ");
+        System.out.println("Wczytaj gre - 2 ");
+
+        int option = DataReader.readInt();
+        switch (option) {
+            case 1:
+                state = new GameState();
+                break;
+            case 2:
+                state = SerializableFileManager.load();
+        }
+
     }
 
     private void welcomeMessage() {
@@ -46,4 +59,3 @@ class Game {
     }
 
 }
-

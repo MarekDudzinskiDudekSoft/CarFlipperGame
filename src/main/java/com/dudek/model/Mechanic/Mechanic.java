@@ -5,9 +5,10 @@ import com.dudek.model.Car.CarEnums.Segment;
 import com.dudek.model.Car.CarParts.CarPart;
 import com.dudek.model.Randomizer;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
-public abstract class Mechanic {
+public abstract class Mechanic implements Serializable {
 
     private final String name;
     private final int successRate;

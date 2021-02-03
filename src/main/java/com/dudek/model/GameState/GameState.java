@@ -1,5 +1,6 @@
 package com.dudek.model.GameState;
 
+import com.dudek.file.SerializableFileManager;
 import com.dudek.model.Car.Car;
 import com.dudek.model.Car.CarGenerator;
 import com.dudek.model.Car.CarParts.CarPart;
@@ -14,8 +15,9 @@ import com.dudek.model.Mechanic.MechanicGarage;
 import com.dudek.model.Player.Player;
 import com.dudek.model.Transaction.TransactionContainer;
 
+import java.io.Serializable;
 
-public class GameState {
+public class GameState implements Serializable {
 
     private final Player player;
     private final NewCarsDatabase newCarsDatabase;
@@ -79,7 +81,7 @@ public class GameState {
 
         if (potentialClient.canBuyCar(potentialCar) && potentialClient.isInterestedInThisCar(potentialCar)) {
             transferCarAfterSell(potentialCar);
-            transactions.addSellCarTransaction(potentialCar.getValueWithParts(), potentialCar, potentialClient, null, null);
+            transactions.addSellCarTransaction(potentialCar.calculateCarPrice15PercentHigher(), potentialCar, potentialClient, null, null);
             moveCounter++;
         }
     }
@@ -108,7 +110,7 @@ public class GameState {
 
     public void buyCommercial() {
         Commercial commercial = commercialFactory.chooseCommercial();
-        player.payForCommercial(commercial.getPrice());
+        player.payForCommercial(commercial);
         transactions.addBuyCommercialTransaction(commercial.getPrice(), null, null, null, commercial);
         moveCounter++;
         for (int i = 0; i < commercial.getClientsInterested(); i++) {
@@ -119,4 +121,9 @@ public class GameState {
     public void calculateTotalRepairAndWashingCost() {
         player.getOwnedCars().getOwnedCarList().forEach(Car::printRepairAndWashCost);
     }
+
+    public void saveGameState() {
+        SerializableFileManager.save(this);
+    }
+
 }

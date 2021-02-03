@@ -3,9 +3,10 @@ package com.dudek.model.Transaction.TransactionDetails;
 import com.dudek.model.Car.Car;
 import com.dudek.model.Car.CarEnums.Brand;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class TransactionCar {
+public class TransactionCar implements Serializable {
 
     private BigDecimal value;
     private Brand brand;

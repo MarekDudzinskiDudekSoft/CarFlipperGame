@@ -4,12 +4,13 @@ import com.dudek.model.Car.Car;
 import com.dudek.model.Car.CarEnums.Brand;
 import com.dudek.model.Randomizer;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.HashSet;
 import java.util.Set;
 
 
-public class Client {
+public class Client implements Serializable {
 
     private final BigDecimal cash;
     ClientNameRandomizer clientNameRandomizer = new ClientNameRandomizer();
@@ -58,7 +59,7 @@ public class Client {
     }
 
     public boolean canBuyCar(Car car) {
-        if (this.cash.compareTo(car.getValueWithParts()) >= 0) {
+        if (this.cash.compareTo(car.calculateCarPrice15PercentHigher()) >= 0) {
             return true;
         } else {
             System.err.println("Niewystarczajace środki na zakup auta! ");
@@ -102,7 +103,7 @@ public class Client {
 
         public Client getNewRandomClient() {
             Client client = new Client(
-                    Randomizer.createRandomDecimalFromRange(450, 600).multiply(BigDecimal.valueOf(100)),
+                    Randomizer.createRandomDecimalFromRange(450, 650).multiply(BigDecimal.valueOf(100)),
                     Randomizer.createBooleanWithTrueProbability(INTERESTED_IN_BROKEN_CARS_PROBABILITY),
                     Randomizer.createBooleanWithTrueProbability(INTERESTED_IN_DELIVERY_CARS_PROBABILITY)
             );

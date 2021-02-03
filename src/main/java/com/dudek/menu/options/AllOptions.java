@@ -23,6 +23,7 @@ public class AllOptions {
         ShowRepairHistoryForAllCars showRepairHistoryForAllCars = new ShowRepairHistoryForAllCars();
         ShowRepairAndWashCost showRepairAndWashCost = new ShowRepairAndWashCost();
         ShowMoveCounter showMoveCounter = new ShowMoveCounter();
+        SaveGameState saveGameState = new SaveGameState();
 
         options.put(showCarsForSale.getNumber(), showCarsForSale);
         options.put(buyACar.getNumber(), buyACar);
@@ -36,6 +37,7 @@ public class AllOptions {
         options.put(showRepairHistoryForAllCars.getNumber(), showRepairHistoryForAllCars);
         options.put(showRepairAndWashCost.getNumber(), showRepairAndWashCost);
         options.put(showMoveCounter.getNumber(), showMoveCounter);
+        options.put(saveGameState.getNumber(), saveGameState);
     }
 
     public void printOptions() {
@@ -48,7 +50,7 @@ public class AllOptions {
         }
     }
 
-    public int getSize(){
+    public int getSize() {
         return options.size();
     }
 }

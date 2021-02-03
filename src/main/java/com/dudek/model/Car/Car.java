@@ -8,13 +8,15 @@ import com.dudek.model.Car.CarParts.*;
 import com.dudek.model.Car.CarWash.Washing;
 import com.dudek.model.Randomizer;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 
-public class Car {
+public class Car implements Serializable {
 
     private final BigDecimal value;
     private final Brand brand;
@@ -30,6 +32,7 @@ public class Car {
     private final Transmission transmission;
     private final CarPartBody carBody;
     private final List<CarPart> repairedPartsList = new ArrayList<>();
+    private final static double TRADER_COMMISSION = 1.15;
 
     public Brand getBrand() {
         return brand;
@@ -117,10 +120,7 @@ public class Car {
     }
 
     public List<CarPart> getBrokenPartsList() {
-        List<CarPart> brokenParts = new ArrayList<>();
-        getPartsList().stream().filter(e -> !e.isOk()).forEach(brokenParts::add);
-
-        return brokenParts;
+        return getPartsList().stream().filter(e -> !e.isOk()).collect(Collectors.toList());
     }
 
     public List<CarPart> getRepairedPartsList() {
@@ -174,6 +174,10 @@ public class Car {
         }
 
         return price;
+    }
+
+    public BigDecimal calculateCarPrice15PercentHigher() {
+        return this.getValueWithParts().multiply(BigDecimal.valueOf(TRADER_COMMISSION));
     }
 
     @Override

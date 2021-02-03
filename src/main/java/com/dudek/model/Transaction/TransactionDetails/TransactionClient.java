@@ -2,7 +2,9 @@ package com.dudek.model.Transaction.TransactionDetails;
 
 import com.dudek.model.Client.Client;
 
-public class TransactionClient {
+import java.io.Serializable;
+
+public class TransactionClient implements Serializable {
 
     private  String firstName;
     private  String lastName;

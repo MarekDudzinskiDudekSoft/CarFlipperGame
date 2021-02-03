@@ -4,10 +4,11 @@ import com.dudek.menu.DataReader;
 import com.dudek.model.Car.Car;
 import com.dudek.model.Car.CarView;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class OwnedCars {
+public class OwnedCars implements Serializable {
 
     private final List<Car> ownedCarList;
 
@@ -15,11 +16,11 @@ public class OwnedCars {
         this.ownedCarList = new ArrayList<>();
     }
 
-    public void buyACar(Car car) {
+    public void addCar(Car car) {
         ownedCarList.add(car);
     }
 
-    public void removeACar(Car car) {
+    public void removeCar(Car car) {
         ownedCarList.remove(car);
     }
 
@@ -34,9 +35,9 @@ public class OwnedCars {
         return new ArrayList<>(ownedCarList);
     }
 
-    public List<Car> getBrokenCars(){
+    public List<Car> getBrokenCars() {
         List<Car> brokenCars = new ArrayList<>();
-        getOwnedCarList().stream().filter(e-> !e.isNotBroken()).forEach(brokenCars::add);
+        getOwnedCarList().stream().filter(e -> !e.isNotBroken()).forEach(brokenCars::add);
         return brokenCars;
     }
 
@@ -50,8 +51,9 @@ public class OwnedCars {
         return getOwnedCarList().get(chosenOption);
     }
 
-    public void printRepairedParts(){
+    public void printRepairedParts() {
         getOwnedCarList().forEach(Car::printRepairedCarParts);
     }
+
 
 }

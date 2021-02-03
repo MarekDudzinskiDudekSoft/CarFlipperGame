@@ -9,9 +9,10 @@ import com.dudek.model.Transaction.TransactionDetails.TransactionClient;
 import com.dudek.model.Transaction.TransactionDetails.TransactionCommercial;
 import com.dudek.model.Transaction.TransactionDetails.TransactionMechanic;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class Transaction {
+public class Transaction implements Serializable {
 
     public static final String ANSI_RESET = "\u001B[0m";
     public static final String ANSI_BLACK = "\u001B[30m";

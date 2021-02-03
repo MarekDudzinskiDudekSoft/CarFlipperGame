@@ -2,10 +2,11 @@ package com.dudek.model.Commercial;
 
 import com.dudek.menu.DataReader;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CommercialFactory {
+public class CommercialFactory implements Serializable {
 
     private final List<Commercial> commercialList = new ArrayList<>();
 

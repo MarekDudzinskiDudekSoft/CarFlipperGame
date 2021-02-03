@@ -1,14 +1,15 @@
 package com.dudek.model.Commercial;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
-public abstract class Commercial {
+public abstract class Commercial implements Serializable {
 
     private final BigDecimal price;
     private final int clientsInterested;
-    private String name;
+    private final String name;
 
-    public Commercial(String name, BigDecimal price, int clientsInterested) {
+    protected Commercial(String name, BigDecimal price, int clientsInterested) {
         this.price = price;
         this.name = name;
         this.clientsInterested = clientsInterested;

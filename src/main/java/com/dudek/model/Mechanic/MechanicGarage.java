@@ -2,10 +2,11 @@ package com.dudek.model.Mechanic;
 
 import com.dudek.menu.DataReader;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MechanicGarage {
+public class MechanicGarage implements Serializable {
 
     private final List<Mechanic> mechanicList = new ArrayList<>();
 

@@ -2,9 +2,10 @@ package com.dudek.model.Car;
 
 import com.dudek.menu.DataReader;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class NewCarsDatabase {
+public class NewCarsDatabase implements Serializable {
 
     private final static int initialCarsNumber = 20;
     private final List<Car> carsList;

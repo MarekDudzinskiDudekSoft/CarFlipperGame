@@ -2,10 +2,11 @@ package com.dudek.model.Client;
 
 import com.dudek.model.Randomizer;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ClientNameRandomizer {
+public class ClientNameRandomizer implements Serializable {
 
     private final List<String> firstName = new ArrayList<>();
     private final List<String> lastName = new ArrayList<>();

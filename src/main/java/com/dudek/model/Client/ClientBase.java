@@ -2,9 +2,10 @@ package com.dudek.model.Client;
 
 import com.dudek.menu.DataReader;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class ClientBase {
+public class ClientBase implements Serializable {
 
     private final static int initialClientNumber = 5;
     private final List<Client> clientList;

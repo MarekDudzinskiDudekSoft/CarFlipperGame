@@ -12,7 +12,6 @@ final class SellCar extends LoopOption {
         System.out.println("Wybrales opcje: Sprzedaj samochod");
         boolean hasAnyCar = state.getPlayer().getOwnedCars().isEmpty();
         if (hasAnyCar) {
-            System.err.println("Nie masz aut na sprzedaz!");
             return state;
         } else
             state.sellACar();
