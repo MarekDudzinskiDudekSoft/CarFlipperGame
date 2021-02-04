@@ -5,12 +5,14 @@ import com.dudek.model.Car.Car;
 import com.dudek.model.Car.CarView;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
 public class OwnedCars implements Serializable {
 
     private final List<Car> ownedCarList;
+    private final static double TRADER_COMMISSION = 1.15;
 
     public OwnedCars() {
         this.ownedCarList = new ArrayList<>();
@@ -55,5 +57,8 @@ public class OwnedCars implements Serializable {
         getOwnedCarList().forEach(Car::printRepairedCarParts);
     }
 
+    public BigDecimal calculateCarPrice15PercentHigher(Car car) {
+        return car.getValueWithParts().multiply(BigDecimal.valueOf(TRADER_COMMISSION));
+    }
 
 }

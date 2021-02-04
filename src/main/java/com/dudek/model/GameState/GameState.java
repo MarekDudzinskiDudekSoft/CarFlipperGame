@@ -16,6 +16,7 @@ import com.dudek.model.Player.Player;
 import com.dudek.model.Transaction.TransactionContainer;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 public class GameState implements Serializable {
 
@@ -77,19 +78,15 @@ public class GameState implements Serializable {
 
     public void sellACar() {
         Car potentialCar = player.getOwnedCars().getCarFromBase();
+        BigDecimal sellingPrice = player.getOwnedCars().calculateCarPrice15PercentHigher(potentialCar);
         Client potentialClient = clients.getClientFromBase();
 
-        if (potentialClient.canBuyCar(potentialCar) && potentialClient.isInterestedInThisCar(potentialCar)) {
-            transferCarAfterSell(potentialCar);
-            transactions.addSellCarTransaction(potentialCar.calculateCarPrice15PercentHigher(), potentialCar, potentialClient, null, null);
+        if (potentialClient.canAfford(sellingPrice) && potentialClient.isInterestedInThisCar(potentialCar)) {
+            player.sellACar(potentialCar, potentialClient);
+            clients.attractNewClients(2);
+            transactions.addSellCarTransaction(sellingPrice, potentialCar, potentialClient, null, null);
             moveCounter++;
         }
-    }
-
-    private void transferCarAfterSell(Car potentialCar) {
-        player.sellACar(potentialCar);
-        clients.addClientToBase();
-        clients.addClientToBase();
     }
 
     public void repairCar() {
@@ -114,7 +111,7 @@ public class GameState implements Serializable {
         transactions.addBuyCommercialTransaction(commercial.getPrice(), null, null, null, commercial);
         moveCounter++;
         for (int i = 0; i < commercial.getClientsInterested(); i++) {
-            clients.addClientToBase();
+            clients.attractNewClients(commercial.getClientsInterested());
         }
     }
 

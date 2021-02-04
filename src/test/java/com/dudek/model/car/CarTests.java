@@ -1,7 +1,10 @@
 package com.dudek.model.car;
 
+import com.dudek.exceptions.IllegalStateOfCarPartException;
 import com.dudek.model.Car.Car;
 import com.dudek.model.Car.CarFee;
+import com.dudek.model.Car.CarParts.Breaks;
+import com.dudek.model.Mechanic.Janusz;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -9,6 +12,8 @@ import java.math.BigDecimal;
 
 public class CarTests {
     Car car = new Car();
+    Janusz janusz = new Janusz();
+    Breaks breaks = new Breaks();
 
     @Test
     public void checkIfCarFeeEquals2PercentCarValue() {
@@ -18,25 +23,22 @@ public class CarTests {
     }
 
     @Test
-    public void checkIfCarCommissionIsCalculatedWell() {
-        Car car = new Car();
-        System.out.println(car);
-
-
-        BigDecimal price = car.getValueWithParts();
-        System.out.println("Cena auta: " + price);
-
-        BigDecimal profitablePrice = car.calculateCarPrice15PercentHigher();
-        System.out.println("Cena z zyskiem: " + profitablePrice);
-
-        BigDecimal profit = price.multiply(BigDecimal.valueOf(0.15));
-        System.out.println("Zysk: " + profit);
-
-        Assertions.assertEquals((price.add(profit)), profitablePrice);
-
+    public void checkIfYouCanAddBrokenPartToRepairedList() {
+        Assertions.assertThrows(IllegalStateOfCarPartException.class, () -> car.addRepairedPartToList(breaks));
     }
 
+    @Test
+    public void checkIfRepairedPartsAreImmutable() {
+        //given
+        janusz.repairCarPart(car, breaks);
+        car.addRepairedPartToList(breaks);
 
+        //when
+        car.getRepairedPartsList().clear();
+
+        //then
+        Assertions.assertFalse(car.getRepairedPartsList().isEmpty());
+    }
 
 
 }

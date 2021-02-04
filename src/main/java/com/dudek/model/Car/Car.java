@@ -1,5 +1,6 @@
 package com.dudek.model.Car;
 
+import com.dudek.exceptions.IllegalStateOfCarPartException;
 import com.dudek.menu.DataReader;
 import com.dudek.model.Car.CarEnums.Brand;
 import com.dudek.model.Car.CarEnums.Color;
@@ -26,13 +27,11 @@ public class Car implements Serializable {
     private final Washing isWashed;
 
     private final Breaks breaks;
-    private final DecimalFormat df = new DecimalFormat("#.000");
     private final Engine engine;
     private final SuspensionSystem suspensionSystem;
     private final Transmission transmission;
     private final CarPartBody carBody;
     private final List<CarPart> repairedPartsList = new ArrayList<>();
-    private final static double TRADER_COMMISSION = 1.15;
 
     public Brand getBrand() {
         return brand;
@@ -124,11 +123,14 @@ public class Car implements Serializable {
     }
 
     public List<CarPart> getRepairedPartsList() {
-        return  new ArrayList<>(repairedPartsList);
+        return new ArrayList<>(repairedPartsList);
     }
 
     public void addRepairedPartToList(CarPart carPart) {
-        getRepairedPartsList().add(carPart);
+        if (carPart.isOk())
+            repairedPartsList.add(carPart);
+        else
+            throw new IllegalStateOfCarPartException("Nie możesz dodać uszkodzonej części do listy naprawionych! ");
     }
 
     public void printRepairedCarParts() {
@@ -154,12 +156,12 @@ public class Car implements Serializable {
         BigDecimal totalPrice = new BigDecimal(0);
         List<CarPart> parts = getBrokenPartsList();
         for (CarPart part : parts) {
-            totalPrice = totalPrice.add(getPartPrice(part));
+            totalPrice = totalPrice.add(calculateCartPartPrice(part));
         }
-        System.out.println("Calkowity koszt wynosi: " + totalPrice.add(getIsWashed().getPrice()) + " z czego naprawa wynosi: " +totalPrice + " a umycie: " + getIsWashed().getPrice());
+        System.out.println("Calkowity koszt wynosi: " + totalPrice.add(getIsWashed().getPrice()) + " z czego naprawa wynosi: " + totalPrice + " a umycie: " + getIsWashed().getPrice());
     }
 
-    private BigDecimal getPartPrice(CarPart carPart) {
+    private BigDecimal calculateCartPartPrice(CarPart carPart) {
         BigDecimal price = new BigDecimal(0);
         if (this.getSegment().equals(Segment.PREMIUM)) {
             price = carPart.getBaseValue().multiply(BigDecimal.valueOf(2));
@@ -176,12 +178,9 @@ public class Car implements Serializable {
         return price;
     }
 
-    public BigDecimal calculateCarPrice15PercentHigher() {
-        return this.getValueWithParts().multiply(BigDecimal.valueOf(TRADER_COMMISSION));
-    }
-
     @Override
     public String toString() {
+        final DecimalFormat df = new DecimalFormat("#.000");
         return "| Cena: " + getValueWithParts() +
                 "| Marka: " + brand.getDescription() +
                 "| Przebieg: " + df.format(getMileage()) +

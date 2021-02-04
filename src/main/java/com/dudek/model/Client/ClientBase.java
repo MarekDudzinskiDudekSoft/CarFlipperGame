@@ -21,9 +21,15 @@ public class ClientBase implements Serializable {
         }
     }
 
-    public void addClientToBase() {
+    private void addClientToBase() {
         Client client = new Client.ClientRandomizer().getNewRandomClient();
         clientList.add(client);
+    }
+
+    public void attractNewClients(int howMany) {
+        for (int i = 0; i < howMany; i++) {
+            addClientToBase();
+        }
     }
 
     public Client getClientFromBase() {

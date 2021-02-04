@@ -2,6 +2,7 @@ package com.dudek.model.Player;
 
 import com.dudek.model.Car.Car;
 import com.dudek.model.Car.CarFee;
+import com.dudek.model.Client.Client;
 import com.dudek.model.Commercial.Commercial;
 
 import java.io.Serializable;
@@ -23,7 +24,7 @@ public class Player implements Serializable {
         return cash;
     }
 
-    public  BigDecimal getInitialCash() {
+    public BigDecimal getInitialCash() {
         return initialCash;
     }
 
@@ -40,7 +41,8 @@ public class Player implements Serializable {
                 " za " + car.getValueWithParts() + " Zaplacono podatek w wysokosci: " + payFee(car));
     }
 
-    public void sellACar(Car car) {
+    public void sellACar(Car car, Client client) {
+        client.payForCar(car);
         cash = receiveCashAndPayFee(car);
         ownedCars.removeCar(car);
 
@@ -72,12 +74,12 @@ public class Player implements Serializable {
         return carFee.calculateCarFee(car);
     }
 
-    private BigDecimal payForCarWithFee(Car car){
+    private BigDecimal payForCarWithFee(Car car) {
         return cash.subtract(car.getValueWithParts()).subtract(payFee(car));
     }
 
-    private BigDecimal receiveCashAndPayFee(Car car){
-        return cash.add(car.calculateCarPrice15PercentHigher()).subtract(payFee(car));
+    private BigDecimal receiveCashAndPayFee(Car car) {
+        return cash.add(ownedCars.calculateCarPrice15PercentHigher(car)).subtract(payFee(car));
     }
 
 }

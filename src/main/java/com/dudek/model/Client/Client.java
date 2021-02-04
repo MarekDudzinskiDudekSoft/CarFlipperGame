@@ -12,8 +12,8 @@ import java.util.Set;
 
 public class Client implements Serializable {
 
-    private final BigDecimal cash;
-    ClientNameRandomizer clientNameRandomizer = new ClientNameRandomizer();
+    private final ClientNameRandomizer clientNameRandomizer = new ClientNameRandomizer();
+    private BigDecimal cash;
     private final String firstName = clientNameRandomizer.randomizeFirstName();
     private final String lastName = clientNameRandomizer.randomizeLastName();
     private final Set<Brand> wantedBrands = new HashSet<>(2);
@@ -21,7 +21,7 @@ public class Client implements Serializable {
     private final boolean isInterestedInDeliveryCars;
 
 
-    private Client(BigDecimal cash, boolean isInterestedInBrokenCars, boolean isInterestedInDeliveryCars) {
+    Client(BigDecimal cash, boolean isInterestedInBrokenCars, boolean isInterestedInDeliveryCars) {
         this.cash = cash;
         this.isInterestedInBrokenCars = isInterestedInBrokenCars;
         this.isInterestedInDeliveryCars = isInterestedInDeliveryCars;
@@ -58,12 +58,18 @@ public class Client implements Serializable {
                 ", Zainteresowany autami dostawczymi: " + convertBooleanToString(isInterestedInDeliveryCars());
     }
 
-    public boolean canBuyCar(Car car) {
-        if (this.cash.compareTo(car.calculateCarPrice15PercentHigher()) >= 0) {
+    public boolean canAfford(BigDecimal decimal) {
+        if (this.cash.compareTo(decimal) >= 0) {
             return true;
         } else {
             System.err.println("Niewystarczajace środki na zakup auta! ");
             return false;
+        }
+    }
+
+    public void payForCar(Car car){
+        if(this.canAfford(car.getValueWithParts().multiply(BigDecimal.valueOf(1.15)))) {
+            this.cash = cash.subtract(car.getValueWithParts().multiply(BigDecimal.valueOf(1.15)));
         }
     }
 

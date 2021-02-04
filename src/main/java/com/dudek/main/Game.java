@@ -21,6 +21,7 @@ public class Game {
     }
 
     private void initialize() {
+        welcomeMessage();
         System.out.println("Nowa gra - 1 ");
         System.out.println("Wczytaj gre - 2 ");
 
@@ -40,7 +41,6 @@ public class Game {
     }
 
     private void gameLoop() {
-        welcomeMessage();
         int option;
         do {
             menu.printOptions();

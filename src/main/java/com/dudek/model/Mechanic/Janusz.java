@@ -9,7 +9,7 @@ public class Janusz extends Mechanic {
 
     private final static String name = "Janusz";
 
-    protected Janusz() {
+    public Janusz() {
         super(name,100, BigDecimal.valueOf(600));
     }
 
