@@ -12,8 +12,8 @@ import java.math.BigDecimal;
 
 public class CarTests {
     Car car = new Car();
-    Janusz janusz = new Janusz();
     Breaks breaks = new Breaks();
+    Janusz janusz = new Janusz();
 
     @Test
     public void checkIfCarFeeEquals2PercentCarValue() {
@@ -24,7 +24,7 @@ public class CarTests {
 
     @Test
     public void checkIfYouCanAddBrokenPartToRepairedList() {
-        Assertions.assertThrows(IllegalStateOfCarPartException.class, () -> car.addRepairedPartToList(breaks));
+        Assertions.assertThrows(IllegalStateOfCarPartException.class, () -> car.addRepairedPartToList(breaks));     //test passes when carPart isOk is prefabricated to false
     }
 
     @Test
@@ -32,13 +32,21 @@ public class CarTests {
         //given
         janusz.repairCarPart(car, breaks);
         car.addRepairedPartToList(breaks);
-
         //when
         car.getRepairedPartsList().clear();
-
         //then
         Assertions.assertFalse(car.getRepairedPartsList().isEmpty());
     }
+
+    @Test
+    public void checkIfBrokenPartsAreImmutable() {
+        int sizeBefore = car.getBrokenPartsList().size();
+        car.getBrokenPartsList().clear();
+        int sizeAfter = car.getBrokenPartsList().size();
+        Assertions.assertEquals(sizeAfter, sizeBefore);
+    }
+
+
 
 
 }

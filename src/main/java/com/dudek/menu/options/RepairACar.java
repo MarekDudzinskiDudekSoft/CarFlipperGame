@@ -12,9 +12,12 @@ final class RepairACar extends LoopOption {
     @Override
     GameState execute(GameState state) {
         System.out.println("Wybrales opcje: Napraw auto");
-        if (!state.getPlayer().getOwnedCars().getBrokenCars().isEmpty()) {
+        if(!state.getPlayer().getOwnedCars().getBrokenCars().isEmpty())
             state.repairCar();
+        else{
+            System.err.println("Nie posiadasz uszkodzonych aut!");
         }
         return state;
+
     }
 }

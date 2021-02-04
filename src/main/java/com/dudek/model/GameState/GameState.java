@@ -60,20 +60,16 @@ public class GameState implements Serializable {
     }
 
     public void buyACar() {
-        Car boughtCar = newCarsDatabase.getACar();
-        if (player.canAffordACar(boughtCar)) {
-            transferCarAfterBuy(boughtCar);
-            transactions.addBuyCarTransaction(boughtCar.getValueWithParts(), boughtCar, null, null, null);
-            moveCounter++;
-        } else {
-            System.err.println("Niewystarczajaca liczba środków aby kupić to auto!");
-        }
+        Car boughtCar = newCarsDatabase.getChosenCar();
+        finalizePurchase(boughtCar);
     }
 
-    private void transferCarAfterBuy(Car boughtCar) {
+    private void finalizePurchase(Car boughtCar) {
         player.buyACar(boughtCar);
         newCarsDatabase.sellACar(boughtCar);
         newCarsDatabase.generateNewCar();
+        transactions.addBuyCarTransaction(boughtCar.getValueWithParts(), boughtCar, null, null, null);
+        moveCounter++;
     }
 
     public void sellACar() {
@@ -82,19 +78,23 @@ public class GameState implements Serializable {
         Client potentialClient = clients.getClientFromBase();
 
         if (potentialClient.canAfford(sellingPrice) && potentialClient.isInterestedInThisCar(potentialCar)) {
-            player.sellACar(potentialCar, potentialClient);
-            clients.attractNewClients(2);
-            transactions.addSellCarTransaction(sellingPrice, potentialCar, potentialClient, null, null);
-            moveCounter++;
+            finalizeSale(potentialCar, sellingPrice, potentialClient);
         }
     }
 
+    private void finalizeSale(Car potentialCar, BigDecimal sellingPrice, Client potentialClient) {
+        player.sellACar(potentialCar, potentialClient);
+        clients.attractNewClients(2);
+        transactions.addSellCarTransaction(sellingPrice, potentialCar, potentialClient, null, null);
+        moveCounter++;
+    }
+
     public void repairCar() {
-        Car brokenCar = player.getOwnedCars().getCarFromBase();
+        Car brokenCar = player.getOwnedCars().getBrokenCarFromBase();
         CarPart brokenPart = brokenCar.choosePartToRepair();
         Mechanic chosenMechanic = mechanicGarage.chooseMechanic();
 
-        if (player.getCash().compareTo(chosenMechanic.calculateRepairCostWithSalary(brokenCar, brokenPart)) >= 0) {
+        if (player.canAfford(chosenMechanic.calculateRepairCostWithSalary(brokenCar, brokenPart))) {
             player.payForRepair(chosenMechanic.repairCarPart(brokenCar, brokenPart));
             brokenCar.addRepairedPartToList(brokenPart);
         } else {
@@ -103,6 +103,7 @@ public class GameState implements Serializable {
         transactions.addCarRepairTransaction(chosenMechanic.calculateRepairCostWithSalary(brokenCar, brokenPart), brokenCar, null, chosenMechanic, null);
         moveCounter++;
         System.out.println("Naprawa przeszla pomyślnie");
+
     }
 
     public void buyCommercial() {

@@ -50,10 +50,10 @@ public class Transaction implements Serializable {
                 return (uniqueID + " Typ tranzakcji " + type + " Sprzedane auto: " + car + " klient: " + client + " kwota: " +ANSI_GREEN+ cashAmount+ANSI_RESET);
 
             case CAR_REPAIR:
-                return (uniqueID + " Typ tranzakcji " + type + "Naprawione auto: " + car + mechanic + " kwota: " +ANSI_RED+ cashAmount+ANSI_RESET);
+                return (uniqueID + " Typ tranzakcji " + type + "Naprawione auto: " + car + " " + mechanic + " kwota: " +ANSI_RED+ cashAmount+ANSI_RESET);
 
             case COMMERCIAL_PURCHASE:
-                return (uniqueID + " Typ tranzakcji " + String.format("%8s",type)  + commercial + " kwota: " +ANSI_RED+ cashAmount+ANSI_RESET);
+                return (uniqueID + " Typ tranzakcji " + String.format("%8s",type)  + " " + commercial + " kwota: " +ANSI_RED+ cashAmount+ANSI_RESET);
 
         }
         return "";

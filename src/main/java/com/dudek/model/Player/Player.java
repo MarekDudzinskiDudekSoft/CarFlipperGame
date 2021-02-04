@@ -29,16 +29,20 @@ public class Player implements Serializable {
     }
 
     public OwnedCars getOwnedCars() {
-        if (ownedCars.isEmpty())
+        if (ownedCars.isOwnedCarsEmpty())
             System.err.println("Nie posiadasz zadnych samochodów!");
         return ownedCars;
     }
 
     public void buyACar(Car car) {
-        cash = payForCarWithFee(car);
-        ownedCars.addCar(car);
-        System.out.println("Zakupiono samochod: " + car.getBrand() + " " + car.getColor().getDescription() +
-                " za " + car.getValueWithParts() + " Zaplacono podatek w wysokosci: " + payFee(car));
+        if (this.canAfford(car.getValueWithParts())) {
+            cash = payForCarWithFee(car);
+            ownedCars.addCar(car);
+            System.out.println("Zakupiono samochod: " + car.getBrand() + " " + car.getColor().getDescription() +
+                    " za " + car.getValueWithParts() + " Zaplacono podatek w wysokosci: " + payFee(car));
+        } else {
+            System.err.println("Niewystarczajaca liczba środków aby kupić to auto!");
+        }
     }
 
     public void sellACar(Car car, Client client) {
@@ -52,17 +56,13 @@ public class Player implements Serializable {
     }
 
     public void printOwnedCars() {
-        if (ownedCars.isEmpty())
+        if (ownedCars.isOwnedCarsEmpty())
             System.err.println("Nie posiadasz zadnych samochodów!");
         ownedCars.printOwnedCars();
     }
 
-    public boolean canAffordACar(Car car) {
-        return (this.getCash().compareTo(car.getValueWithParts().add(payFee(car))) >= 0);
-    }
-
-    public void payForRepair(BigDecimal price) {
-        this.cash = getCash().subtract(price);
+    public boolean canAfford(BigDecimal price) {
+        return (this.getCash().compareTo(price) >= 0);
     }
 
     public void payForCommercial(Commercial commercial) {
@@ -82,4 +82,7 @@ public class Player implements Serializable {
         return cash.add(ownedCars.calculateCarPrice15PercentHigher(car)).subtract(payFee(car));
     }
 
+    public void payForRepair(BigDecimal price) {            //czy tak moze byc?
+        this.cash = cash.subtract(price);
+    }
 }

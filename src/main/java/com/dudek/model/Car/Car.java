@@ -32,6 +32,7 @@ public class Car implements Serializable {
     private final Transmission transmission;
     private final CarPartBody carBody;
     private final List<CarPart> repairedPartsList = new ArrayList<>();
+    private final DecimalFormat df = new DecimalFormat("#.000");
 
     public Brand getBrand() {
         return brand;
@@ -137,7 +138,7 @@ public class Car implements Serializable {
         if (getRepairedPartsList().isEmpty()) {
             System.err.println("W aucie nie byly dokonywane zadne naprawy! ");
         } else {
-            System.out.println("W aucie: " + this.getBrand() + " " + this.color + " " + this.mileage + "bylo naprawiane: ");
+            System.out.println("W aucie: " + this.getBrand() + " " + this.color + " " + df.format(getMileage()) + " bylo naprawiane: ");
             for (CarPart carPart : getRepairedPartsList()) {
                 System.out.println(carPart.getName());
             }
@@ -161,8 +162,9 @@ public class Car implements Serializable {
         System.out.println("Calkowity koszt wynosi: " + totalPrice.add(getIsWashed().getPrice()) + " z czego naprawa wynosi: " + totalPrice + " a umycie: " + getIsWashed().getPrice());
     }
 
-    private BigDecimal calculateCartPartPrice(CarPart carPart) {
+    public BigDecimal calculateCartPartPrice(CarPart carPart) {
         BigDecimal price = new BigDecimal(0);
+
         if (this.getSegment().equals(Segment.PREMIUM)) {
             price = carPart.getBaseValue().multiply(BigDecimal.valueOf(2));
         }
@@ -180,7 +182,6 @@ public class Car implements Serializable {
 
     @Override
     public String toString() {
-        final DecimalFormat df = new DecimalFormat("#.000");
         return "| Cena: " + getValueWithParts() +
                 "| Marka: " + brand.getDescription() +
                 "| Przebieg: " + df.format(getMileage()) +

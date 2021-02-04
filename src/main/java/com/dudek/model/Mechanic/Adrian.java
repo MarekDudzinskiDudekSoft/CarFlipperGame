@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 
 public class Adrian extends Mechanic implements CanBreakAPart {
 
-    private final static int criticalErrorChance = 2;
+    private final static int CRITICAL_ERROR_CHANCE = 3;
     private final static String name = "Adrian";
 
     protected Adrian() {
@@ -21,8 +21,10 @@ public class Adrian extends Mechanic implements CanBreakAPart {
         carPart.breakAPart(this);
 
         if (!carPart.isOk()) {
+            System.err.println("Adrian nie umie naprawic auta, musial wezwac Janusza, bedzie to dodatkowo kosztowac!");
             Janusz janusz = new Janusz();
-            return janusz.calculateRepairCostWithSalary(car, carPart).add(getMechanicSalary());
+            return janusz.repairCarPart(car, carPart);
+
         }
         return calculateRepairCostWithSalary(car, carPart);
     }
@@ -33,7 +35,7 @@ public class Adrian extends Mechanic implements CanBreakAPart {
 
     @Override
     public boolean didPartBroke() {
-        return Randomizer.createBooleanWithTrueProbability(criticalErrorChance);
+        return Randomizer.createBooleanWithTrueProbability(CRITICAL_ERROR_CHANCE);
     }
 }
 

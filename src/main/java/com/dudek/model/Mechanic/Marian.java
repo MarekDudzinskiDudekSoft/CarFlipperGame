@@ -20,7 +20,8 @@ public class Marian extends Mechanic {
         if (!carPart.isOk()) {
             System.err.println("Marian nie umie naprawic auta, musial wezwac Janusza, bedzie to dodatkowo kosztowac!");
             Janusz janusz = new Janusz();
-            return janusz.repairCarPart(car, carPart).add(getMechanicSalary());
+            return janusz.repairCarPart(car, carPart);
+
         }
         return calculateRepairCostWithSalary(car, carPart);
     }

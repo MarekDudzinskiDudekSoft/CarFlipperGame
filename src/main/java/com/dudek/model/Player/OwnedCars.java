@@ -8,6 +8,7 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class OwnedCars implements Serializable {
 
@@ -38,15 +39,18 @@ public class OwnedCars implements Serializable {
     }
 
     public List<Car> getBrokenCars() {
-        List<Car> brokenCars = new ArrayList<>();
-        getOwnedCarList().stream().filter(e -> !e.isNotBroken()).forEach(brokenCars::add);
-        return brokenCars;
+        return getOwnedCarList().stream().filter(e -> !e.isNotBroken()).collect(Collectors.toList());
     }
 
-    public boolean isEmpty() {
+    public boolean isOwnedCarsEmpty() {
         return getOwnedCarList().isEmpty();
     }
 
+    public Car getBrokenCarFromBase() {
+        System.out.println("Podaj indeks auta: ");
+        int chosenOption = DataReader.readOptionFromRange(1, getBrokenCars().size());
+        return getBrokenCars().get(chosenOption);
+    }
     public Car getCarFromBase() {
         System.out.println("Podaj indeks auta: ");
         int chosenOption = DataReader.readOptionFromRange(1, getOwnedCarList().size());

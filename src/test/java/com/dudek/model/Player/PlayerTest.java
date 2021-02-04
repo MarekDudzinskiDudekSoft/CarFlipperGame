@@ -9,7 +9,6 @@ import java.math.BigDecimal;
 public class PlayerTest {
 
     Player player = new Player();
-    Car car = new Car();
 
 
     @Test
@@ -32,6 +31,9 @@ public class PlayerTest {
         Assertions.assertEquals((price.add(profit)), profitablePrice);
 
     }
+public void checkPlayer(){
+
+}
 
 
 }

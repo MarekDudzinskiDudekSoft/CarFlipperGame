@@ -24,7 +24,7 @@ public class NewCarsDatabase implements Serializable {
         }
     }
 
-    public Car getACar() {
+    public Car getChosenCar() {
         System.out.println("Podaj indeks auta do kupienia: ");
         int chosenOption = DataReader.readOptionFromRange(1, carsList.size());
         return carsList.get(chosenOption);
