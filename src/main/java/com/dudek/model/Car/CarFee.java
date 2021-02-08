@@ -4,15 +4,15 @@ import java.math.BigDecimal;
 
 public class CarFee {
 
-    private final static BigDecimal CAR_FEE = BigDecimal.valueOf(0.02);
+    private final static BigDecimal CAR_FEE_RATE = BigDecimal.valueOf(0.02);
+    private final BigDecimal carFee;
 
-    public  BigDecimal getCarFee() {
-        return CAR_FEE;
+    public  CarFee(Car car){
+        carFee = car.getValueWithParts().multiply(CAR_FEE_RATE);
     }
 
-    public  BigDecimal calculateCarFee(Car car){
-        return car.getValueWithParts().multiply(getCarFee());
+    public  BigDecimal getValue() {
+        return carFee;
     }
-
 
 }

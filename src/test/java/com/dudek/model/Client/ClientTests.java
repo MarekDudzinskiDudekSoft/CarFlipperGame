@@ -26,9 +26,10 @@ public class ClientTests {
     }
 
     @Test
-    public void checkIfClientSpendMoneyProperly(){
+    public void checkIfClientCashIsSubtractedAccordinglyToTheCarPrice(){
         Client client = new Client(BigDecimal.valueOf(1000000),true,true);
         BigDecimal cashBefore = client.getCash();
+
         client.payForCar(car);
         BigDecimal cashAfter = client.getCash();
 

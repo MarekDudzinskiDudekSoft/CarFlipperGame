@@ -70,8 +70,8 @@ public class Player implements Serializable {
     }
 
     private BigDecimal payFee(Car car) {
-        CarFee carFee = new CarFee();
-        return carFee.calculateCarFee(car);
+        CarFee carFee = new CarFee(car);
+        return carFee.getValue();
     }
 
     private BigDecimal payForCarWithFee(Car car) {

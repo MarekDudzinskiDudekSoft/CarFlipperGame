@@ -4,29 +4,42 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77cb2015-737e-4fd6-a33e-faee6b36be82" name="Default Changelist" comment="[Version 1.4] &#10;Refactoring methods including adding parameters to methods in order to close accesses. Added tests of player, client, car.">
+    <list default="true" id="77cb2015-737e-4fd6-a33e-faee6b36be82" name="Default Changelist" comment="[Version 1.5] &#10;Fixed repairing and printing broken cars features.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dudek/model/Car/CarParts/CarPartsTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/RepairACar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/RepairACar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/SellCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/menu/options/SellCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarFee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarFee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarParts/Breaks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarParts/Breaks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarParts/CarPart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarParts/CarPart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/NewCarsDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/NewCarsDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/GameState/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/GameState/GameState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Adrian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Adrian.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Marian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Marian.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Mechanic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Mechanic/Mechanic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Player/OwnedCars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Player/OwnedCars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Client/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Transaction/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dudek/model/Mechanic/JanuszTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dudek/model/Mechanic/MechanicTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dudek/model/Player/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dudek/model/Player/PlayerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dudek/model/car/CarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dudek/model/car/CarTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dudek/model/Client/ClientTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dudek/model/Client/ClientTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dudek/model/GameState/GameStateTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dudek/model/GameState/GameStateTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dudek/model/car/CarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dudek/model/Car/CarTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/MenuOptionReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/MenuOptionReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/AllOptions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/AllOptions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/BuyACar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/BuyACar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/BuyACommercial.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/BuyACommercial.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/LoopOption.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/LoopOption.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/RepairACar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/RepairACar.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/SellCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/SellCar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowAccountBalance.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowAccountBalance.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowCarsForSale.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowCarsForSale.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowOwnedCars.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowOwnedCars.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowPotentialClients.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowPotentialClients.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowRepairAndWashCost.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowRepairAndWashCost.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowRepairHistoryForAllCars.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowRepairHistoryForAllCars.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowTransactionsHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowTransactionsHistory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/Breaks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/Breaks.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/CarPart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/CarPart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/Engine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/Engine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/SuspensionSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/SuspensionSystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/Transmission.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/Transmission.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/GameState/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/GameState/GameState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/GameState/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/GameState/Transaction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Mechanic/Adrian.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Mechanic/Adrian.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Mechanic/Janusz.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Mechanic/Janusz.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Mechanic/Marian.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Mechanic/Marian.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Mechanic/Mechanic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Mechanic/Mechanic.class" afterDir="false" />
     </list>
@@ -325,10 +338,10 @@
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="shared-indexes" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -344,7 +357,7 @@
       <recent name="com.dudek.model.Client" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in Januszex">
+  <component name="RunManager" selected="Application.GameApp">
     <configuration name="GameApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dudek.main.GameApp" />
       <module name="Januszex" />
@@ -358,54 +371,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in Januszex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Januszex" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CarTests.checkIfBrokenPartsAreImmutable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarPartsTests.checkIfYouCanAddBrokenPartToRepairedList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Januszex" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dudek.model.car.*" />
+          <option name="PATTERN" value="com.dudek.model.Car.CarParts.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.dudek.model.car" />
-      <option name="MAIN_CLASS_NAME" value="com.dudek.model.car.CarTests" />
-      <option name="METHOD_NAME" value="checkIfBrokenPartsAreImmutable" />
+      <option name="PACKAGE_NAME" value="com.dudek.model.Car.CarParts" />
+      <option name="MAIN_CLASS_NAME" value="com.dudek.model.Car.CarParts.CarPartsTests" />
+      <option name="METHOD_NAME" value="checkIfYouCanAddBrokenPartToRepairedList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarTests.checkIfRepairedPartsAreImmutable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarTests.checkIfCarFeeEquals2PercentCarValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Januszex" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dudek.model.car.*" />
+          <option name="PATTERN" value="com.dudek.model.Car.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.dudek.model.car" />
-      <option name="MAIN_CLASS_NAME" value="com.dudek.model.car.CarTests" />
-      <option name="METHOD_NAME" value="checkIfRepairedPartsAreImmutable" />
+      <option name="PACKAGE_NAME" value="com.dudek.model.Car" />
+      <option name="MAIN_CLASS_NAME" value="com.dudek.model.Car.CarTests" />
+      <option name="METHOD_NAME" value="checkIfCarFeeEquals2PercentCarValue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -415,13 +418,45 @@
       <module name="Januszex" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dudek.model.car.*" />
+          <option name="PATTERN" value="com.dudek.model.Car.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.dudek.model.car" />
-      <option name="MAIN_CLASS_NAME" value="com.dudek.model.car.CarTests" />
+      <option name="PACKAGE_NAME" value="com.dudek.model.Car" />
+      <option name="MAIN_CLASS_NAME" value="com.dudek.model.Car.CarTests" />
       <option name="METHOD_NAME" value="checkIfYouCanAddBrokenPartToRepairedList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientTests.checkIfClientCashIsSubtractedAccordinglyToTheCarPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Januszex" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dudek.model.Client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dudek.model.Client" />
+      <option name="MAIN_CLASS_NAME" value="com.dudek.model.Client.ClientTests" />
+      <option name="METHOD_NAME" value="checkIfClientCashIsSubtractedAccordinglyToTheCarPrice" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameStateTests.checkIfPlayerSellsCarWell" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="Januszex" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dudek.model.GameState.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dudek.model.GameState" />
+      <option name="MAIN_CLASS_NAME" value="com.dudek.model.GameState.GameStateTests" />
+      <option name="METHOD_NAME" value="checkIfPlayerSellsCarWell" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -429,11 +464,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in Januszex" />
-        <item itemvalue="JUnit.CarTests.checkIfRepairedPartsAreImmutable" />
         <item itemvalue="Application.GameApp" />
+        <item itemvalue="JUnit.ClientTests.checkIfClientCashIsSubtractedAccordinglyToTheCarPrice" />
+        <item itemvalue="JUnit.CarPartsTests.checkIfYouCanAddBrokenPartToRepairedList" />
         <item itemvalue="JUnit.CarTests.checkIfYouCanAddBrokenPartToRepairedList" />
-        <item itemvalue="JUnit.CarTests.checkIfBrokenPartsAreImmutable" />
+        <item itemvalue="JUnit.CarTests.checkIfCarFeeEquals2PercentCarValue" />
       </list>
     </recent_temporary>
   </component>
@@ -472,7 +507,12 @@
       <workItem from="1612335299013" duration="23552000" />
       <workItem from="1612425649507" duration="440000" />
       <workItem from="1612426320814" duration="16924000" />
-      <workItem from="1612451407795" duration="2750000" />
+      <workItem from="1612451407795" duration="3107000" />
+      <workItem from="1612454708068" duration="10000" />
+      <workItem from="1612458382568" duration="30000" />
+      <workItem from="1612618501057" duration="6217000" />
+      <workItem from="1612636753259" duration="11000" />
+      <workItem from="1612820741356" duration="190000" />
     </task>
     <task id="LOCAL-00001" summary="Separation of logic from Menu to optionReader">
       <created>1607881014028</created>
@@ -635,7 +675,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612438705056</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="[Version 1.5] &#10;Fixed repairing and printing broken cars features.">
+      <created>1612454226911</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1612454226911</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -774,7 +821,8 @@
     <MESSAGE value="Fixed GitIgnore file" />
     <MESSAGE value="[Version 1.3] &#10;Added save and load game Feature.&#10;Minor refactoring of few methods in Player and GameState" />
     <MESSAGE value="[Version 1.4] &#10;Refactoring methods including adding parameters to methods in order to close accesses. Added tests of player, client, car." />
-    <option name="LAST_COMMIT_MESSAGE" value="[Version 1.4] &#10;Refactoring methods including adding parameters to methods in order to close accesses. Added tests of player, client, car." />
+    <MESSAGE value="[Version 1.5] &#10;Fixed repairing and printing broken cars features." />
+    <option name="LAST_COMMIT_MESSAGE" value="[Version 1.5] &#10;Fixed repairing and printing broken cars features." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

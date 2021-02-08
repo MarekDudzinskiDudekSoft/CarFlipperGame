@@ -20,7 +20,7 @@ public class Client implements Serializable {
     private final boolean isInterestedInBrokenCars;
     private final boolean isInterestedInDeliveryCars;
 
-
+//TODO setter do cash, walidacja przed ujemna wartoscia
     Client(BigDecimal cash, boolean isInterestedInBrokenCars, boolean isInterestedInDeliveryCars) {
         this.cash = cash;
         this.isInterestedInBrokenCars = isInterestedInBrokenCars;

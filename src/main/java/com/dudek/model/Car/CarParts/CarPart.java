@@ -15,8 +15,13 @@ public abstract class CarPart implements Serializable {
     private final BigDecimal baseValue;
 
     CarPart(BigDecimal multiplier, String name, BigDecimal baseValue ) {
+        this(multiplier,name,baseValue,Randomizer.createBooleanWithTrueProbability(75));
+    }
+
+
+    protected CarPart(BigDecimal multiplier, String name, BigDecimal baseValue ,boolean isOk) {
         this.name = name;
-        this.isOk = Randomizer.createBooleanWithTrueProbability(75);
+        this.isOk = isOk;
         this.multiplier = multiplier;
         this.baseValue = baseValue;
     }
