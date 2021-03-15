@@ -20,6 +20,7 @@ public class Game {
         gameLoop();
     }
 
+
     private void initialize() {
         welcomeMessage();
         System.out.println("Nowa gra - 1 ");

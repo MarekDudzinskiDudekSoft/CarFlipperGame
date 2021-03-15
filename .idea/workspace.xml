@@ -4,45 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77cb2015-737e-4fd6-a33e-faee6b36be82" name="Default Changelist" comment="[Version 1.5] &#10;Fixed repairing and printing broken cars features.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/dudek/model/Car/CarParts/CarPartsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarFee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarFee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarParts/Breaks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarParts/Breaks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarParts/CarPart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Car/CarParts/CarPart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dudek/model/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dudek/model/Player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dudek/model/Client/ClientTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dudek/model/Client/ClientTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dudek/model/GameState/GameStateTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dudek/model/GameState/GameStateTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dudek/model/car/CarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dudek/model/Car/CarTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/MenuOptionReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/MenuOptionReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/AllOptions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/AllOptions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/BuyACar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/BuyACar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/BuyACommercial.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/BuyACommercial.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/LoopOption.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/LoopOption.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/RepairACar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/RepairACar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/SellCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/SellCar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowAccountBalance.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowAccountBalance.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowCarsForSale.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowCarsForSale.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowOwnedCars.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowOwnedCars.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowPotentialClients.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowPotentialClients.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowRepairAndWashCost.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowRepairAndWashCost.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowRepairHistoryForAllCars.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowRepairHistoryForAllCars.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowTransactionsHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/menu/options/ShowTransactionsHistory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/Car.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/Breaks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/Breaks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/CarPart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/CarPart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/Engine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/Engine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/SuspensionSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/SuspensionSystem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/Transmission.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Car/CarParts/Transmission.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/GameState/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/GameState/GameState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/GameState/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/GameState/Transaction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Mechanic/Adrian.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Mechanic/Adrian.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Mechanic/Janusz.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Mechanic/Janusz.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Mechanic/Marian.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Mechanic/Marian.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dudek/model/Mechanic/Mechanic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dudek/model/Mechanic/Mechanic.class" afterDir="false" />
-    </list>
+    <list default="true" id="77cb2015-737e-4fd6-a33e-faee6b36be82" name="Default Changelist" comment="[Version 1.5] &#10;Fixed repairing and printing broken cars features." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -371,17 +333,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CarPartsTests.checkIfYouCanAddBrokenPartToRepairedList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Januszex" />
       <extension name="coverage">
@@ -513,6 +464,7 @@
       <workItem from="1612618501057" duration="6217000" />
       <workItem from="1612636753259" duration="11000" />
       <workItem from="1612820741356" duration="190000" />
+      <workItem from="1615827799128" duration="25000" />
     </task>
     <task id="LOCAL-00001" summary="Separation of logic from Menu to optionReader">
       <created>1607881014028</created>
